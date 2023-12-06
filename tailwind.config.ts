@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'top': "url('/libraries/images/svg/headTopRight.svg')"
+        'count': "url('/libraries/images/svg/countdownBackgound.svg')"
       },
       colors: {
         'hackBlue': '#428EFF',
@@ -19,6 +19,7 @@ const config: Config = {
         'hackGrey': '#919090',
         'softDark': '#202124',
         'softBlue': '#73A9FF',
+        'softGrey': '#D9D9D9'
       },
       fontFamily: {
         'gooReg': 'gooReg, sans-serif',

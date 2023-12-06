@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function HeaderHack() {
   return (
     <section className='headerHack topBackground'>
