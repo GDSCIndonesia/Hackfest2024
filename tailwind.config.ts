@@ -14,7 +14,13 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        'hackBlue': '#428EFF'
+        'hackBlue': '#428EFF',
+        'hackYellow': '#FB9A07',
+        'hackWhite': '#FFFFFF',
+        'hackBlack': '#141414',
+        'hackGrey': '#919090',
+        'softDark': '#202124',
+        'softBlue': '#73A9FF',
       },
       fontFamily: {
         'gooReg': 'gooReg, sans-serif',

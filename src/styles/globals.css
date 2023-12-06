@@ -30,3 +30,45 @@
   }
   /* End Google Fonts */
 }
+
+@layer components {
+  body{
+    @apply  max-w-[1900px] bg-softDark mx-auto
+  }
+  .headerHack{
+    @apply bg-softDark px-[30px] sm:px-[60px] pt-[85px] pb-[100px] relative
+  }
+  .headerGrid{
+    @apply grid grid-cols-6 border border-hackWhite rounded-[15px] sm:rounded-[30px] bg-hackBlue
+  }
+  .headLeft, .headRight{
+    @apply col-span-6 lg:col-span-3
+  }
+  .headLeft{
+    @apply p-[35px] text-hackWhite 
+  }
+  .headLeft > h1{
+    @apply font-gooBold tracking-[-4px] text-[40px] sm:text-[60px] lg:text-[60px] xl:text-[75px]
+  }
+  .headLeft > p{
+    @apply font-gooReg text-[13px]
+  }
+  .headLeft > a{
+    @apply mt-[25px] block text-hackBlack font-gooBold bg-hackYellow w-fit px-[30px] py-[10px]
+  }
+  .headRight > img{
+    @apply rounded-b-[15px] lg:rounded-b-[0px] lg:rounded-r-[30px]
+  }
+  .headFull{
+    @apply mt-[50px] md:mt-[100px]
+  }
+  .headFull > div {
+    @apply text-white font-gooReg text-center w-[95%] sm:w-[95%] xl:w-[85%] max-w-[938px] mx-auto
+  }
+  .headFull > div > h1{
+    @apply text-[25px] md:text-[35px]
+  }
+  .headFull > div > p{
+    @apply text-[16px] mt-[12px]
+  }
+}
