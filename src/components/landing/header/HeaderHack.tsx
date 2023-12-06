@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function HeaderHack() {
   return (
-    <section className='headerHack'>
-        <img className='absolute top-0 right-0' src="/libraries/images/svg/headTopRight.svg" alt="" />
-        <img className='absolute bottom-24 left-0' src="/libraries/images/svg/headBottomLeft.svg" alt="" />
+    <section className='headerHack nico'>
+        {/* <img className='absolute top-0 right-0' src="/libraries/images/svg/headTopRight.svg" alt="" />
+        <img className='absolute bottom-24 left-0' src="/libraries/images/svg/headBottomLeft.svg" alt="" /> */}
         <div className='headerGrid'>
             <div className='headLeft'>
                 <h1>HackFest 2024</h1>
