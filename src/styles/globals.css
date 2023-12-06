@@ -31,7 +31,8 @@
   /* End Google Fonts */
 }
 
-.nico{
+/* Custom Background */
+.topBackground{
   background-image: url(/libraries/images/svg/headBottomLeft.svg), url(/libraries/images/svg/headTopRight.svg);
   background-position: left 80%, right top;
   background-repeat: no-repeat, no-repeat;
