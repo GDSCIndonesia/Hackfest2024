@@ -196,4 +196,37 @@
     @apply text-[15px] md:text-[20px] font-gooMed tracking-[-1px]
   }
   /* End SessionTech */
+
+  /* Mentors */
+  .mentors{
+    @apply px-[30px] sm:px-[60px] pt-[85px] pb-[100px] bg-softDark
+  }
+  .mentorsTop > h1{
+    @apply font-gooBold text-[40px] sm:text-[60px] xl:text-[60px] tracking-[-4px] text-hackWhite xl:leading-[80px]
+  }
+  .mentorsTop > p{
+    @apply mb-[30px] text-[14px] md:text-[18px] font-gooReg text-hackWhite
+  }
+  .mentorsGrid{
+    @apply grid grid-cols-12 gap-10 mt-[100px]
+  }
+  .mentorsCol{
+    @apply col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3 text-center
+  }
+  .mentorsImg{
+    @apply w-[180px] h-[180px] rounded-full relative mx-auto
+  }
+  .mentorsBorder{
+    @apply absolute left-0 top-0 w-full h-full z-20
+  }
+  .mentorsRealImg{
+    @apply w-full h-full object-cover rounded-full
+  }
+  .mentorsCol > h1{
+    @apply font-gooBold text-hackWhite text-[25px] mt-[10px]
+  }
+  .mentorsCol > p{
+    @apply font-gooReg text-hackGrey text-[15px]
+  }
+  /* End Mentors */
 }

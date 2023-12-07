@@ -5,6 +5,7 @@ import HeaderHack from '@/components/landing/header/HeaderHack'
 import CountDown from '@/components/landing/countdown/CountDown'
 import TimeLine from '@/components/landing/timeline/TimeLine'
 import SessionTech from '@/components/landing/session/SessionTech'
+import MentorsHack from '@/components/landing/mentors/MentorsHack'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,6 +17,7 @@ export default function Home() {
       <CountDown/>
       <TimeLine/>
       <SessionTech/>
+      <MentorsHack/>
     </>
   )
 }
