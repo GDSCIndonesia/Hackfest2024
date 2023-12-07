@@ -37,8 +37,16 @@
   background-position: left 80%, right top;
   background-repeat: no-repeat, no-repeat;
 }
+.sessionTechBackground{
+  background-image: url(/libraries/images/svg/sessionTechHead.svg), url(/libraries/images/svg/sessionTechLeft.svg);
+  background-position: left top, left bottom;
+  background-repeat: no-repeat, no-repeat;
+}
 .darkShadow{
   box-shadow: 5px 5px 0px 0px rgba(32, 33, 36, 1);
+}
+.greyShadow{
+  box-shadow: 5px 5px 0px 0px rgba(218, 220, 224, 1)
 }
 
 @layer components {
@@ -158,4 +166,34 @@
     @apply bg-hackWhite border w-fit border-softDark py-2 px-4 rounded-md font-gooMed text-[13px] mt-6
   }
   /* End Timeline */
+
+  /* SessionTech */
+  .sessionTech{
+    @apply px-[30px] sm:px-[60px] pt-[250px] pb-[100px] bg-softDark sessionTechBackground
+  }
+  .sessionTechTop {
+    @apply ml-auto lg:w-[75%] xl:w-[50%]
+  }
+  .sessionTechTop > h1{
+    @apply font-gooBold text-[40px] sm:text-[60px] xl:text-[60px] tracking-[-4px] text-hackWhite xl:leading-[80px]
+  }
+  .sessionTechTop > p{
+    @apply mb-[30px] text-[14px] md:text-[18px] font-gooReg text-hackWhite
+  }
+  .sessionTechGrid{
+    @apply grid grid-cols-12 gap-6 mt-[80px]
+  }
+  .sessionCol{
+    @apply col-span-12 sm:col-span-6 lg:col-span-4
+  }
+  .timeContent > div {
+    @apply w-[120px] h-[120px] sm:w-[100px] sm:h-[100px] mb-[20px] rounded-md border-2 border-softDark bg-softGrey
+  }
+  .timeContent > div > img{
+    @apply w-full h-full object-cover rounded-md
+  }
+  .timeContent > h2{
+    @apply text-[15px] md:text-[20px] font-gooMed tracking-[-1px]
+  }
+  /* End SessionTech */
 }
