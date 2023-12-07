@@ -13,13 +13,16 @@ const config: Config = {
       },
       colors: {
         'hackBlue': '#428EFF',
-        'hackYellow': '#FB9A07',
+        'hackRed': '#EA4335',
+        'hackYellow': '#FBBC04',
+        'hackGreen': '#34A853',
+        'hackOrange': '#FB9A07',
         'hackWhite': '#FFFFFF',
         'hackBlack': '#141414',
         'hackGrey': '#919090',
         'softDark': '#202124',
         'softBlue': '#73A9FF',
-        'softGrey': '#D9D9D9'
+        'softGrey': '#DADCE0'
       },
       fontFamily: {
         'gooReg': 'gooReg, sans-serif',

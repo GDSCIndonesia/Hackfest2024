@@ -37,6 +37,9 @@
   background-position: left 80%, right top;
   background-repeat: no-repeat, no-repeat;
 }
+.darkShadow{
+  box-shadow: 5px 5px 0px 0px rgba(32, 33, 36, 1);
+}
 
 @layer components {
   body{
@@ -81,7 +84,7 @@
 
   /* Countdown */
   .countdown{
-    @apply bg-count bg-no-repeat bg-bottom px-[30px] sm:px-[60px] pt-[85px] pb-[100px] 
+    @apply bg-count bg-cover bg-no-repeat bg-bottom px-[30px] sm:px-[60px] pt-[85px] pb-[100px] 
   }
   .countGrid{
     @apply grid grid-cols-6 pb-[200px] gap-y-5 lg:gap-y-0 gap-x-5
@@ -96,16 +99,16 @@
     @apply font-gooReg text-white text-[15px] md:text-[18px]
   }
   .countDate{
-    @apply col-span-6 lg:col-span-3 bg-softGrey rounded-[20px] md:rounded-[30px] p-[30px]
+    @apply col-span-6 lg:col-span-3 bg-softGrey rounded-[20px] md:rounded-[30px] p-[30px] 
   }
   .countDate > div > h1{
     @apply font-gooBold text-[50px] sm:text-[60px] xl:text-[80px] tracking-[-4px] text-hackBlack leading-[80px]
   }
   .countDate > div > p{
-    @apply mb-[30px] text-[15px] md:text-[18px]
+    @apply mb-[30px] text-[15px] md:text-[18px] font-gooReg
   }
   .countFrame{
-    @apply text-center border-y-2 first:border-l-2 last:border-l-2 border-l-0 border-black w-full bg-hackWhite
+    @apply text-center border-y-2 first:border-l-2 last:border-l-2 border-l-0 border-black w-full bg-hackWhite darkShadow
   }
   .countNumber{
     @apply font-gooMed text-[45px] sm:text-[50px] md:text-[60px] lg:text-[70px] xl:text-[80px]
@@ -113,4 +116,46 @@
   .countStatus{
     @apply border-t-2 border-black font-gooReg text-[14px] sm:text-[16px] md:text-[18px] py-[5px]
   }
+
+  /* Timeline */
+  .timeline{
+    @apply px-[30px] sm:px-[60px] pt-[85px] pb-[100px] bg-softGrey darkShadow
+  }
+  .timeline > h1{
+    @apply font-gooBold text-[50px] sm:text-[60px] xl:text-[80px] tracking-[-4px] text-hackBlack leading-[80px]
+  }
+  .timeline > p{
+    @apply mb-[30px] text-[15px] md:text-[18px] font-gooReg
+  }
+  .timeGrid{
+    @apply grid grid-cols-12 
+  }
+  .startEndGrid{
+    @apply grid grid-cols-12
+  }
+  .startEndCol{
+    @apply col-span-12 sm:col-span-6 lg:col-span-4 p-[20px] relative
+  }
+  .startEndFrame{
+    @apply p-[20px] border-2 border-softDark rounded-[20px] darkShadow h-full w-[50%] mx-auto text-center
+  }
+  .startEndFrame > h1{
+    @apply font-gooBold text-[30px] tracking-[-2px] text-hackBlack leading-[40px] 
+  }
+  .timeCol{
+    @apply col-span-12 sm:col-span-6 lg:col-span-4 p-[20px] relative
+  }
+  .timeFrame{
+    @apply p-[30px] border-2 border-softDark rounded-[20px] darkShadow h-full flex flex-col justify-between
+  }
+  .timeFrame > .timeContent > h1{
+    @apply font-gooBold text-[25px] sm:text-[30px] xl:text-[30px] tracking-[-2px] text-hackBlack leading-[40px] mb-[10px]
+  }
+  .timeFrame > div > p{
+    @apply text-[15px] md:text-[14px] font-gooReg
+  }
+  .dateBottom{
+    @apply bg-hackWhite border w-fit border-softDark py-2 px-4 rounded-md font-gooMed text-[13px] mt-6
+  }
+  /* End Timeline */
 }
