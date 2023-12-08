@@ -9,12 +9,34 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'count': "url('/libraries/images/svg/countdownBackgound.svg')",
+        'sponsors': "url('/libraries/images/svg/sponsorsBg.svg')",
+        'organizer': "url('/libraries/images/svg/organizerBg.svg')",
+        'discord': "url('/libraries/images/svg/discord.svg')",
+      },
+      colors: {
+        'hackBlue': '#428EFF',
+        'hackRed': '#EA4335',
+        'hackYellow': '#FBBC04',
+        'hackGreen': '#34A853',
+        'hackOrange': '#FB9A07',
+        'hackWhite': '#FFFFFF',
+        'hackBlack': '#141414',
+        'hackGrey': '#919090',
+        'softDark': '#202124',
+        'softBlue': '#73A9FF',
+        'softGrey': '#DADCE0'
+      },
+      fontFamily: {
+        'gooReg': 'gooReg, sans-serif',
+        'gooMed': 'gooMed, sans-serif',
+        'gooBold': 'gooBold, sans-serif',
+        'gooRegit': 'gooRegit, sans-serif',
+        'gooMedit': 'gooMedit, sans-serif',
+        'gooBoldit': 'gooBoldit, sans-serif',
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/aspect-ratio")],
 }
 export default config
