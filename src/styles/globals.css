@@ -53,6 +53,40 @@
   body{
     @apply  max-w-[1900px] bg-softDark mx-auto
   }
+
+  /* Navbar */
+  .navbar{
+    @apply bg-white sticky top-0 left-0 z-[8999] w-full overflow-x-clip
+  }
+  .navbarContent{
+    @apply flex border-y-[2px] border-black justify-between lg:justify-start items-center
+  }
+  .navbarController{
+    @apply absolute lg:static top-0 h-screen lg:h-fit bg-white lg:bg-transparent lg:w-full border-l-2 border-black lg:border-l-0 transition-all duration-500 ease-in-out z-[8999]
+  }
+  .navbarItems{
+    @apply flex justify-between items-center flex-col lg:flex-row
+  }
+  .navbarUl{
+    @apply flex w-full lg:w-fit text-center lg:text-left space-x-0 lg:space-x-[50px] flex-col lg:flex-row
+  }
+  .navbarLiTop{
+    @apply border-y-2 border-black lg:border-0 py-[20px] lg:py-0 px-[15px] lg:p-0
+  }
+  .navbarLi{
+    @apply border-b border-black lg:border-0
+  }
+  .navbarLink{
+    @apply font-gooReg py-[15px] lg:py-0 inline-block w-full hover:bg-hackYellow lg:hover:bg-transparent lg:hover:underline transition-all
+  }
+  .navDiscord{
+    @apply inline-block text-black font-gooReg py-[15px] px-[40px] hover:bg-hackYellow hover:text-black transition-all border-y lg:border-y-0 lg:border-x-2 border-black w-full lg:w-fit text-center
+  }
+  .navRegister{
+    @apply inline-block text-black font-gooReg py-[15px] px-[40px] hover:bg-hackYellow hover:text-black transition-all border-y lg:border-y-0 lg:border-r-2 border-black w-full lg:w-fit text-center
+  }
+  /* End Navbar */
+
   .headerHack{
     @apply bg-softDark px-[30px] sm:px-[60px] pt-[85px] pb-[100px]
   }
@@ -208,16 +242,16 @@
     @apply mb-[30px] text-[14px] md:text-[18px] font-gooReg text-hackWhite
   }
   .mentorsGrid{
-    @apply grid grid-cols-12 gap-10 mt-[100px]
+    @apply grid grid-cols-6 sm:grid-cols-12 gap-10 mt-[100px]
   }
   .mentorsCol{
-    @apply col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3 text-center
+    @apply col-span-6 sm:col-span-6 md:col-span-4 lg:col-span-3 text-center
   }
   .mentorsImg{
     @apply w-[180px] h-[180px] rounded-full relative mx-auto
   }
   .mentorsBorder{
-    @apply absolute left-0 top-0 w-full h-full z-20
+    @apply absolute left-0 top-0 w-full h-full z-20 hover:rotate-180 transition-all ease-in-out duration-500
   }
   .mentorsRealImg{
     @apply w-full h-full object-cover rounded-full
@@ -229,4 +263,118 @@
     @apply font-gooReg text-hackGrey text-[15px]
   }
   /* End Mentors */
+
+  /* Sponsors */
+  .sponsors{
+    @apply px-[30px] sm:px-[60px] pt-[85px] pb-[100px] bg-softDark text-center bg-sponsors bg-no-repeat bg-bottom bg-contain
+  }
+  .sponsorsTop > h1{
+    @apply font-gooBold text-[40px] sm:text-[60px] xl:text-[60px] tracking-[-4px] text-hackWhite xl:leading-[80px]
+  }
+  .sponsorsTop > p{
+    @apply mb-[30px] text-[14px] md:text-[18px] font-gooReg text-hackWhite
+  }
+  .sponsorsItem{
+    @apply mt-[150px] mb-[300px] flex flex-col sm:flex-row justify-between space-y-12 sm:space-y-0 sm:space-x-8
+  }
+  /* End Sponsors */
+
+  /* Media Partners */
+  .mediaPartners{
+    @apply px-[30px] sm:px-[60px] pt-[85px] pb-[100px] bg-softGrey text-center bg-sponsors bg-no-repeat bg-bottom bg-contain
+  }
+  .mediaPartnersTop > h1{
+    @apply font-gooBold text-[40px] sm:text-[60px] xl:text-[60px] tracking-[-4px] text-softDark xl:leading-[80px]
+  }
+  .mediaPartnersTop > p{
+    @apply mb-[30px] text-[14px] md:text-[18px] font-gooReg text-softDark
+  }
+  .mediaPartnersItem{
+    @apply mt-[150px] mb-[50px] flex flex-col sm:flex-row justify-between space-y-12 sm:space-y-0 sm:space-x-8
+  }
+  /* ENd Media Partners */
+
+  /* Organizer */
+  .organizer{
+    @apply px-[30px] sm:px-[60px] pt-[300px] pb-[100px] bg-organizer bg-left-top bg-cover bg-no-repeat bg-softDark
+  }
+  .organizerTop {
+    @apply mr-auto lg:w-[75%] xl:w-[50%]
+  }
+  .organizerTop > h1{
+    @apply font-gooBold text-[40px] sm:text-[60px] xl:text-[60px] tracking-[-4px] text-hackWhite xl:leading-[80px]
+  }
+  .organizerTop > p{
+    @apply mb-[30px] text-[14px] md:text-[18px] font-gooReg text-hackWhite
+  }
+  .organizerGrid{
+    @apply grid grid-cols-4 sm:grid-cols-6 mt-[80px] gap-x-20 gap-y-20 sm:gap-y-28
+  }
+  .organizerCol{
+    @apply col-span-4 sm:col-span-3
+  }
+  .organizerCol > img{
+    @apply w-[90%] sm:w-full h-auto mx-auto
+  }
+  /* End Organizer */
+
+  /* Faq */
+  .faq{
+    @apply px-[30px] sm:px-[60px] pt-[85px] pb-[100px] 
+  }
+  .faqTop {
+    @apply mr-auto lg:w-[85%] xl:w-[75%]
+  }
+  .faqTop > h1{
+    @apply font-gooBold text-[40px] sm:text-[60px] xl:text-[60px] tracking-[-4px] text-hackWhite xl:leading-[80px]
+  }
+  .faqTop > p{
+    @apply mb-[30px] text-[14px] md:text-[18px] font-gooReg text-hackWhite
+  }
+  .faqContent{
+    @apply mt-[50px]
+  }
+  /* End Faq */
+
+  /* Discord */
+  .discord{
+    @apply px-[30px] sm:px-[60px] pt-[85px] pb-[100px]
+  }
+  .discordGrid{
+    @apply grid grid-cols-12 gap-y-10 lg:gap-y-0 lg:gap-x-8
+  }
+  .discordContent{
+    @apply col-span-12 lg:col-span-6 xl:col-span-7 flex items-start md:items-center 
+  }
+  .discordTop{
+    @apply text-white font-gooBold text-[35px] sm:text-[50px] md:text-[35px] lg:text-[50px] xl:text-[60px] leading-tight
+  }
+  .discordPar{
+    @apply text-white font-gooReg text-[13px] md:text-[12px] lg:text-[14px] mt-[10px]
+  }
+  .discordButton{
+    @apply inline-block bg-transparent text-white font-gooReg py-[10px] md:py-[15px] px-[30px] md:px-[40px] hover:bg-white hover:text-black transition-all w-full lg:w-fit text-center border-2 border-white mt-[30px] xl:mt-[40px] text-[16px] lg:text-[18px]
+  }
+  .discordImg{
+    @apply col-span-12 h-[300px] sm:h-[400px] lg:h-full lg:col-span-6 xl:col-span-5 bg-softGrey bg-discord bg-cover lg:bg-cover 2xl:bg-contain bg-right-top bg-no-repeat rounded-3xl
+  }
+  /* End Discord */
+
+  /* Footer */
+  .footerContent{
+    @apply py-[70px] flex flex-col justify-center
+  }
+  .footerFlex{
+    @apply flex space-x-[40px] text-[20px] mx-auto mt-[31px]
+  }
+  .footerLogo{
+    @apply w-[300px] md:w-[400px] h-auto mx-auto
+  }
+  .footerCopy{
+    @apply mt-[70px] text-white font-gooReg text-center text-[14px] sm:text-[16px]
+  }
+  .footDown{
+    @apply flex
+  }
+  /* End Footer */
 }

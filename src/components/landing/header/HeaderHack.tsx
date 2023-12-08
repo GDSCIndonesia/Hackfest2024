@@ -15,7 +15,7 @@ export default function HeaderHack() {
         </div>
         <div className='headFull'>
                 <div>
-                    <h1>You know all those great ideas you have? We want you to try them, lots of them, and find out what works.</h1>
+                    <h1>Turn your creative ideas into reality. Try them out and see what succeeds.</h1>
                     <p>Register your team now and have the chance of winning one of the most prestigious hackathon events in Indonesia!</p>
                 </div>
             </div>

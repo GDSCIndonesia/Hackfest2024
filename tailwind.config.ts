@@ -9,7 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'count': "url('/libraries/images/svg/countdownBackgound.svg')"
+        'count': "url('/libraries/images/svg/countdownBackgound.svg')",
+        'sponsors': "url('/libraries/images/svg/sponsorsBg.svg')",
+        'organizer': "url('/libraries/images/svg/organizerBg.svg')",
+        'discord': "url('/libraries/images/svg/discord.svg')",
       },
       colors: {
         'hackBlue': '#428EFF',
@@ -34,6 +37,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/aspect-ratio")],
 }
 export default config
