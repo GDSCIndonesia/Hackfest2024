@@ -43,7 +43,14 @@ export default function Home() {
         handle: '@handle',
         site: '@site',
         cardType: 'summary_large_image',
-      }}/>
+      }}
+      additionalLinkTags={[
+        {
+          rel: 'icon',
+          href: '/icon.svg',
+        }
+      ]}
+      />
       {/* <ComingSoon/> */}
       <Navbar/>
       <HeaderHack/>
