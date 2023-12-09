@@ -26,8 +26,8 @@ export default function Home() {
       canonical="https://www.gdsc-hackfest.com/"
       openGraph={{
         url: 'https://www.gdsc-hackfest.com/',
-        title: 'Open Graph Title',
-        description: 'Open Graph Description',
+        title: 'HackFest 2024',
+        description: 'HackFest Indonesia is Indonesia’s hackathon held by GDSC Indonesia where university students of different skills from all over Indonesia can come together to experiment and develop impactful software or hardware based on the United Nations 17 SDGs.',
         images: [
           {
             url: '/libraries/images/jpg/HackFest-Thumbnail.jpg',
