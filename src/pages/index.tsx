@@ -37,7 +37,7 @@ export default function Home() {
             type: 'image/jpeg',
           }
         ],
-        siteName: 'SiteName',
+        siteName: 'GDSC HackFest',
       }}
       twitter={{
         handle: '@handle',
