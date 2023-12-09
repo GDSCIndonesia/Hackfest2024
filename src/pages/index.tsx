@@ -13,12 +13,37 @@ import FrequentlyAsked from '@/components/landing/faq/FrequentlyAsked'
 import DiscordHack from '@/components/landing/discord/DiscordHack'
 import Footer from '@/components/landing/layout/Footer'
 import Navbar from '@/components/landing/layout/Navbar'
+import { NextSeo } from 'next-seo';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <>
+      <NextSeo
+      title="HackFest 2024"
+      description="HackFest Indonesia is Indonesia’s hackathon held by GDSC Indonesia where university students of different skills from all over Indonesia can come together to experiment and develop impactful software or hardware based on the United Nations 17 SDGs."
+      canonical="https://www.gdsc-hackfest.com/"
+      openGraph={{
+        url: 'https://www.gdsc-hackfest.com/',
+        title: 'Open Graph Title',
+        description: 'Open Graph Description',
+        images: [
+          {
+            url: '/libraries/images/jpg/HackFest-Thumbnail.jpg',
+            width: 800,
+            height: 450,
+            alt: 'HackFest 2024 Thumbnal',
+            type: 'image/jpeg',
+          }
+        ],
+        siteName: 'SiteName',
+      }}
+      twitter={{
+        handle: '@handle',
+        site: '@site',
+        cardType: 'summary_large_image',
+      }}/>
       {/* <ComingSoon/> */}
       <Navbar/>
       <HeaderHack/>
