@@ -35,10 +35,10 @@ export default function CountDown() {
     </div>
   );
 
-  const eventDate = new Date("2023-12-17T23:59:59");
+  const eventDate = new Date("2023-12-16T19:30:00");
 
   return (
-    <section className='countdown'>
+    <section className='countdown' id='events'>
       <div className='countGrid'>
         <div className='countText'>
           <h1>Keep Up to Date</h1>
@@ -49,7 +49,7 @@ export default function CountDown() {
         </div>
         <div className='countDate'>
           <div>
-            <h1>Event Date</h1>
+            <h1>Talk Series #2 : Pitching & Product Management</h1>
             <p>Don&#39;t worry, it&#39;s just shrinking bit by bit. Like my motivation during Monday mornings</p>
             <Countdown date={eventDate} renderer={renderer} />
           </div>

@@ -50,8 +50,11 @@
 }
 
 @layer components {
+  *{
+    @apply scroll-smooth
+  }
   body{
-    @apply  max-w-[1900px] bg-softDark mx-auto
+    @apply  max-w-[1900px] bg-softDark mx-auto 
   }
 
   /* Navbar */
@@ -147,7 +150,7 @@
     @apply col-span-6 lg:col-span-3 bg-softGrey rounded-[20px] md:rounded-[30px] p-[30px] 
   }
   .countDate > div > h1{
-    @apply font-gooBold text-[50px] sm:text-[60px] xl:text-[80px] tracking-[-4px] text-hackBlack leading-[80px]
+    @apply font-gooBold text-[30px] sm:text-[40px] xl:text-[60px] tracking-[-2px] md:tracking-[-4px] text-hackBlack leading-[30px] md:leading-[50px] lg:leading-[70px]
   }
   .countDate > div > p{
     @apply mb-[30px] text-[15px] md:text-[18px] font-gooReg
@@ -311,13 +314,13 @@
     @apply mb-[30px] text-[14px] md:text-[18px] font-gooReg text-hackWhite
   }
   .organizerGrid{
-    @apply grid grid-cols-4 sm:grid-cols-6 mt-[80px] gap-x-20 gap-y-20 sm:gap-y-28
+    @apply grid grid-cols-4 mt-[80px] gap-x-20 gap-y-20 sm:gap-y-28
   }
   .organizerCol{
-    @apply col-span-4 sm:col-span-3
+    @apply col-span-4
   }
   .organizerCol > img{
-    @apply w-[90%] sm:w-full h-auto mx-auto
+    @apply w-full md:w-[50%] h-auto mx-auto
   }
   /* End Organizer */
 

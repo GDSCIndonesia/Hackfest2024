@@ -9,16 +9,7 @@ export default function OrganizerHack() {
         </div>
         <div className='organizerGrid'>
             <div className='organizerCol'>
-                <img src="/libraries/images/png/googleDevelopers.png" alt="" />
-            </div>
-            <div className='organizerCol'>
-                <img src="/libraries/images/png/googleDevelopers.png" alt="" />
-            </div>
-            <div className='organizerCol'>
-                <img src="/libraries/images/png/googleDevelopers.png" alt="" />
-            </div>
-            <div className='organizerCol'>
-                <img src="/libraries/images/png/googleDevelopers.png" alt="" />
+                <img src='/libraries/images/svg/gdscindonesiaLong.svg' className='footerLogo'/>
             </div>
         </div>
     </section>

@@ -1,6 +1,6 @@
 export default function TimeLine() {
   return (
-    <section className='timeline'>
+    <section className='timeline' id='timeline'>
         <h1>Timeline</h1>
         <p>This is a magical timeline that can make your heart beat faster.</p>
         <div className='startEndGrid'>
@@ -24,7 +24,7 @@ export default function TimeLine() {
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum tempora suscipit veritatis sequi voluptas omnis ducimus dicta culpa.</p>
                     </div>
                     <div className='dateBottom'>
-                        <h1>18 Desember 2023</h1>
+                        <h1>Updating Shortly</h1>
                     </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@ export default function TimeLine() {
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum tempora suscipit veritatis sequi voluptas omnis ducimus dicta culpa.</p>
                     </div>
                     <div className='dateBottom'>
-                        <h1>18 Desember 2023</h1>
+                        <h1>Updating Shortly</h1>
                     </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@ export default function TimeLine() {
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum tempora suscipit veritatis sequi voluptas omnis ducimus dicta culpa. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum tempora suscipit veritatis sequi voluptas omnis ducimus dicta culpa.</p>
                     </div>
                     <div className='dateBottom'>
-                        <h1>18 Desember 2023</h1>
+                        <h1>Updating Shortly</h1>
                     </div>
                 </div>
             </div>
@@ -68,7 +68,7 @@ export default function TimeLine() {
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum tempora suscipit veritatis sequi voluptas omnis ducimus dicta culpa.</p>
                     </div>
                     <div className='dateBottom'>
-                        <h1>18 Desember 2023</h1>
+                        <h1>Updating Shortly</h1>
                     </div>
                 </div>
             </div>
@@ -83,7 +83,7 @@ export default function TimeLine() {
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum tempora suscipit veritatis sequi voluptas omnis ducimus dicta culpa.</p>
                     </div>
                     <div className='dateBottom'>
-                        <h1>18 Desember 2023</h1>
+                        <h1>Updating Shortly</h1>
                     </div>
                 </div>
             </div>
@@ -98,7 +98,7 @@ export default function TimeLine() {
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum tempora suscipit veritatis sequi voluptas omnis ducimus dicta culpa.</p>
                     </div>
                     <div className='dateBottom'>
-                        <h1>18 Desember 2023</h1>
+                        <h1>Updating Shortly</h1>
                     </div>
                 </div>
             </div>

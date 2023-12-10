@@ -27,7 +27,7 @@ export default function FrequentlyAsked() {
         },
         {
           question: "Do I need a team?",
-          answer: "While you do have the option of working alone, GDSC HackFest Indonesia is a team event, so working with others is encouraged. You can participate as a team with a minimum of 1 GDSC member from the same/different universities/faculties. The maximum number of team members is 4 people."
+          answer: "While you do have the option of working alone, GDSC HackFest Indonesia is a team event, so working with others is encouraged. You can participate as a team with a minimum of 1 GDSC member from the same/different universities/faculties. The minimum number of member is 3, and the maximum number of team members is 4 people."
         },
         {
           question: "Is there any specific technologies required for our solution?",
@@ -85,7 +85,7 @@ export default function FrequentlyAsked() {
         // }
       ];
   return (
-    <section className='faq'>
+    <section className='faq' id='faq'>
         <div className='faqTop'>
             <h1>Frequently Asked Questions</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta distinctio aliquid exercitationem, quis delectus ipsam.</p>

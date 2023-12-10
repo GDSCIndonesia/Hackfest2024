@@ -1,6 +1,6 @@
 export default function HeaderHack() {
   return (
-    <section className='headerHack topBackground'>
+    <section className='headerHack topBackground' id='about'>
         <div className='headerGrid'>
             <div className='headLeft'>
                 <h1>HackFest 2024</h1>

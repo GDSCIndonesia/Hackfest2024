@@ -5,7 +5,7 @@ export default function MentorsHack() {
     <section className='mentors'>
         <div className='mentorsTop'>
             <h1>Mentors</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta distinctio aliquid exercitationem, quis delectus ipsam.</p>
+            <p>Unlock exclusive mentorship from experts. Elevate your skills with personalized guidance, ensuring an extraordinary journey to mastery.</p>
         </div>
         <div className='mentorsGrid'>
             <div className='mentorsCol'>

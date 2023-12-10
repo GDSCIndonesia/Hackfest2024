@@ -25,7 +25,7 @@ export default function Navbar() {
 		<section className="navbar" ref={menuRef}>
 			<div className="navbarContent">
 				<div className="pl-[30px] md:pl-[60px] pr-[20px]">
-					<a href="#">
+					<a href="#about">
 						<img
 							src="/libraries/images/svg/gdsc-logo.svg"
 							className="h-[28px]"
@@ -100,7 +100,7 @@ export default function Navbar() {
 								</a>
 							</li>
 							<li className="navbarLi">
-								<a href="#" className="navbarLink">
+								<a href="#prizes" className="navbarLink">
 									Prizes
 								</a>
 							</li>

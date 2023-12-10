@@ -5,14 +5,14 @@ export default function SponsorsHack() {
     <section className='sponsors'>
         <div className='sponsorsTop'>
             <h1>Sponsors</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta distinctio aliquid exercitationem, quis delectus ipsam.</p>
+            <p>Proudly presents Google HackFest 2024 Official Sponsor.</p>
         </div>
         <div className='sponsorsItem'>
             <div className='sponsorImg'>
-                <img src="/libraries/images/png/googleDevelopers.png" alt="" />
+                <img src="/libraries/images/png/googleForDevelopers.png" alt="" />
             </div>
             <div className='sponsorImg'>
-                <img src="/libraries/images/png/googleDevelopers.png" alt="" />
+                <img src="/libraries/images/png/googleForDevelopers.png" alt="" />
             </div>
         </div>
     </section>
