@@ -43,6 +43,9 @@ export default function CountDown() {
         <div className='countText'>
           <h1>Keep Up to Date</h1>
           <p>As a front-end developer, I find myself in a perpetual race against time. However, unlike the elements in my code, time refuses to be debugged or optimized. So, make sure you do not run out of time.</p>
+          <a href="https://links.gdsc-hackfest.com/bookletHackFest2024" target="_blank">
+              Download Booklet
+          </a>
         </div>
         <div className='countDate'>
           <div>

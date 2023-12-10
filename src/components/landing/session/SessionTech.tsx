@@ -20,7 +20,7 @@ export default function SessionTech() {
                     </div>
                     <div className='flex space-x-2'>
                         <div className='dateBottom'>
-                            <h1>You&#39;ll know ut</h1>
+                            <h1>You&#39;ll know it</h1>
                         </div>
                         <div className='dateBottom'>
                             <h1>11 AM - 1 PM</h1>
@@ -40,7 +40,7 @@ export default function SessionTech() {
                     </div>
                     <div className='flex space-x-2'>
                         <div className='dateBottom'>
-                            <h1>You&#39;ll know ut</h1>
+                            <h1>You&#39;ll know it</h1>
                         </div>
                         <div className='dateBottom'>
                             <h1>11 AM - 1 PM</h1>
@@ -60,7 +60,7 @@ export default function SessionTech() {
                     </div>
                     <div className='flex space-x-2'>
                         <div className='dateBottom'>
-                            <h1>You&#39;ll know ut</h1>
+                            <h1>You&#39;ll know it</h1>
                         </div>
                         <div className='dateBottom'>
                             <h1>11 AM - 1 PM</h1>
@@ -80,7 +80,7 @@ export default function SessionTech() {
                     </div>
                     <div className='flex space-x-2'>
                         <div className='dateBottom'>
-                            <h1>You&#39;ll know ut</h1>
+                            <h1>You&#39;ll know it</h1>
                         </div>
                         <div className='dateBottom'>
                             <h1>11 AM - 1 PM</h1>
@@ -100,7 +100,7 @@ export default function SessionTech() {
                     </div>
                     <div className='flex space-x-2'>
                         <div className='dateBottom'>
-                            <h1>You&#39;ll know ut</h1>
+                            <h1>You&#39;ll know it</h1>
                         </div>
                         <div className='dateBottom'>
                             <h1>11 AM - 1 PM</h1>
@@ -120,7 +120,7 @@ export default function SessionTech() {
                     </div>
                     <div className='flex space-x-2'>
                         <div className='dateBottom'>
-                            <h1>You&#39;ll know ut</h1>
+                            <h1>You&#39;ll know it</h1>
                         </div>
                         <div className='dateBottom'>
                             <h1>11 AM - 1 PM</h1>
