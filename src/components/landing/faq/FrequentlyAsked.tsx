@@ -1,3 +1,5 @@
+import { motion } from "framer-motion"
+
 import Qna from "../qna/Qna";
 
 export default function FrequentlyAsked() {
@@ -86,10 +88,16 @@ export default function FrequentlyAsked() {
       ];
   return (
     <section className='faq' id='faq'>
-        <div className='faqTop'>
+        <motion.div 
+          initial={{ opacity: 0, y:-150 }}
+          whileInView={{ opacity: 1, y:0 }}
+          transition={{ 
+              duration: 0.5
+          }}
+        className='faqTop'>
             <h1>Frequently Asked Questions</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta distinctio aliquid exercitationem, quis delectus ipsam.</p>
-        </div>
+        </motion.div>
         <div className='faqContent'>
             {faqData.map((faq, index) => (
                     <Qna key={index} {...faq} />

@@ -1,8 +1,16 @@
+import { motion } from "framer-motion"
+
 export default function DiscordHack() {
   return (
     <section className='discord'>
         <div className='discordGrid'>
-        <div className='discordContent'>
+        <motion.div 
+          initial={{ opacity: 0, x:-150 }}
+          whileInView={{ opacity: 1, x:0 }}
+          transition={{ 
+              duration: 0.5
+          }}
+        className='discordContent'>
           <div>
             <h1 className='discordTop'>
               Join Our
@@ -22,9 +30,15 @@ export default function DiscordHack() {
               Join Discord
             </a>
           </div>
-        </div>
-        <div className='discordImg'>
-        </div>
+        </motion.div>
+        <motion.div 
+          initial={{ opacity: 0, y:150 }}
+          whileInView={{ opacity: 1, y:0 }}
+          transition={{ 
+              duration: 0.5
+          }}
+        className='discordImg'>
+        </motion.div>
       </div>
     </section>
   )

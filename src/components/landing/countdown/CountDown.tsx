@@ -1,6 +1,7 @@
 "use client"
 
 import Countdown from 'react-countdown';
+import { motion } from "framer-motion"
 
 interface RendererProps {
   days: number;
@@ -38,23 +39,38 @@ export default function CountDown() {
   const eventDate = new Date("2023-12-16T19:30:00");
 
   return (
-    <section className='countdown' id='events'>
+    <div
+    className='countdown' id='events'>
       <div className='countGrid'>
-        <div className='countText'>
+        <motion.div 
+        initial={{ opacity: 0, x:-150 }}
+        whileInView={{ opacity: 1, x:0 }}
+        transition={{
+          ease: "easeInOut", 
+          duration: 0.5
+        }} 
+        className='countText'>
           <h1>Keep Up to Date</h1>
           <p>As a front-end developer, I find myself in a perpetual race against time. However, unlike the elements in my code, time refuses to be debugged or optimized. So, make sure you do not run out of time.</p>
           <a href="https://links.gdsc-hackfest.com/bookletHackFest2024" target="_blank">
               Download Booklet
           </a>
-        </div>
-        <div className='countDate'>
+        </motion.div>
+        <motion.div
+        initial={{ opacity: 0, x:150 }}
+        whileInView={{ opacity: 1, x:0 }}
+        transition={{
+          ease: "easeInOut", 
+          duration: 0.5
+        }} 
+        className='countDate'>
           <div>
             <h1>Talk Series #2 : Pitching & Product Management</h1>
             <p>Don&#39;t worry, it&#39;s just shrinking bit by bit. Like my motivation during Monday mornings</p>
             <Countdown date={eventDate} renderer={renderer} />
           </div>
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </div>
   );
 }

@@ -130,7 +130,7 @@
 
   /* Countdown */
   .countdown{
-    @apply bg-count bg-cover bg-no-repeat bg-bottom px-[30px] sm:px-[60px] pt-[85px] pb-[100px] 
+    @apply bg-count bg-cover bg-no-repeat bg-bottom px-[30px] sm:px-[60px] pt-[85px] pb-[100px] overflow-hidden
   }
   .countGrid{
     @apply grid grid-cols-6 pb-[200px] gap-y-5 lg:gap-y-0 gap-x-5
@@ -168,12 +168,12 @@
 
   /* Timeline */
   .timeline{
-    @apply px-[30px] sm:px-[60px] pt-[85px] pb-[100px] bg-softGrey darkShadow
+    @apply px-[30px] sm:px-[60px] pt-[85px] pb-[100px] bg-softGrey darkShadow overflow-hidden
   }
-  .timeline > h1{
+  .timeline > div > h1{
     @apply font-gooBold text-[50px] sm:text-[60px] xl:text-[80px] tracking-[-4px] text-hackBlack leading-[80px]
   }
-  .timeline > p{
+  .timeline > div > p{
     @apply mb-[30px] text-[15px] md:text-[18px] font-gooReg
   }
   .timeGrid{
@@ -210,7 +210,7 @@
 
   /* SessionTech */
   .sessionTech{
-    @apply px-[30px] sm:px-[60px] pt-[250px] pb-[100px] bg-softDark sessionTechBackground
+    @apply px-[30px] sm:px-[60px] pt-[250px] pb-[100px] bg-softDark sessionTechBackground overflow-hidden
   }
   .sessionTechTop {
     @apply ml-auto lg:w-[75%] xl:w-[50%]
@@ -240,7 +240,7 @@
 
   /* Mentors */
   .mentors{
-    @apply px-[30px] sm:px-[60px] pt-[85px] pb-[100px] bg-softDark
+    @apply px-[30px] sm:px-[60px] pt-[85px] pb-[100px] bg-softDark overflow-hidden
   }
   .mentorsTop > h1{
     @apply font-gooBold text-[40px] sm:text-[60px] xl:text-[60px] tracking-[-4px] text-hackWhite xl:leading-[80px]
@@ -273,7 +273,7 @@
 
   /* Sponsors */
   .sponsors{
-    @apply px-[30px] sm:px-[60px] pt-[85px] pb-[100px] bg-softDark text-center bg-sponsors bg-no-repeat bg-bottom bg-contain
+    @apply px-[30px] sm:px-[60px] pt-[85px] pb-[100px] bg-softDark text-center bg-sponsors bg-no-repeat bg-bottom bg-contain overflow-hidden
   }
   .sponsorsTop > h1{
     @apply font-gooBold text-[40px] sm:text-[60px] xl:text-[60px] tracking-[-4px] text-hackWhite xl:leading-[80px]
@@ -303,7 +303,7 @@
 
   /* Organizer */
   .organizer{
-    @apply px-[30px] sm:px-[60px] pt-[300px] pb-[100px] bg-organizer bg-left-top bg-cover bg-no-repeat bg-softDark
+    @apply px-[30px] sm:px-[60px] pt-[300px] pb-[100px] bg-organizer bg-left-top bg-cover bg-no-repeat bg-softDark overflow-hidden
   }
   .organizerTop {
     @apply mr-auto lg:w-[75%] xl:w-[50%]

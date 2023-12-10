@@ -1,13 +1,27 @@
-import React from 'react'
+import { motion } from "framer-motion"
 
 export default function SessionTech() {
   return (
     <section className='sessionTech'>
-        <div className='sessionTechTop'>
+        <motion.div
+            initial={{ opacity: 0, x:150 }}
+            whileInView={{ opacity: 1, x:0 }}
+            transition={{ 
+                duration: 0.5
+            }}
+            className='sessionTechTop'
+        >
             <h1>Sessions and Tech Talk</h1>
             <p>Enhance yourself by attending tech talk sessions led by experts.</p>
-        </div>
-        <div className='sessionTechGrid'>
+        </motion.div>
+        <motion.div 
+            initial={{ opacity: 0, scale:.2 }}
+            whileInView={{ opacity: 1, scale:1 }}
+            transition={{ 
+                duration: 0.5
+            }}
+            className='sessionTechGrid'
+        >
             <div className='sessionCol'>
                 <div className='timeFrame bg-hackBlue greyShadow'>
                     <div className='timeContent'>
@@ -129,7 +143,7 @@ export default function SessionTech() {
                 </div>
             </div>
             
-        </div>
+        </motion.div>
     </section>
   )
 }
