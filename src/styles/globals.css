@@ -106,7 +106,7 @@
     @apply font-gooReg text-[13px]
   }
   .headLeft > a{
-    @apply mt-[25px] block text-hackBlack font-gooBold bg-hackYellow w-fit px-[30px] py-[10px]
+    @apply mt-[25px] block text-hackBlack font-gooBold bg-hackYellow text-center lg:text-left w-full lg:w-fit px-[30px] py-[10px]
   }
   .headRight > img{
     @apply rounded-b-[15px] sm:rounded-b-[30px] lg:rounded-b-[0px] lg:rounded-r-[30px] w-full h-full object-cover

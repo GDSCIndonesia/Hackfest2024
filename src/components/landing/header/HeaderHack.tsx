@@ -5,8 +5,8 @@ export default function HeaderHack() {
             <div className='headLeft'>
                 <h1>HackFest 2024</h1>
                 <p>HackFest Indonesia is Indonesia’s hackathonheld by GDSC Indonesia where university studentsof different skills from all over Indonesia can cometogether to experiment and develop impactful software or hardware based onUnited Nation 17 SDGs.</p>
-                <a href="#">
-                    Learn more
+                <a href="https://links.gdsc-hackfest.com/bookletHackFest2024" target="_blank">
+                    Download Booklet
                 </a>
             </div>
             <div className='headRight'>

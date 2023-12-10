@@ -72,17 +72,17 @@ export default function FrequentlyAsked() {
           question: "How if I have another question that didn't get answered here?",
           answer: "You will receive guidance from expert mentors, exciting prizes for winners and feedback for your submitted solutions from industry-seasoned professionals."
         },
-        {
-          question: "How will the winners be announced?",
-          answer: `Please kindly reach us directly through our email at <strong>gdschackfest@gmail.com</strong> or hit our contact persons up below.
-          <div style="margin-bottom: 5px;"></div>
-          <strong>Joni Bastian https://t.me/jonibastian via Telegram</strong>
-          <div style="margin-bottom: 5px;"></div>
-          <strong>Sendhy https://wa.me/6282150103051 via WhatsApp</strong>
-          <div style="margin-bottom: 5px;"></div>
-          We would be happy to help you.
-          `
-        }
+        // {
+        //   question: "How will the winners be announced?",
+        //   answer: `Please kindly reach us directly through our email at <strong>gdschackfest@gmail.com</strong> or hit our contact persons up below.
+        //   <div style="margin-bottom: 5px;"></div>
+        //   <strong>Joni Bastian https://t.me/jonibastian via Telegram</strong>
+        //   <div style="margin-bottom: 5px;"></div>
+        //   <strong>Sendhy https://wa.me/6282150103051 via WhatsApp</strong>
+        //   <div style="margin-bottom: 5px;"></div>
+        //   We would be happy to help you.
+        //   `
+        // }
       ];
   return (
     <section className='faq'>

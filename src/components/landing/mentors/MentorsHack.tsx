@@ -11,66 +11,66 @@ export default function MentorsHack() {
             <div className='mentorsCol'>
                 <div className='mentorsImg'>
                     <img className='mentorsBorder' src="/libraries/images/svg/circleMentors.svg" alt="" />
-                    <img className='mentorsRealImg' src="https://cdn1-production-images-kly.akamaized.net/PzP0vPMo8CgA2NmgQztFqlzkOJc=/800x1066/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2477883/original/049219600_1543305693-063_1061229270.jpg" alt="" />
+                    <img className='mentorsRealImg' src="" alt="" />
                 </div>
-                <h1>Nico Abel Laia</h1>
-                <p>Google Developer Expert Web</p>
+                <h1>TBA</h1>
+                <p>Coming Soon</p>
             </div>
             <div className='mentorsCol'>
                 <div className='mentorsImg'>
                     <img className='mentorsBorder' src="/libraries/images/svg/circleMentors.svg" alt="" />
-                    <img className='mentorsRealImg' src="https://cdn1-production-images-kly.akamaized.net/PzP0vPMo8CgA2NmgQztFqlzkOJc=/800x1066/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2477883/original/049219600_1543305693-063_1061229270.jpg" alt="" />
+                    <img className='mentorsRealImg' src="" alt="" />
                 </div>
-                <h1>Nico Abel Laia</h1>
-                <p>Google Developer Expert Web</p>
+                <h1>TBA</h1>
+                <p>Coming Soon</p>
             </div>
             <div className='mentorsCol'>
                 <div className='mentorsImg'>
                     <img className='mentorsBorder' src="/libraries/images/svg/circleMentors.svg" alt="" />
-                    <img className='mentorsRealImg' src="https://cdn1-production-images-kly.akamaized.net/PzP0vPMo8CgA2NmgQztFqlzkOJc=/800x1066/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2477883/original/049219600_1543305693-063_1061229270.jpg" alt="" />
+                    <img className='mentorsRealImg' src="" alt="" />
                 </div>
-                <h1>Nico Abel Laia</h1>
-                <p>Google Developer Expert Web</p>
+                <h1>TBA</h1>
+                <p>Coming Soon</p>
             </div>
             <div className='mentorsCol'>
                 <div className='mentorsImg'>
                     <img className='mentorsBorder' src="/libraries/images/svg/circleMentors.svg" alt="" />
-                    <img className='mentorsRealImg' src="https://cdn1-production-images-kly.akamaized.net/PzP0vPMo8CgA2NmgQztFqlzkOJc=/800x1066/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2477883/original/049219600_1543305693-063_1061229270.jpg" alt="" />
+                    <img className='mentorsRealImg' src="" alt="" />
                 </div>
-                <h1>Nico Abel Laia</h1>
-                <p>Google Developer Expert Web</p>
+                <h1>TBA</h1>
+                <p>Coming Soon</p>
             </div>
             <div className='mentorsCol'>
                 <div className='mentorsImg'>
                     <img className='mentorsBorder' src="/libraries/images/svg/circleMentors.svg" alt="" />
-                    <img className='mentorsRealImg' src="https://cdn1-production-images-kly.akamaized.net/PzP0vPMo8CgA2NmgQztFqlzkOJc=/800x1066/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2477883/original/049219600_1543305693-063_1061229270.jpg" alt="" />
+                    <img className='mentorsRealImg' src="" alt="" />
                 </div>
-                <h1>Nico Abel Laia</h1>
-                <p>Google Developer Expert Web</p>
+                <h1>TBA</h1>
+                <p>Coming Soon</p>
             </div>
             <div className='mentorsCol'>
                 <div className='mentorsImg'>
                     <img className='mentorsBorder' src="/libraries/images/svg/circleMentors.svg" alt="" />
-                    <img className='mentorsRealImg' src="https://cdn1-production-images-kly.akamaized.net/PzP0vPMo8CgA2NmgQztFqlzkOJc=/800x1066/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2477883/original/049219600_1543305693-063_1061229270.jpg" alt="" />
+                    <img className='mentorsRealImg' src="" alt="" />
                 </div>
-                <h1>Nico Abel Laia</h1>
-                <p>Google Developer Expert Web</p>
+                <h1>TBA</h1>
+                <p>Coming Soon</p>
             </div>
             <div className='mentorsCol'>
                 <div className='mentorsImg'>
                     <img className='mentorsBorder' src="/libraries/images/svg/circleMentors.svg" alt="" />
-                    <img className='mentorsRealImg' src="https://cdn1-production-images-kly.akamaized.net/PzP0vPMo8CgA2NmgQztFqlzkOJc=/800x1066/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2477883/original/049219600_1543305693-063_1061229270.jpg" alt="" />
+                    <img className='mentorsRealImg' src="" alt="" />
                 </div>
-                <h1>Nico Abel Laia</h1>
-                <p>Google Developer Expert Web</p>
+                <h1>TBA</h1>
+                <p>Coming Soon</p>
             </div>
             <div className='mentorsCol'>
                 <div className='mentorsImg'>
                     <img className='mentorsBorder' src="/libraries/images/svg/circleMentors.svg" alt="" />
-                    <img className='mentorsRealImg' src="https://cdn1-production-images-kly.akamaized.net/PzP0vPMo8CgA2NmgQztFqlzkOJc=/800x1066/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2477883/original/049219600_1543305693-063_1061229270.jpg" alt="" />
+                    <img className='mentorsRealImg' src="" alt="" />
                 </div>
-                <h1>Nico Abel Laia</h1>
-                <p>Google Developer Expert Web</p>
+                <h1>TBA</h1>
+                <p>Coming Soon</p>
             </div>
         </div>
     </section>
