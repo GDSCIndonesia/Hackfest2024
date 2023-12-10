@@ -15,8 +15,8 @@ export default function SessionTech() {
             <p>Enhance yourself by attending tech talk sessions led by experts.</p>
         </motion.div>
         <motion.div 
-            initial={{ opacity: 0, scale:.2 }}
-            whileInView={{ opacity: 1, scale:1 }}
+            initial={{ opacity: 0, y:-150 }}
+            whileInView={{ opacity: 1, y:0 }}
             transition={{ 
                 duration: 0.5
             }}

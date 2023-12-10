@@ -31,7 +31,7 @@
   /* End Google Fonts */
 }
 
-/* Custom Background */
+/* Custom Backgrounds */
 .topBackground{
   background-image: url(/libraries/images/svg/headBottomLeft.svg), url(/libraries/images/svg/headTopRight.svg);
   background-position: left 80%, right top;
@@ -43,16 +43,21 @@
   background-repeat: no-repeat, no-repeat;
   background-size: contain, auto;
 }
+/* End Custom Backgrounds */
+
+/* Custom Shadows */
 .darkShadow{
   box-shadow: 5px 5px 0px 0px rgba(32, 33, 36, 1);
 }
 .greyShadow{
   box-shadow: 5px 5px 0px 0px rgba(218, 220, 224, 1)
 }
+/* End Custom Shadows */
 
 @layer components {
+
   *{
-    @apply scroll-smooth
+    @apply scroll-smooth 
   }
   body{
     @apply  max-w-[1900px] bg-softDark mx-auto 
@@ -91,6 +96,7 @@
   }
   /* End Navbar */
 
+  /* Header */
   .headerHack{
     @apply bg-softDark px-[30px] sm:px-[60px] pt-[85px] pb-[100px]
   }
@@ -127,6 +133,7 @@
   .headFull > div > p{
     @apply text-[16px] mt-[12px]
   }
+  /* End Header */
 
   /* Countdown */
   .countdown{
@@ -165,6 +172,7 @@
   .countStatus{
     @apply border-t-2 border-black font-gooReg text-[14px] sm:text-[16px] md:text-[18px] py-[5px]
   }
+  /* End Countdown */
 
   /* Timeline */
   .timeline{
@@ -299,7 +307,7 @@
   .mediaPartnersItem{
     @apply mt-[150px] mb-[50px] flex flex-col sm:flex-row justify-between space-y-12 sm:space-y-0 sm:space-x-8
   }
-  /* ENd Media Partners */
+  /* End Media Partners */
 
   /* Organizer */
   .organizer{
