@@ -41,6 +41,7 @@
   background-image: url(/libraries/images/svg/sessionTechHead.svg), url(/libraries/images/svg/sessionTechLeft.svg);
   background-position: left top, left bottom;
   background-repeat: no-repeat, no-repeat;
+  background-size: contain, auto;
 }
 .darkShadow{
   box-shadow: 5px 5px 0px 0px rgba(32, 33, 36, 1);
