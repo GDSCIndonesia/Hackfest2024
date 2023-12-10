@@ -21,12 +21,13 @@ Build with NextJs, and Firebase
 
 ## Credits
 List of contriubutors:
-- Project Manager:
-[Fannan Fauzan Fardhurohman](https://www.linkedin.com/in/fannan-fauzan-fardhurohman/)
 
-- UI/UX & Front End Developer:
-- [Nico Abel Laia](https://www.linkedin.com/in/nicoabellaia/)
+    - Project Manager:
+        - [Fannan Fauzan Fardhurohman](https://www.linkedin.com/in/fannan-fauzan-fardhurohman/)
 
-- Back End Developer:
-- [Jose Ryu Leonesta](https://www.linkedin.com/in/jose-ryu-leonesta/)
-- [Ayu Sudi Dwijayanti](https://www.linkedin.com/in/ayu-sudi-dwijayanti/)
+    - UI/UX & Front End Developer:
+        - [Nico Abel Laia](https://www.linkedin.com/in/nicoabellaia/)
+
+    - Back End Developer:
+        - [Jose Ryu Leonesta](https://www.linkedin.com/in/jose-ryu-leonesta/)
+        - [Ayu Sudi Dwijayanti](https://www.linkedin.com/in/ayu-sudi-dwijayanti/)
