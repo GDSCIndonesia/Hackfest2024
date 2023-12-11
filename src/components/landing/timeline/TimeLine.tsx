@@ -81,7 +81,7 @@ export default function TimeLine() {
                     <div className='timeFrame bg-hackBlue'>
                         <div className='timeContent'>
                             <h1>Updating Shortly</h1>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum tempora suscipit veritatis sequi voluptas omnis ducimus dicta culpa.</p>
+                            <p>Updating shortly...</p>
                         </div>
                         <div className='dateBottom'>
                             <h1>Updating Shortly</h1>
