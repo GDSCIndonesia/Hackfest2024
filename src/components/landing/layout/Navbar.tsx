@@ -112,7 +112,7 @@ export default function Navbar() {
 						</ul>
 						<ul className="flex flex-col lg:flex-row w-full lg:w-fit ">
 							<li>
-								<a href="https://goo.gle/googledevsid" className="navDiscord">
+								<a href="https://goo.gle/googledevsid" target="_blank" className="navDiscord">
 									Join Discord
 								</a>
 							</li>
@@ -120,6 +120,7 @@ export default function Navbar() {
 								<a
 									href="https://s.id/register-hackfest2024"
 									className="navRegister"
+									target="_blank"
 								>
 									Register
 								</a>

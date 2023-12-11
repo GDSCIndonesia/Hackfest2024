@@ -113,10 +113,10 @@
     @apply font-gooBold tracking-[-4px] text-[40px] sm:text-[60px] lg:text-[60px] xl:text-[75px]
   }
   .headLeft > p{
-    @apply font-gooReg text-[13px]
+    @apply font-gooReg text-[14px] xl:text-[15px] 2xl:text-[20px]
   }
   .headLeft > a{
-    @apply mt-[25px] block text-hackBlack font-gooBold bg-hackYellow text-center lg:text-left w-full lg:w-fit px-[30px] py-[10px]
+    @apply mt-[25px] block text-hackBlack font-gooBold bg-hackYellow text-center lg:text-left w-full lg:w-fit px-[30px] py-[10px] text-[15px] 2xl:text-[20px]
   }
   .headRight > img{
     @apply rounded-b-[15px] sm:rounded-b-[30px] lg:rounded-b-[0px] lg:rounded-r-[30px] w-full h-full object-cover
@@ -132,6 +132,9 @@
   }
   .headFull > div > p{
     @apply text-[16px] mt-[12px]
+  }
+  .headFull > div > a{
+    @apply mt-[25px] block font-gooBold bg-transparent border-2 border-hackYellow text-hackYellow hover:text-hackBlack hover:bg-hackYellow text-center lg:text-left w-full lg:w-fit px-[30px] py-[10px] transition-all duration-150 ease-in-out mx-auto animate-pulse
   }
   /* End Header */
 

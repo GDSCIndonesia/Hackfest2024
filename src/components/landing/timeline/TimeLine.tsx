@@ -36,11 +36,11 @@ export default function TimeLine() {
                     <div className='absolute sm:hidden w-[10px] h-[20px] bg-softDark right-1/2 -translate-x-1/2 bottom-0'></div>
                     <div className='timeFrame bg-softGrey'>
                         <div className='timeContent'>
-                            <h1>Stage 1</h1>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum tempora suscipit veritatis sequi voluptas omnis ducimus dicta culpa.</p>
+                            <h1>Info Session</h1>
+                            <p>Join the GDSC Indonesia HackFest Info Session to uncover exciting details about the upcoming hackfest. Dive into innovation and creativity with us!</p>
                         </div>
                         <div className='dateBottom'>
-                            <h1>Updating Shortly</h1>
+                            <h1>December 06, 2023</h1>
                         </div>
                     </div>
                 </div>
@@ -51,11 +51,11 @@ export default function TimeLine() {
                     <div className='absolute lg:hidden w-[10px] h-[20px] bg-softDark right-1/2 -translate-x-1/2 bottom-0'></div>
                     <div className='timeFrame bg-hackRed'>
                         <div className='timeContent'>
-                            <h1>Stage 2</h1>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum tempora suscipit veritatis sequi voluptas omnis ducimus dicta culpa.</p>
+                            <h1>Registration</h1>
+                            <p>Registration opens December 6–15, 2023. Secure your spot for the GDSC Indonesia HackFest and be part of the innovation wave!</p>
                         </div>
                         <div className='dateBottom'>
-                            <h1>Updating Shortly</h1>
+                            <h1>December 06, 2023 - December 15, 2023</h1>
                         </div>
                     </div>
                 </div>
@@ -65,11 +65,11 @@ export default function TimeLine() {
                     <div className='absolute lg:hidden w-[10px] h-[20px] bg-softDark right-1/2 -translate-x-1/2 top-0'></div>
                     <div className='timeFrame bg-hackYellow'>
                         <div className='timeContent'>
-                            <h1>Stage 3</h1>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum tempora suscipit veritatis sequi voluptas omnis ducimus dicta culpa. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum tempora suscipit veritatis sequi voluptas omnis ducimus dicta culpa.</p>
+                            <h1>Announcement of Participant</h1>
+                            <p>Stay tuned for the announcement of participants! Excitement is building up as we reveal the talented individuals joining the GDSC Indonesia HackFest. Are you ready to be recognized among the innovators?</p>
                         </div>
                         <div className='dateBottom'>
-                            <h1>Updating Shortly</h1>
+                            <h1>December 16, 2023</h1>
                         </div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@ export default function TimeLine() {
                     <div className='hidden sm:block sm:absolute lg:hidden w-[20px] h-[10px] bg-softDark left-0 top-1/2 -translate-y-1/2'></div>
                     <div className='timeFrame bg-hackBlue'>
                         <div className='timeContent'>
-                            <h1>Stage 6</h1>
+                            <h1>Updating Shortly</h1>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum tempora suscipit veritatis sequi voluptas omnis ducimus dicta culpa.</p>
                         </div>
                         <div className='dateBottom'>
@@ -95,11 +95,11 @@ export default function TimeLine() {
                     <div className='absolute sm:hidden w-[10px] h-[20px] bg-softDark right-1/2 -translate-x-1/2 bottom-0'></div>
                     <div className='timeFrame bg-softGrey'>
                         <div className='timeContent'>
-                            <h1>Stage 5</h1>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum tempora suscipit veritatis sequi voluptas omnis ducimus dicta culpa.</p>
+                            <h1>1st Stage Submission</h1>
+                            <p>Ready for the 1st Stage Submission? Showcase your skills in the GDSC Indonesia HackFest and take the first step towards victory!</p>
                         </div>
                         <div className='dateBottom'>
-                            <h1>Updating Shortly</h1>
+                            <h1>December 24, 2023 - January 02, 2024</h1>
                         </div>
                     </div>
                 </div>
@@ -110,11 +110,11 @@ export default function TimeLine() {
                     <div className='absolute lg:hidden w-[10px] h-[20px] bg-softDark right-1/2 -translate-x-1/2 bottom-0'></div>
                     <div className='timeFrame bg-hackGreen'>
                         <div className='timeContent'>
-                            <h1>Stage 4</h1>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum tempora suscipit veritatis sequi voluptas omnis ducimus dicta culpa.</p>
+                            <h1>Technical Meeting</h1>
+                            <p>Prepare for the GDSC Indonesia HackFest Technical Meeting! Delve into details, discuss strategies, and ensure you&#39;re ready for an exciting coding experience. Don&#39;t miss this crucial session!</p>
                         </div>
                         <div className='dateBottom'>
-                            <h1>Updating Shortly</h1>
+                            <h1>December 16, 2023</h1>
                         </div>
                     </div>
                 </div>

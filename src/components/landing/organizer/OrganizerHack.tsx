@@ -11,7 +11,7 @@ export default function OrganizerHack() {
           }}
         className='organizerTop'>
             <h1>Organizer</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quidem suscipit enim optio libero sit corrupti saepe obcaecati magni corporis.</p>
+            <p>Meet the organizers behind GDSC Indonesia HackFest. Get to know the team working hard to make this event unforgettable!</p>
         </motion.div>
         <motion.div 
           initial={{ opacity: 0, x:150 }}

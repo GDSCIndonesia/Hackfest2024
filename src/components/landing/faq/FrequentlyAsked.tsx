@@ -96,7 +96,7 @@ export default function FrequentlyAsked() {
           }}
         className='faqTop'>
             <h1>Frequently Asked Questions</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta distinctio aliquid exercitationem, quis delectus ipsam.</p>
+            <p>Check our FAQs for quick answers about GDSC Indonesia HackFest. Get ready for a seamless experience!</p>
         </motion.div>
         <div className='faqContent'>
             {faqData.map((faq, index) => (

@@ -26,18 +26,18 @@ export default function SessionTech() {
                 <div className='timeFrame bg-hackBlue greyShadow'>
                     <div className='timeContent'>
                         <div>
-                            <img src="" alt="" />
+                            <img src="/libraries/images/png/peoples/jason.png" alt="Jason Jeremy" />
                         </div>
-                        <h1>-</h1>
-                        <h2>TBA</h2>
-                        <p>Coming Soon</p>
+                        <h1>Info Session HackFest</h1>
+                        <h2>Jason Jeremy Wijadi</h2>
+                        <p>Co-Founder of Wonder Reader</p>
                     </div>
                     <div className='flex space-x-2'>
                         <div className='dateBottom'>
-                            <h1>You&#39;ll know it</h1>
+                            <h1>December 06, 2023</h1>
                         </div>
                         <div className='dateBottom'>
-                            <h1>11 AM - 1 PM</h1>
+                            <h1>07.30 PM - 09.00 PM</h1>
                         </div>
                     </div>
                 </div>
@@ -46,18 +46,18 @@ export default function SessionTech() {
                 <div className='timeFrame bg-hackRed greyShadow'>
                     <div className='timeContent'>
                         <div>
-                            <img src="" alt="" />
+                            <img src="/libraries/images/png/peoples/abadi.png" alt="Abadi Suryo" />
                         </div>
-                        <h1>-</h1>
-                        <h2>TBA</h2>
-                        <p>Coming Soon</p>
+                        <h1>Info Session HackFest</h1>
+                        <h2>Abadi Suryo Setiyo</h2>
+                        <p>Winner HackFest 2023</p>
                     </div>
                     <div className='flex space-x-2'>
                         <div className='dateBottom'>
-                            <h1>You&#39;ll know it</h1>
+                            <h1>December 06, 2023</h1>
                         </div>
                         <div className='dateBottom'>
-                            <h1>11 AM - 1 PM</h1>
+                            <h1>07.30 PM - 09.00 PM</h1>
                         </div>
                     </div>
                 </div>
@@ -66,18 +66,18 @@ export default function SessionTech() {
                 <div className='timeFrame bg-hackYellow greyShadow'>
                     <div className='timeContent'>
                         <div>
-                            <img src="" alt="" />
+                            <img src="/libraries/images/png/peoples/nino.png" alt="" />
                         </div>
-                        <h1>-</h1>
-                        <h2>TBA</h2>
-                        <p>Coming Soon</p>
+                        <h1>Design Thinking</h1>
+                        <h2>Rizqi Nino Firmansyah</h2>
+                        <p>Coordinator Leader UXiD Bandung</p>
                     </div>
                     <div className='flex space-x-2'>
                         <div className='dateBottom'>
-                            <h1>You&#39;ll know it</h1>
+                            <h1>December 09, 2023</h1>
                         </div>
                         <div className='dateBottom'>
-                            <h1>11 AM - 1 PM</h1>
+                            <h1>07.30 PM - 09.00 PM</h1>
                         </div>
                     </div>
                 </div>
