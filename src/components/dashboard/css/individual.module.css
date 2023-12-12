@@ -1,0 +1,18 @@
+.container h1 {
+	@apply font-gooBold 
+        tracking-[4px] 
+        text-3xl 
+        sm:text-4xl 
+        lg:text-5xl 
+        xl:text-5xl 
+        text-hackWhite 
+        rounded-xl;
+}
+
+.container p {
+	@apply font-gooBold 
+        tracking-[4px] 
+        text-xl 
+        text-hackWhite 
+        rounded-xl;
+}
