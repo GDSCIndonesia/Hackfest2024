@@ -1,4 +1,4 @@
-.teamName h1 {
+.teamName > h1 {
 	@apply font-gooBold 
         tracking-[4px] 
         text-3xl 
@@ -16,17 +16,17 @@
 }
 
 .navigation {
-	@apply px-[30px] sm:px-[60px] flex gap-x-8;
+	@apply px-[30px] sm:px-[60px] flex gap-x-5;
 }
 
 .navigationButton {
-	@apply text-2xl 
+	@apply text-xl 
         tracking-[2px] 
         text-hackWhite 
         font-gooBold
-        py-2
-        px-5
-        rounded-xl
+        py-1
+        px-3
+        rounded-lg
         transition-all;
 }
 
@@ -35,17 +35,17 @@
 }
 
 .active {
-	@apply text-2xl 
+	@apply text-xl 
         tracking-[2px] 
         text-hackWhite 
         font-gooBold
-        py-2
-        px-5
-        rounded-xl
+        py-1
+        px-3
+        rounded-lg
         transition-all
         bg-hackBlue;
 }
 
 .individuContainer {
-	@apply mx-[30px] sm:mx-[60px] py-16 px-8 mt-5 border-2 border-hackWhite;
+	@apply mx-[30px] sm:mx-[60px] py-8 px-8 mt-5 border-2 border-hackWhite;
 }
