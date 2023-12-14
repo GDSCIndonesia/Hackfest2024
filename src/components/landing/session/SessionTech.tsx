@@ -94,10 +94,10 @@ export default function SessionTech() {
                     </div>
                     <div className='flex space-x-2'>
                         <div className='dateBottom'>
-                            <h1>You&#39;ll know it</h1>
+                            <h1>December 16, 2023</h1>
                         </div>
                         <div className='dateBottom'>
-                            <h1>11 AM - 1 PM</h1>
+                            <h1>10.00 AM - 12.00 PM</h1>
                         </div>
                     </div>
                 </div>
@@ -106,18 +106,18 @@ export default function SessionTech() {
                 <div className='timeFrame bg-softGrey greyShadow'>
                     <div className='timeContent'>
                         <div>
-                            <img src="" alt="" />
+                            <img src="/libraries/images/png/peoples/eko.png" alt="" />
                         </div>
-                        <h1>-</h1>
-                        <h2>TBA</h2>
-                        <p>Coming Soon</p>
+                        <h1>Pitching & Product Management</h1>
+                        <h2>Eko Putra Nasaru</h2>
+                        <p>Founder Blod.id</p>
                     </div>
                     <div className='flex space-x-2'>
                         <div className='dateBottom'>
-                            <h1>You&#39;ll know it</h1>
+                            <h1>December 16, 2023</h1>
                         </div>
                         <div className='dateBottom'>
-                            <h1>11 AM - 1 PM</h1>
+                            <h1>10.00 AM - 12.00 PM</h1>
                         </div>
                     </div>
                 </div>
