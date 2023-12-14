@@ -86,11 +86,11 @@ export default function SessionTech() {
                 <div className='timeFrame bg-hackGreen greyShadow'>
                     <div className='timeContent'>
                         <div>
-                            <img src="" alt="" />
+                            <img src="/libraries/images/png/peoples/denySalvana.png" alt="" />
                         </div>
-                        <h1>-</h1>
-                        <h2>TBA</h2>
-                        <p>Coming Soon</p>
+                        <h1>Pitching & Product Management</h1>
+                        <h2>Deny Salvana Ervan</h2>
+                        <p>Chapter Manager GDG Semarang</p>
                     </div>
                     <div className='flex space-x-2'>
                         <div className='dateBottom'>
