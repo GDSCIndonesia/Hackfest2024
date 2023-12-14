@@ -122,7 +122,7 @@ export default function SessionTech() {
                     </div>
                 </div>
             </div>
-            <div className='sessionCol'>
+            {/* <div className='sessionCol'>
                 <div className='timeFrame bg-hackBlue greyShadow'>
                     <div className='timeContent'>
                         <div>
@@ -141,7 +141,7 @@ export default function SessionTech() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             
         </motion.div>
     </section>
