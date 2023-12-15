@@ -1,8 +1,31 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
+import { signInWithPopup, signOut, GoogleAuthProvider } from "firebase/auth";
+import { useAuthState } from "react-firebase-hooks/auth"
+import { auth } from "../../../lib/firebase";
+
 
 export default function Navbar() {
+	const [user, setUser] = useAuthState(auth)
+	const googleAuth = new GoogleAuthProvider()
+	const login = async () => {
+		try {
+			(googleAuth);
+			const result = await signInWithPopup(auth, googleAuth)
+			let { expirationTime, token, claims } = await result.user.getIdTokenResult()
+			let email = claims.email
+		} catch (error) {
+		}
+	}
+	const logout = () => {
+		signOut(auth);
+	};
+
+	// useEffect(() => {
+	// 	console.log(user);
+	// }, [user])
+
 	// Navbar Hooks
 	const [showNavbar, setNavbar] = useState(false);
 
@@ -51,9 +74,8 @@ export default function Navbar() {
 					</button>
 				</div>
 				<div
-					className={`${
-						showNavbar ? "right-0" : "right-[-100%]"
-					} navbarController`}
+					className={`${showNavbar ? "right-0" : "right-[-100%]"
+						} navbarController`}
 				>
 					<div className="navbarItems">
 						<ul className="navbarUl">
@@ -116,15 +138,16 @@ export default function Navbar() {
 									Join Discord
 								</a>
 							</li>
-							<li>
-								<a
-									href="https://s.id/register-hackfest2024"
-									className="navRegister"
-									target="_blank"
-								>
-									Register
-								</a>
-							</li>
+							{
+								!user && <li onClick={login}>
+									<p className="navRegister cursor-pointer">Login</p>
+								</li>
+							}
+							{
+								user && <li onClick={logout}>
+									<p className="navRegister cursor-pointer">Logout</p>
+								</li>
+							}
 						</ul>
 					</div>
 				</div>
