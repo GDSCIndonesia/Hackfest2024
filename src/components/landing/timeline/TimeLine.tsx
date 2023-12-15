@@ -52,10 +52,10 @@ export default function TimeLine() {
                     <div className='timeFrame bg-hackRed'>
                         <div className='timeContent'>
                             <h1>Registration</h1>
-                            <p>Registration opens December 6–15, 2023. Secure your spot for the GDSC Indonesia HackFest and be part of the innovation wave!</p>
+                            <p>Registration opens December 6–21, 2023. Secure your spot for the GDSC Indonesia HackFest and be part of the innovation wave!</p>
                         </div>
                         <div className='dateBottom'>
-                            <h1>December 06, 2023 - December 15, 2023</h1>
+                            <h1>December 06, 2023 - December 21, 2023</h1>
                         </div>
                     </div>
                 </div>
