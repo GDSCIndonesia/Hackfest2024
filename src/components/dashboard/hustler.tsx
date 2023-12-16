@@ -1,6 +1,12 @@
+import { useEffect } from "react";
 import individualStyle from "./css/individual.module.css";
 import Phase from "./elements/phase";
-export default function Hustler() {
+
+export default function Hustler(teamData: any) {
+	useEffect(() => {
+		console.log(teamData?.phase_1?.link_hustler);
+	}, [teamData])
+
 	return (
 		<div className={individualStyle.container}>
 			<div>

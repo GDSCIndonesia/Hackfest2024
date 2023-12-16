@@ -1,7 +1,10 @@
 import { initializeApp } from "firebase/app";
-import { getApps, getApp } from "firebase/app";
+import { getApps } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { GoogleAuthProvider } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
+
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_APIKEY,
@@ -13,8 +16,10 @@ const firebaseConfig = {
   measurementId: process.env.NEXT_PUBLIC_MEASUREMENTID
 };
 
-const app = getApps().length > 0 ? getApp() : initializeApp(firebaseConfig);
+const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0];
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
+export const db = getFirestore(app);
+export const storage = getStorage(app);
 
 export { auth, provider }
