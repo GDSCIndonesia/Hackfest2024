@@ -69,7 +69,7 @@ export default function TimeLine() {
                             <p>Stay tuned for the announcement of participants! Excitement is building up as we reveal the talented individuals joining the GDSC Indonesia HackFest. Are you ready to be recognized among the innovators?</p>
                         </div>
                         <div className='dateBottom'>
-                            <h1>December 16, 2023</h1>
+                            <h1>December 22, 2023</h1>
                         </div>
                     </div>
                 </div>
@@ -114,7 +114,7 @@ export default function TimeLine() {
                             <p>Prepare for the GDSC Indonesia HackFest Technical Meeting! Delve into details, discuss strategies, and ensure you&#39;re ready for an exciting coding experience. Don&#39;t miss this crucial session!</p>
                         </div>
                         <div className='dateBottom'>
-                            <h1>December 16, 2023</h1>
+                            <h1>December 22, 2023</h1>
                         </div>
                     </div>
                 </div>
