@@ -1,8 +1,13 @@
+import { useEffect } from "react";
 import individualStyle from "./css/individual.module.css";
 import Phase from "./elements/phase";
 import { useAppStyle } from "@/styles/tailwind";
 
-export default function Hacker() {
+export default function Hacker(teamData: any) {
+	useEffect(() => {
+		console.log(teamData?.phase_1?.link_hacker);
+	}, [teamData])
+
 	const style = useAppStyle();
 	return (
 		<div className={individualStyle.container}>
