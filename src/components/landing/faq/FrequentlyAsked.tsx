@@ -6,7 +6,7 @@ export default function FrequentlyAsked() {
     const faqData = [
         {
           question: "How much does the enrollment cost?",
-          answer: "GDSC Hackfest Indonesia 2023 is completely FREE to join. There are no monetary fees whatsoever required to participate. Hence, please be wary of any fee-related scams claiming to be us."
+          answer: "GDSC Hackfest Indonesia 2024 is completely FREE to join. There are no monetary fees whatsoever required to participate. Hence, please be wary of any fee-related scams claiming to be us."
         },
         {
           question: "Is there anything that I should prepare to join the competition?",
@@ -63,12 +63,12 @@ export default function FrequentlyAsked() {
           answer: "Talented professionals in tech will evaluate the solution's impact (how the solution fits the problem statement, accounting for 60% of the total criteria) and the solution's technology (how the solution implements certain technologies and addresses technical challenges, accounting for 40% of the total criteria)."
         },
         {
-          question: "How will the winners of GDSC HackFest Indonesia 2023 be announced?",
+          question: "How will the winners of GDSC HackFest Indonesia 2024 be announced?",
           answer: "The winners will be announced through the awarding session."
         },
         {
           question: "What will I receive from participating in GDSC Hackfest Indonesia?",
-          answer: "You will receive guidance from expert mentors, exciting prizes for winners, and feedback for your submitted solutions from industry-seasoned professionals. Your solution will be polished in this competition to be contested later in the Google Solution Challenge 2023."
+          answer: "You will receive guidance from expert mentors, exciting prizes for winners, and feedback for your submitted solutions from industry-seasoned professionals. Your solution will be polished in this competition to be contested later in the Google Solution Challenge 2024."
         },
         {
           question: "How if I have another question that didn't get answered here?",
