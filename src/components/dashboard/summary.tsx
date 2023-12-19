@@ -8,7 +8,7 @@ export default function Summary(teamData: any) {
 
 	return (
 		<div className={individualStyle.container}>
-			<h1>This is team's summary progress</h1>
+			<h1>This is team summary progress</h1>
 			<p>Please do accordingly</p>
 		</div>
 	);
