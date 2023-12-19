@@ -61,7 +61,7 @@ export default function Home() {
       <SponsorsHack/>
       <MediaPartners/>
       <OrganizerHack/>
-      <FrequentlyAsked/>
+      {/* <FrequentlyAsked/> */}
       <DiscordHack/>
       <Footer/>
     </>

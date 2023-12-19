@@ -19,7 +19,7 @@ export default function DiscordHack() {
               Discord Channel
             </h1>
             <p className='discordPar'>
-              Get all the information about HackFest 2023 through the official
+              Get all the information about HackFest 2024 through the official
               Google Developers Indonesia discord channel. Don&#39;t miss it, make
               sure you join by pressing the button below
             </p>
