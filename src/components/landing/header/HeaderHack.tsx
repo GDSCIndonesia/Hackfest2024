@@ -29,8 +29,8 @@ export default function HeaderHack() {
                         duration: 0.5
                     }}
                 >
-                    <h1>Turn your creative ideas into reality. Try them out and see what succeeds.</h1>
-                    <p>Register your team now and have the chance of winning one of the most prestigious hackathon events in Indonesia!</p>
+                    <h1>Re-registration and Ideation</h1>
+                    <p>Lock in your participation and submit your groundbreaking ideas before the clock strikes midnight on Tuesday, December 26th, 2024 23:59 WIB</p>
                     <a href="https://links.gdsc-hackfest.com/IdeaHackfest2024" target="_blank">
                         Re-Register Now
                     </a>
