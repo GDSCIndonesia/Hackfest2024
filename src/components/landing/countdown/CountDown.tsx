@@ -36,7 +36,7 @@ export default function CountDown() {
     </div>
   );
 
-  const eventDate = new Date("2023-12-16T19:30:00");
+  const eventDate = new Date("2023-12-22T20:00:00");
 
   return (
     <div
@@ -65,7 +65,7 @@ export default function CountDown() {
         }} 
         className='countDate'>
           <div>
-            <h1>Talk Series #2 : Pitching & Product Management</h1>
+            <h1>Technical Meeting</h1>
             <p>Don&#39;t worry, it&#39;s just shrinking bit by bit. Like my motivation during Monday mornings</p>
             <Countdown date={eventDate} renderer={renderer} />
           </div>
