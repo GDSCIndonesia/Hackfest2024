@@ -129,7 +129,7 @@ export default function TimeLine() {
                             <p>Gear up for the 2nd Stage Mentoring & Workshop at GDSC Indonesia HackFest 2024! Elevate your skills further on the path to success!</p>
                         </div>
                         <div className='dateBottom'>
-                            <h1>January 06, 2023</h1>
+                            <h1>January 06, 2024</h1>
                         </div>
                     </div>
                 </div>
@@ -163,18 +163,17 @@ export default function TimeLine() {
                         </div>
                     </div>
                 </div>
-                
                 <div className='timeCol row-start-[11] sm:row-start-6 lg:row-start-4'>
                     <div className='absolute sm:hidden  w-[10px] h-[20px] bg-softDark right-1/2 -translate-x-1/2 top-0'></div>
                     <div className='hidden sm:block sm:absolute w-[20px] h-[10px] bg-softDark right-0 top-1/2 -translate-y-1/2'></div>
                     <div className='absolute w-[10px] h-[20px] bg-softDark right-1/2 -translate-x-1/2 bottom-0'></div>
                     <div className='timeFrame bg-hackGreen'>
                         <div className='timeContent'>
-                            <h1>Updating Shortly</h1>
-                            <p>Updating Shortly</p>
+                            <h1>Best 20 Ideation</h1>
+                            <p>Top 20 Ideation: Explore the most innovative concepts at GDSC Indonesia HackFest. These standout ideas are set to redefine the future of technology!</p>
                         </div>
                         <div className='dateBottom'>
-                            <h1>Updating Shortly</h1>
+                            <h1>January 21, 2024</h1>
                         </div>
                     </div>
                 </div>
@@ -182,11 +181,11 @@ export default function TimeLine() {
                     <div className='absolute lg:hidden w-[10px] h-[20px] bg-softDark right-1/2 -translate-x-1/2 top-0'></div>
                     <div className='hidden sm:block sm:absolute w-[20px] h-[10px] bg-softDark left-0 top-1/2 -translate-y-1/2'></div>
                     <div className='hidden lg:block lg:absolute w-[20px] h-[10px] bg-softDark right-0 top-1/2 -translate-y-1/2'></div>
-                    <div className='absolute lg:hidden w-[10px] h-[20px] bg-softDark right-1/2 -translate-x-1/2 bottom-0'></div>
+                    <div className='absolute sm:hidden w-[10px] h-[20px] bg-softDark right-1/2 -translate-x-1/2 bottom-0'></div>
                     <div className='timeFrame bg-hackBlue'>
                         <div className='timeContent'>
                             <h1>Pitch Deck Demo Submission</h1>
-                            <p>Pitch Deck Demo Submission: Present your innovation in the GDSC Indonesia HackFest with a compelling pitch deck. Let your ideas shine for a chance to make a lasting impact!</p>
+                            <p>Present your innovation in the GDSC Indonesia HackFest with a compelling pitch deck. Let your ideas shine for a chance to make a lasting impact!</p>
                         </div>
                         <div className='dateBottom'>
                             <h1>January 19, 2024 - January 20, 2024</h1>
@@ -208,9 +207,54 @@ export default function TimeLine() {
                     </div>
                 </div>
 
+
+                <div className='timeCol'>
+                    <div className='absolute sm:block sm:absolute w-[10px] h-[20px] bg-softDark right-1/2 -translate-x-1/2 top-0'></div>
+                    <div className='hidden sm:block sm:absolute w-[20px] h-[10px] bg-softDark right-0 top-1/2 -translate-y-1/2'></div>
+                    <div className='absolute sm:hidden w-[10px] h-[20px] bg-softDark right-1/2 -translate-x-1/2 bottom-0'></div>
+                    <div className='timeFrame bg-hackYellow'>
+                        <div className='timeContent'>
+                            <h1>Continue Developing</h1>
+                            <p>Gear up for the 2nd Stage Mentoring & Workshop at GDSC Indonesia HackFest 2024! Elevate your skills further on the path to success!</p>
+                        </div>
+                        <div className='dateBottom'>
+                            <h1>January 22, 2024 - January 26, 2024</h1>
+                        </div>
+                    </div>
+                </div>
+                <div className='timeCol'>
+                    <div className='absolute sm:hidden w-[10px] h-[20px] bg-softDark right-1/2 -translate-x-1/2 top-0'></div>
+                    <div className='hidden sm:block sm:absolute w-[20px] h-[10px] bg-softDark left-0 top-1/2 -translate-y-1/2'></div>
+                    <div className='hidden lg:block lg:absolute w-[20px] h-[10px] bg-softDark right-0 top-1/2 -translate-y-1/2'></div>
+                    <div className='absolute lg:hidden w-[10px] h-[20px] bg-softDark right-1/2 -translate-x-1/2 bottom-0'></div>
+                    <div className='timeFrame bg-hackRed'>
+                        <div className='timeContent'>
+                            <h1>Best 20 Demo Day</h1>
+                            <p>Witness the pinnacle of innovation at GDSC Indonesia HackFest. These top demos are set to captivate and redefine the landscape of technology!</p>
+                        </div>
+                        <div className='dateBottom'>
+                            <h1>January 27, 2024</h1>
+                        </div>
+                    </div>
+                </div>
+                <div className='timeCol sm:col-start-7 lg:col-start-9'>
+                    <div className='hidden lg:block lg:absolute w-[20px] h-[10px] bg-softDark left-0 top-1/2 -translate-y-1/2'></div>
+                    <div className='absolute w-[10px] h-[20px] bg-softDark right-1/2 -translate-x-1/2 bottom-0'></div>
+                    <div className='absolute lg:hidden w-[10px] h-[20px] bg-softDark right-1/2 -translate-x-1/2 top-0'></div>
+                    <div className='timeFrame bg-softGrey'>
+                        <div className='timeContent'>
+                            <h1>1 on 1 Mentoring</h1>
+                            <p>Elevate your skills with personalized guidance at GDSC Indonesia HackFest. Take the opportunity for focused learning and advancement!</p>
+                        </div>
+                        <div className='dateBottom'>
+                            <h1>January 31, 2024</h1>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div className='startEndGrid'>
-                <div className='startEndCol sm:col-start-7 lg:col-start-1'>
+                <div className='startEndCol sm:col-start-7 lg:col-start-9'>
                     <div className='absolute w-[10px] h-[20px] bg-softDark right-1/2 -translate-x-1/2 top-0'></div>
                     <div className='startEndFrame'>
                         <h1>Finish</h1>
