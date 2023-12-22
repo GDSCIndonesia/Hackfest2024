@@ -7,27 +7,40 @@ import Hipster from "@/components/dashboard/hipster";
 import Summary from "@/components/dashboard/summary";
 import Hustler from "@/components/dashboard/hustler";
 import { getTeamByTeamId, getUserByEmail } from "@/lib/firestore";
-import { useAuthState } from "react-firebase-hooks/auth"
+import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "@/lib/firebase";
+import { onAuthStateChanged, signOut } from "firebase/auth";
+import firebase from "firebase/compat/app";
+import Router from "next/router";
+import Loading from "@/components/dashboard/elements/loading";
 
+export interface TeamData {
+	[index: string]: string;
+	name: string;
+}
 
 export default function Dashboard() {
-	const [user, setUser] = useAuthState(auth)
-	const [teamName, setTeamName] = useState("Team's Name")
-	const [teamData, setTeamData] = useState({})
+	const [authLoading, setAuthLoading] = useState(true);
+	const [teamName, setTeamName] = useState("Team's Name");
+	const [teamData, setTeamData] = useState<TeamData>({} as TeamData);
+
 	useEffect(() => {
-		let email = user?.email || ''
-		getUserByEmail(email)
-			.then((data: any) => {
-				return getTeamByTeamId(data.teamId)
-			})
-			.then((data: any) => {
-				if (data) {
-					setTeamName(data?.name)
-					setTeamData(data)
+		onAuthStateChanged(auth, async (user) => {
+			if (user) {
+				const userData = await getUserByEmail(user.email || "");
+				if (!userData) {
+					Router.push("/not-authorized");
+					return;
 				}
-			})
-	}, [user])
+
+				const teamData = await getTeamByTeamId(userData.teamId);
+				setTeamData(teamData);
+				setAuthLoading(false);
+			} else {
+				Router.push("/");
+			}
+		});
+	});
 
 	type Roles = keyof typeof components;
 
@@ -44,11 +57,9 @@ export default function Dashboard() {
 		return components[active as Roles];
 	}
 
-	useEffect(() => {
-
-	})
-
-	return (
+	return authLoading ? (
+		<Loading />
+	) : (
 		<>
 			<Navbar />
 			<div className={style.dashHeader}>
@@ -58,6 +69,9 @@ export default function Dashboard() {
 				<div className={style.dashHackLogo}>
 					<h1>HACKFEST 2024</h1>
 				</div>
+			</div>
+			<div className={style.teamName}>
+				<h1>{teamData.name}</h1>
 			</div>
 			<div className={style.dashSwitcher}>
 				<div className={style.dashCaps}>

@@ -1,0 +1,51 @@
+.teamName > h1 {
+	@apply font-gooBold 
+        tracking-[4px] 
+        text-3xl 
+        sm:text-4xl 
+        lg:text-5xl 
+        xl:text-5xl 
+        text-hackWhite 
+        inline
+        py-2
+        rounded-xl;
+}
+
+.teamName {
+	@apply px-[30px] sm:px-[60px] pt-[100px] pb-[60px] flex justify-between;
+}
+
+.navigation {
+	@apply px-[30px] sm:px-[60px] flex gap-x-5;
+}
+
+.navigationButton {
+	@apply text-xl 
+        tracking-[2px] 
+        text-hackWhite 
+        font-gooBold
+        py-1
+        px-3
+        rounded-lg
+        transition-all;
+}
+
+.navigationButton:hover {
+	@apply bg-slate-800 text-hackBlue;
+}
+
+.active {
+	@apply text-xl 
+        tracking-[2px] 
+        text-hackWhite 
+        font-gooBold
+        py-1
+        px-3
+        rounded-lg
+        transition-all
+        bg-hackBlue;
+}
+
+.individuContainer {
+	@apply mx-[30px] sm:mx-[60px] py-8 px-8 mt-5 border-2 border-hackWhite;
+}

@@ -29,6 +29,11 @@
       src: url('/libraries/fonts/google/GoogleSans-BoldItalic.ttf') format('truetype');
   }
   /* End Google Fonts */
+html,
+body,
+#__next {
+	height: 100%;
+	width: 100%;
 }
 
 /* Custom Backgrounds */
