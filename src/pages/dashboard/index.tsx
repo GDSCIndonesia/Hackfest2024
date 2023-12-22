@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import Hipster from "@/components/dashboard/hipster";
 import Summary from "@/components/dashboard/summary";
 import Hustler from "@/components/dashboard/hustler";
-import { getTeamByTeamId, getUserByEmail } from "@/lib/firestore";
+import { TeamData, getTeamByTeamId, getUserByEmail } from "@/lib/firestore";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "@/lib/firebase";
 import { onAuthStateChanged, signOut } from "firebase/auth";
@@ -14,15 +14,11 @@ import firebase from "firebase/compat/app";
 import Router from "next/router";
 import Loading from "@/components/dashboard/elements/loading";
 
-export interface TeamData {
-	[index: string]: string;
-	name: string;
-}
-
 export default function Dashboard() {
 	const [authLoading, setAuthLoading] = useState(true);
 	const [teamName, setTeamName] = useState("Team's Name");
 	const [teamData, setTeamData] = useState<TeamData>({} as TeamData);
+	const [user, setUser] = useState("");
 
 	useEffect(() => {
 		onAuthStateChanged(auth, async (user) => {
@@ -36,11 +32,10 @@ export default function Dashboard() {
 				const teamData = await getTeamByTeamId(userData.teamId);
 				setTeamData(teamData);
 				setAuthLoading(false);
-			} else {
-				Router.push("/");
+				setUser(user.email || "");
 			}
 		});
-	});
+	}, [user]);
 
 	type Roles = keyof typeof components;
 

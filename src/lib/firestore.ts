@@ -14,7 +14,20 @@ import {
 } from "firebase/firestore";
 
 import { db } from "./firebase";
-import { TeamData } from "@/pages/dashboard";
+
+export interface TeamData {
+	[index: string]: string | Phase;
+	name: string;
+}
+
+export interface Phase {
+	[index: string]: Submission;
+}
+
+export interface Submission {
+	link: string;
+	submissionDate: Timestamp;
+}
 
 export async function getUserByEmail(email: string = "") {
 	let q = query(collection(db, "users"));
@@ -46,4 +59,27 @@ export async function getTeamByTeamId(teamId: string = ""): Promise<TeamData> {
 			// Only plain objects can be passed to Client Components from Server Components
 		};
 	})[0] as TeamData;
+}
+
+export async function updateLink({
+	teamId,
+	role,
+	phase,
+	link,
+}: {
+	teamId: string;
+	role: string;
+	phase: string;
+	link: string;
+}) {
+	const team = doc(db, "teams", teamId);
+
+	const data = {} as { [index: string]: string | object };
+
+	data[phase + ".link_" + role] = {
+		link,
+		submissionDate: new Date(),
+	};
+
+	await updateDoc(team, data);
 }
