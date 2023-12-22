@@ -20,7 +20,7 @@ export default function ProgressBar({ finished }: { finished?: boolean }) {
 				cx="15"
 				cy="15"
 				r="15"
-				fill={style.theme?.colors?.hackWhite as string}
+				fill={style.theme?.colors?.softDark as string}
 			/>
 			<circle
 				cx="15"

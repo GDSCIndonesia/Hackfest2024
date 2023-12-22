@@ -51,42 +51,49 @@ export default function Dashboard() {
 	return (
 		<>
 			<Navbar />
-			<div className={style.teamName}>
-				<h1>{teamName}</h1>
+			<div className={style.dashHeader}>
+				<div className={style.dashTeamName}>
+					<h1>{teamName}</h1>
+				</div>
+				<div className={style.dashHackLogo}>
+					<h1>HACKFEST 2024</h1>
+				</div>
 			</div>
-			<div className={style.navigation}>
-				<button
-					onClick={() => setActive("summary")}
-					className={
-						active === "summary" ? style.active : style.navigationButton
-					}
-				>
-					Summary
-				</button>
-				<button
-					onClick={() => setActive("hacker")}
-					className={
-						active === "hacker" ? style.active : style.navigationButton
-					}
-				>
-					Hacker
-				</button>
-				<button
-					onClick={() => setActive("hipster")}
-					className={
-						active === "hipster" ? style.active : style.navigationButton
-					}
-				>
-					Hipster
-				</button>
-				<button
-					onClick={() => setActive("hustler")}
-					className={
-						active === "hustler" ? style.active : style.navigationButton
-					}
-				>
-					Hustler
-				</button>
+			<div className={style.dashSwitcher}>
+				<div className={style.dashCaps}>
+					<button
+						onClick={() => setActive("summary")}
+						className={
+							active === "summary" ? style.active : style.navigationButton
+						}
+					>
+						Summary
+					</button>
+					<button
+						onClick={() => setActive("hacker")}
+						className={
+							active === "hacker" ? style.active : style.navigationButton
+						}
+					>
+						Hacker
+					</button>
+					<button
+						onClick={() => setActive("hipster")}
+						className={
+							active === "hipster" ? style.active : style.navigationButton
+						}
+					>
+						Hipster
+					</button>
+					<button
+						onClick={() => setActive("hustler")}
+						className={
+							active === "hustler" ? style.active : style.navigationButton
+						}
+					>
+						Hustler
+					</button>
+				</div>
 			</div>
 			<div className={style.individuContainer}>{renderIndividu()}</div>
 			<Footer />

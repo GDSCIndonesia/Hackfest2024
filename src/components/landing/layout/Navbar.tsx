@@ -72,7 +72,7 @@ export default function Navbar() {
 									src="/libraries/images/svg/gdsc-logo.svg"
 									className="h-[28px]"
 								/>
-								<h1>HackFest2024</h1>
+								<h1 className="font-gooBold tracking-[-1px] text-hackBlue">HackFest2024</h1>
 							</div>
 						)
 					}
