@@ -2,33 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-  /* Google Fonts */
-    @font-face {
-      font-family: 'gooReg';
-      src: url('/libraries/fonts/google/GoogleSans-Regular.ttf') format('truetype');
-  }
-    @font-face {
-      font-family: 'gooMed';
-      src: url('/libraries/fonts/google/GoogleSans-Medium.ttf') format('truetype');
-  }
-    @font-face {
-      font-family: 'gooBold';
-      src: url('/libraries/fonts/google/GoogleSans-Bold.ttf') format('truetype');
-  }
-    @font-face {
-      font-family: 'gooRegit';
-      src: url('/libraries/fonts/google/GoogleSans-Italic.ttf') format('truetype');
-  }
-    @font-face {
-      font-family: 'gooMedit';
-      src: url('/libraries/fonts/google/GoogleSans-MediumItalic.ttf') format('truetype');
-  }
-    @font-face {
-      font-family: 'gooBoldit';
-      src: url('/libraries/fonts/google/GoogleSans-BoldItalic.ttf') format('truetype');
-  }
-  /* End Google Fonts */
+:root {
+	--toastify-color-dark: #202124 !important;
+	--toastify-color-success: theme("colors.hackBlue") !important;
+}
+
+p {
+	@apply font-gooReg text-hackWhite;
+}
+
+@layer base {
+	/* Google Fonts */
+	@font-face {
+		font-family: "gooReg";
+		src: url("/libraries/fonts/google/GoogleSans-Regular.ttf")
+			format("truetype");
+	}
+	@font-face {
+		font-family: "gooMed";
+		src: url("/libraries/fonts/google/GoogleSans-Medium.ttf") format("truetype");
+	}
+	@font-face {
+		font-family: "gooBold";
+		src: url("/libraries/fonts/google/GoogleSans-Bold.ttf") format("truetype");
+	}
+	@font-face {
+		font-family: "gooRegit";
+		src: url("/libraries/fonts/google/GoogleSans-Italic.ttf") format("truetype");
+	}
+	@font-face {
+		font-family: "gooMedit";
+		src: url("/libraries/fonts/google/GoogleSans-MediumItalic.ttf")
+			format("truetype");
+	}
+	@font-face {
+		font-family: "gooBoldit";
+		src: url("/libraries/fonts/google/GoogleSans-BoldItalic.ttf")
+			format("truetype");
+	}
+}
+/* End Google Fonts */
 html,
 body,
 #__next {
@@ -37,367 +50,369 @@ body,
 }
 
 /* Custom Backgrounds */
-.topBackground{
-  background-image: url(/libraries/images/svg/headBottomLeft.svg), url(/libraries/images/svg/headTopRight.svg);
-  background-position: left 80%, right top;
-  background-repeat: no-repeat, no-repeat;
+.topBackground {
+	background-image: url(/libraries/images/svg/headBottomLeft.svg),
+		url(/libraries/images/svg/headTopRight.svg);
+	background-position: left 80%, right top;
+	background-repeat: no-repeat, no-repeat;
 }
-.sessionTechBackground{
-  background-image: url(/libraries/images/svg/sessionTechHead.svg), url(/libraries/images/svg/sessionTechLeft.svg);
-  background-position: left top, left bottom;
-  background-repeat: no-repeat, no-repeat;
-  background-size: contain, auto;
+.sessionTechBackground {
+	background-image: url(/libraries/images/svg/sessionTechHead.svg),
+		url(/libraries/images/svg/sessionTechLeft.svg);
+	background-position: left top, left bottom;
+	background-repeat: no-repeat, no-repeat;
+	background-size: contain, auto;
 }
 /* End Custom Backgrounds */
 
 /* Custom Shadows */
-.darkShadow{
-  box-shadow: 5px 5px 0px 0px rgba(32, 33, 36, 1);
+.darkShadow {
+	box-shadow: 5px 5px 0px 0px rgba(32, 33, 36, 1);
 }
-.greyShadow{
-  box-shadow: 5px 5px 0px 0px rgba(218, 220, 224, 1)
+.greyShadow {
+	box-shadow: 5px 5px 0px 0px rgba(218, 220, 224, 1);
 }
 /* End Custom Shadows */
 
 @layer components {
+	* {
+		@apply scroll-smooth;
+	}
+	body {
+		@apply max-w-[1900px] bg-softDark mx-auto;
+	}
 
-  *{
-    @apply scroll-smooth 
-  }
-  body{
-    @apply  max-w-[1900px] bg-softDark mx-auto 
-  }
+	/* Navbar */
+	.navbar {
+		@apply bg-white sticky top-0 left-0 z-[8999] w-full overflow-x-clip;
+	}
+	.navbarContent {
+		@apply flex border-y-[2px] border-black justify-between lg:justify-start items-center;
+	}
+	.navbarController {
+		@apply absolute lg:static top-0 h-screen lg:h-fit bg-white lg:bg-transparent lg:w-full border-l-2 border-black lg:border-l-0 transition-all duration-500 ease-in-out z-[8999];
+	}
+	.navbarItems {
+		@apply flex justify-between items-center flex-col lg:flex-row;
+	}
+	.navbarUl {
+		@apply flex w-full lg:w-fit text-center lg:text-left space-x-0 lg:space-x-[50px] flex-col lg:flex-row;
+	}
+	.navbarLiTop {
+		@apply border-y-2 border-black lg:border-0 py-[20px] lg:py-0 px-[15px] lg:p-0;
+	}
+	.navbarLi {
+		@apply border-b border-black lg:border-0;
+	}
+	.navbarLink {
+		@apply font-gooReg py-[15px] lg:py-0 inline-block w-full hover:bg-hackYellow lg:hover:bg-transparent lg:hover:underline transition-all;
+	}
+	.navDiscord {
+		@apply inline-block text-black font-gooReg py-[15px] px-[40px] hover:bg-hackYellow hover:text-black transition-all border-y lg:border-y-0 lg:border-x-2 border-black w-full lg:w-fit text-center;
+	}
+	.navRegister {
+		@apply inline-block text-black font-gooReg py-[15px] px-[40px] hover:bg-hackYellow hover:text-black transition-all border-y lg:border-y-0 lg:border-r-2 border-black w-full lg:w-fit text-center;
+	}
+	/* End Navbar */
 
-  /* Navbar */
-  .navbar{
-    @apply bg-white sticky top-0 left-0 z-[8999] w-full overflow-x-clip
-  }
-  .navbarContent{
-    @apply flex border-y-[2px] border-black justify-between lg:justify-start items-center
-  }
-  .navbarController{
-    @apply absolute lg:static top-0 h-screen lg:h-fit bg-white lg:bg-transparent lg:w-full border-l-2 border-black lg:border-l-0 transition-all duration-500 ease-in-out z-[8999]
-  }
-  .navbarItems{
-    @apply flex justify-between items-center flex-col lg:flex-row
-  }
-  .navbarUl{
-    @apply flex w-full lg:w-fit text-center lg:text-left space-x-0 lg:space-x-[50px] flex-col lg:flex-row
-  }
-  .navbarLiTop{
-    @apply border-y-2 border-black lg:border-0 py-[20px] lg:py-0 px-[15px] lg:p-0
-  }
-  .navbarLi{
-    @apply border-b border-black lg:border-0
-  }
-  .navbarLink{
-    @apply font-gooReg py-[15px] lg:py-0 inline-block w-full hover:bg-hackYellow lg:hover:bg-transparent lg:hover:underline transition-all
-  }
-  .navDiscord{
-    @apply inline-block text-black font-gooReg py-[15px] px-[40px] hover:bg-hackYellow hover:text-black transition-all border-y lg:border-y-0 lg:border-x-2 border-black w-full lg:w-fit text-center
-  }
-  .navRegister{
-    @apply inline-block text-black font-gooReg py-[15px] px-[40px] hover:bg-hackYellow hover:text-black transition-all border-y lg:border-y-0 lg:border-r-2 border-black w-full lg:w-fit text-center
-  }
-  /* End Navbar */
+	/* Header */
+	.headerHack {
+		@apply bg-softDark px-[30px] sm:px-[60px] pt-[85px] pb-[100px];
+	}
+	.headerGrid {
+		@apply grid grid-cols-6 border border-hackWhite rounded-[15px] sm:rounded-[30px] bg-hackBlue;
+	}
+	.headLeft,
+	.headRight {
+		@apply col-span-6 lg:col-span-3;
+	}
+	.headLeft {
+		@apply p-[35px] text-hackWhite;
+	}
+	.headLeft > h1 {
+		@apply font-gooBold tracking-[-4px] text-[40px] sm:text-[60px] lg:text-[60px] xl:text-[75px];
+	}
+	.headLeft > p {
+		@apply font-gooReg text-[14px] xl:text-[15px] 2xl:text-[20px];
+	}
+	.headLeft > a {
+		@apply mt-[25px] block text-hackBlack font-gooBold bg-hackYellow text-center lg:text-left w-full lg:w-fit px-[30px] py-[10px] text-[15px] 2xl:text-[20px];
+	}
+	.headRight > img {
+		@apply rounded-b-[15px] sm:rounded-b-[30px] lg:rounded-b-[0px] lg:rounded-r-[30px] w-full h-full object-cover;
+	}
+	.headFull {
+		@apply mt-[50px] md:mt-[100px];
+	}
+	.headFull > div {
+		@apply text-white font-gooReg text-center w-[95%] sm:w-[95%] xl:w-[85%] max-w-[938px] mx-auto;
+	}
+	.headFull > div > h1 {
+		@apply text-[25px] md:text-[35px];
+	}
+	.headFull > div > p {
+		@apply text-[16px] mt-[12px];
+	}
+	.headFull > div > a {
+		@apply mt-[25px] block font-gooBold bg-transparent border-2 border-hackYellow text-hackYellow hover:text-hackBlack hover:bg-hackYellow text-center lg:text-left w-full lg:w-fit px-[30px] py-[10px] transition-all duration-150 ease-in-out mx-auto animate-pulse;
+	}
+	/* End Header */
 
-  /* Header */
-  .headerHack{
-    @apply bg-softDark px-[30px] sm:px-[60px] pt-[85px] pb-[100px]
-  }
-  .headerGrid{
-    @apply grid grid-cols-6 border border-hackWhite rounded-[15px] sm:rounded-[30px] bg-hackBlue
-  }
-  .headLeft, .headRight{
-    @apply col-span-6 lg:col-span-3
-  }
-  .headLeft{
-    @apply p-[35px] text-hackWhite 
-  }
-  .headLeft > h1{
-    @apply font-gooBold tracking-[-4px] text-[40px] sm:text-[60px] lg:text-[60px] xl:text-[75px]
-  }
-  .headLeft > p{
-    @apply font-gooReg text-[14px] xl:text-[15px] 2xl:text-[20px]
-  }
-  .headLeft > a{
-    @apply mt-[25px] block text-hackBlack font-gooBold bg-hackYellow text-center lg:text-left w-full lg:w-fit px-[30px] py-[10px] text-[15px] 2xl:text-[20px]
-  }
-  .headRight > img{
-    @apply rounded-b-[15px] sm:rounded-b-[30px] lg:rounded-b-[0px] lg:rounded-r-[30px] w-full h-full object-cover
-  }
-  .headFull{
-    @apply mt-[50px] md:mt-[100px]
-  }
-  .headFull > div {
-    @apply text-white font-gooReg text-center w-[95%] sm:w-[95%] xl:w-[85%] max-w-[938px] mx-auto
-  }
-  .headFull > div > h1{
-    @apply text-[25px] md:text-[35px]
-  }
-  .headFull > div > p{
-    @apply text-[16px] mt-[12px]
-  }
-  .headFull > div > a{
-    @apply mt-[25px] block font-gooBold bg-transparent border-2 border-hackYellow text-hackYellow hover:text-hackBlack hover:bg-hackYellow text-center lg:text-left w-full lg:w-fit px-[30px] py-[10px] transition-all duration-150 ease-in-out mx-auto animate-pulse
-  }
-  /* End Header */
+	/* Countdown */
+	.countdown {
+		@apply bg-count bg-cover bg-no-repeat bg-bottom px-[30px] sm:px-[60px] pt-[85px] pb-[100px] overflow-hidden;
+	}
+	.countGrid {
+		@apply grid grid-cols-6 pb-[200px] gap-y-5 lg:gap-y-0 gap-x-5;
+	}
+	.countText {
+		@apply col-span-6 lg:col-span-3;
+	}
+	.countText > h1 {
+		@apply font-gooBold text-hackWhite text-[50px] sm:text-[60px] xl:text-[80px] tracking-[-4px];
+	}
+	.countText > p {
+		@apply font-gooReg text-white text-[15px] md:text-[18px];
+	}
+	.countText > a {
+		@apply mt-[25px] block font-gooBold bg-transparent border-2 border-hackYellow text-hackYellow hover:text-hackBlack hover:bg-hackYellow text-center lg:text-left w-full lg:w-fit px-[30px] py-[10px] transition-all duration-150 ease-in-out;
+	}
+	.countDate {
+		@apply col-span-6 lg:col-span-3 bg-softGrey rounded-[20px] md:rounded-[30px] p-[30px];
+	}
+	.countDate > div > h1 {
+		@apply font-gooBold text-[30px] sm:text-[40px] xl:text-[60px] tracking-[-2px] md:tracking-[-4px] text-hackBlack leading-[30px] md:leading-[50px] lg:leading-[70px];
+	}
+	.countDate > div > p {
+		@apply mb-[30px] text-[15px] md:text-[18px] font-gooReg;
+	}
+	.countFrame {
+		@apply text-center border-y-2 first:border-l-2 last:border-l-2 border-l-0 border-black w-full bg-hackWhite darkShadow;
+	}
+	.countNumber {
+		@apply font-gooMed text-[45px] sm:text-[50px] md:text-[60px] lg:text-[70px] xl:text-[80px];
+	}
+	.countStatus {
+		@apply border-t-2 border-black font-gooReg text-[14px] sm:text-[16px] md:text-[18px] py-[5px];
+	}
+	/* End Countdown */
 
-  /* Countdown */
-  .countdown{
-    @apply bg-count bg-cover bg-no-repeat bg-bottom px-[30px] sm:px-[60px] pt-[85px] pb-[100px] overflow-hidden
-  }
-  .countGrid{
-    @apply grid grid-cols-6 pb-[200px] gap-y-5 lg:gap-y-0 gap-x-5
-  }
-  .countText{
-    @apply col-span-6 lg:col-span-3
-  }
-  .countText > h1{
-    @apply font-gooBold text-hackWhite text-[50px] sm:text-[60px] xl:text-[80px] tracking-[-4px]
-  }
-  .countText > p{
-    @apply font-gooReg text-white text-[15px] md:text-[18px]
-  }
-  .countText > a{
-    @apply mt-[25px] block font-gooBold bg-transparent border-2 border-hackYellow text-hackYellow hover:text-hackBlack hover:bg-hackYellow text-center lg:text-left w-full lg:w-fit px-[30px] py-[10px] transition-all duration-150 ease-in-out
-  }
-  .countDate{
-    @apply col-span-6 lg:col-span-3 bg-softGrey rounded-[20px] md:rounded-[30px] p-[30px] 
-  }
-  .countDate > div > h1{
-    @apply font-gooBold text-[30px] sm:text-[40px] xl:text-[60px] tracking-[-2px] md:tracking-[-4px] text-hackBlack leading-[30px] md:leading-[50px] lg:leading-[70px]
-  }
-  .countDate > div > p{
-    @apply mb-[30px] text-[15px] md:text-[18px] font-gooReg
-  }
-  .countFrame{
-    @apply text-center border-y-2 first:border-l-2 last:border-l-2 border-l-0 border-black w-full bg-hackWhite darkShadow
-  }
-  .countNumber{
-    @apply font-gooMed text-[45px] sm:text-[50px] md:text-[60px] lg:text-[70px] xl:text-[80px]
-  }
-  .countStatus{
-    @apply border-t-2 border-black font-gooReg text-[14px] sm:text-[16px] md:text-[18px] py-[5px]
-  }
-  /* End Countdown */
+	/* Timeline */
+	.timeline {
+		@apply px-[30px] sm:px-[60px] pt-[85px] pb-[100px] bg-softGrey darkShadow overflow-hidden;
+	}
+	.timeline > div > h1 {
+		@apply font-gooBold text-[50px] sm:text-[60px] xl:text-[80px] tracking-[-4px] text-hackBlack leading-[80px];
+	}
+	.timeline > div > p {
+		@apply mb-[30px] text-[15px] md:text-[18px] font-gooReg;
+	}
+	.timeGrid {
+		@apply grid grid-cols-12;
+	}
+	.startEndGrid {
+		@apply grid grid-cols-12;
+	}
+	.startEndCol {
+		@apply col-span-12 sm:col-span-6 lg:col-span-4 p-[20px] relative;
+	}
+	.startEndFrame {
+		@apply p-[20px] border-2 border-softDark rounded-[20px] darkShadow h-full w-[50%] mx-auto text-center;
+	}
+	.startEndFrame > h1 {
+		@apply font-gooBold text-[30px] tracking-[-2px] text-hackBlack leading-[40px];
+	}
+	.timeCol {
+		@apply col-span-12 sm:col-span-6 lg:col-span-4 p-[20px] relative;
+	}
+	.timeFrame {
+		@apply p-[30px] border-2 border-softDark rounded-[20px] darkShadow h-full flex flex-col justify-between;
+	}
+	.timeFrame > .timeContent > h1 {
+		@apply font-gooBold text-[25px] sm:text-[30px] xl:text-[30px] tracking-[-2px] text-hackBlack leading-[40px] mb-[10px];
+	}
+	.timeFrame > div > p {
+		@apply text-[15px] md:text-[14px] font-gooReg;
+	}
+	.dateBottom {
+		@apply bg-hackWhite border w-fit border-softDark py-2 px-4 rounded-md font-gooMed text-[13px] mt-6;
+	}
+	/* End Timeline */
 
-  /* Timeline */
-  .timeline{
-    @apply px-[30px] sm:px-[60px] pt-[85px] pb-[100px] bg-softGrey darkShadow overflow-hidden
-  }
-  .timeline > div > h1{
-    @apply font-gooBold text-[50px] sm:text-[60px] xl:text-[80px] tracking-[-4px] text-hackBlack leading-[80px]
-  }
-  .timeline > div > p{
-    @apply mb-[30px] text-[15px] md:text-[18px] font-gooReg
-  }
-  .timeGrid{
-    @apply grid grid-cols-12 
-  }
-  .startEndGrid{
-    @apply grid grid-cols-12
-  }
-  .startEndCol{
-    @apply col-span-12 sm:col-span-6 lg:col-span-4 p-[20px] relative
-  }
-  .startEndFrame{
-    @apply p-[20px] border-2 border-softDark rounded-[20px] darkShadow h-full w-[50%] mx-auto text-center
-  }
-  .startEndFrame > h1{
-    @apply font-gooBold text-[30px] tracking-[-2px] text-hackBlack leading-[40px] 
-  }
-  .timeCol{
-    @apply col-span-12 sm:col-span-6 lg:col-span-4 p-[20px] relative
-  }
-  .timeFrame{
-    @apply p-[30px] border-2 border-softDark rounded-[20px] darkShadow h-full flex flex-col justify-between
-  }
-  .timeFrame > .timeContent > h1{
-    @apply font-gooBold text-[25px] sm:text-[30px] xl:text-[30px] tracking-[-2px] text-hackBlack leading-[40px] mb-[10px]
-  }
-  .timeFrame > div > p{
-    @apply text-[15px] md:text-[14px] font-gooReg
-  }
-  .dateBottom{
-    @apply bg-hackWhite border w-fit border-softDark py-2 px-4 rounded-md font-gooMed text-[13px] mt-6
-  }
-  /* End Timeline */
+	/* SessionTech */
+	.sessionTech {
+		@apply px-[30px] sm:px-[60px] pt-[250px] pb-[100px] bg-softDark sessionTechBackground overflow-hidden;
+	}
+	.sessionTechTop {
+		@apply ml-auto lg:w-[75%] xl:w-[50%];
+	}
+	.sessionTechTop > h1 {
+		@apply font-gooBold text-[40px] sm:text-[60px] xl:text-[60px] tracking-[-4px] text-hackWhite xl:leading-[80px];
+	}
+	.sessionTechTop > p {
+		@apply mb-[30px] text-[14px] md:text-[18px] font-gooReg text-hackWhite;
+	}
+	.sessionTechGrid {
+		@apply grid grid-cols-12 gap-6 mt-[80px];
+	}
+	.sessionCol {
+		@apply col-span-12 sm:col-span-6 lg:col-span-4;
+	}
+	.timeContent > div {
+		@apply w-[120px] h-[120px] sm:w-[100px] sm:h-[100px] mb-[20px] rounded-md border-2 border-softDark bg-softGrey;
+	}
+	.timeContent > div > img {
+		@apply w-full h-full object-cover rounded-md;
+	}
+	.timeContent > h2 {
+		@apply text-[15px] md:text-[20px] font-gooMed tracking-[-1px];
+	}
+	/* End SessionTech */
 
-  /* SessionTech */
-  .sessionTech{
-    @apply px-[30px] sm:px-[60px] pt-[250px] pb-[100px] bg-softDark sessionTechBackground overflow-hidden
-  }
-  .sessionTechTop {
-    @apply ml-auto lg:w-[75%] xl:w-[50%]
-  }
-  .sessionTechTop > h1{
-    @apply font-gooBold text-[40px] sm:text-[60px] xl:text-[60px] tracking-[-4px] text-hackWhite xl:leading-[80px]
-  }
-  .sessionTechTop > p{
-    @apply mb-[30px] text-[14px] md:text-[18px] font-gooReg text-hackWhite
-  }
-  .sessionTechGrid{
-    @apply grid grid-cols-12 gap-6 mt-[80px]
-  }
-  .sessionCol{
-    @apply col-span-12 sm:col-span-6 lg:col-span-4
-  }
-  .timeContent > div {
-    @apply w-[120px] h-[120px] sm:w-[100px] sm:h-[100px] mb-[20px] rounded-md border-2 border-softDark bg-softGrey
-  }
-  .timeContent > div > img{
-    @apply w-full h-full object-cover rounded-md
-  }
-  .timeContent > h2{
-    @apply text-[15px] md:text-[20px] font-gooMed tracking-[-1px]
-  }
-  /* End SessionTech */
+	/* Mentors */
+	.mentors {
+		@apply px-[30px] sm:px-[60px] pt-[85px] pb-[100px] bg-softDark overflow-hidden;
+	}
+	.mentorsTop > h1 {
+		@apply font-gooBold text-[40px] sm:text-[60px] xl:text-[60px] tracking-[-4px] text-hackWhite xl:leading-[80px];
+	}
+	.mentorsTop > p {
+		@apply mb-[30px] text-[14px] md:text-[18px] font-gooReg text-hackWhite;
+	}
+	.mentorsGrid {
+		@apply grid grid-cols-6 sm:grid-cols-12 gap-10 mt-[100px];
+	}
+	.mentorsCol {
+		@apply col-span-6 sm:col-span-6 md:col-span-4 lg:col-span-3 text-center;
+	}
+	.mentorsImg {
+		@apply w-[180px] h-[180px] rounded-full relative mx-auto;
+	}
+	.mentorsBorder {
+		@apply absolute left-0 top-0 w-full h-full z-20 hover:rotate-180 transition-all ease-in-out duration-500;
+	}
+	.mentorsRealImg {
+		@apply w-full h-full object-cover rounded-full;
+	}
+	.mentorsCol > h1 {
+		@apply font-gooBold text-hackWhite text-[25px] mt-[10px];
+	}
+	.mentorsCol > p {
+		@apply font-gooReg text-hackGrey text-[15px];
+	}
+	/* End Mentors */
 
-  /* Mentors */
-  .mentors{
-    @apply px-[30px] sm:px-[60px] pt-[85px] pb-[100px] bg-softDark overflow-hidden
-  }
-  .mentorsTop > h1{
-    @apply font-gooBold text-[40px] sm:text-[60px] xl:text-[60px] tracking-[-4px] text-hackWhite xl:leading-[80px]
-  }
-  .mentorsTop > p{
-    @apply mb-[30px] text-[14px] md:text-[18px] font-gooReg text-hackWhite
-  }
-  .mentorsGrid{
-    @apply grid grid-cols-6 sm:grid-cols-12 gap-10 mt-[100px]
-  }
-  .mentorsCol{
-    @apply col-span-6 sm:col-span-6 md:col-span-4 lg:col-span-3 text-center
-  }
-  .mentorsImg{
-    @apply w-[180px] h-[180px] rounded-full relative mx-auto
-  }
-  .mentorsBorder{
-    @apply absolute left-0 top-0 w-full h-full z-20 hover:rotate-180 transition-all ease-in-out duration-500
-  }
-  .mentorsRealImg{
-    @apply w-full h-full object-cover rounded-full
-  }
-  .mentorsCol > h1{
-    @apply font-gooBold text-hackWhite text-[25px] mt-[10px]
-  }
-  .mentorsCol > p{
-    @apply font-gooReg text-hackGrey text-[15px]
-  }
-  /* End Mentors */
+	/* Sponsors */
+	.sponsors {
+		@apply px-[30px] sm:px-[60px] pt-[85px] pb-[100px] bg-softDark text-center bg-sponsors bg-no-repeat bg-bottom bg-contain overflow-hidden;
+	}
+	.sponsorsTop > h1 {
+		@apply font-gooBold text-[40px] sm:text-[60px] xl:text-[60px] tracking-[-4px] text-hackWhite xl:leading-[80px];
+	}
+	.sponsorsTop > p {
+		@apply mb-[30px] text-[14px] md:text-[18px] font-gooReg text-hackWhite;
+	}
+	.sponsorsItem {
+		@apply mt-[150px] mb-[300px] flex flex-col sm:flex-row justify-between space-y-12 sm:space-y-0 sm:space-x-8;
+	}
+	/* End Sponsors */
 
-  /* Sponsors */
-  .sponsors{
-    @apply px-[30px] sm:px-[60px] pt-[85px] pb-[100px] bg-softDark text-center bg-sponsors bg-no-repeat bg-bottom bg-contain overflow-hidden
-  }
-  .sponsorsTop > h1{
-    @apply font-gooBold text-[40px] sm:text-[60px] xl:text-[60px] tracking-[-4px] text-hackWhite xl:leading-[80px]
-  }
-  .sponsorsTop > p{
-    @apply mb-[30px] text-[14px] md:text-[18px] font-gooReg text-hackWhite
-  }
-  .sponsorsItem{
-    @apply mt-[150px] mb-[300px] flex flex-col sm:flex-row justify-between space-y-12 sm:space-y-0 sm:space-x-8
-  }
-  /* End Sponsors */
+	/* Media Partners */
+	.mediaPartners {
+		@apply px-[30px] sm:px-[60px] pt-[85px] pb-[100px] bg-softGrey text-center bg-sponsors bg-no-repeat bg-bottom bg-contain;
+	}
+	.mediaPartnersTop > h1 {
+		@apply font-gooBold text-[40px] sm:text-[60px] xl:text-[60px] tracking-[-4px] text-softDark xl:leading-[80px];
+	}
+	.mediaPartnersTop > p {
+		@apply mb-[30px] text-[14px] md:text-[18px] font-gooReg text-softDark;
+	}
+	.mediaPartnersItem {
+		@apply mt-[150px] mb-[50px] flex flex-col sm:flex-row justify-between space-y-12 sm:space-y-0 sm:space-x-8;
+	}
+	/* End Media Partners */
 
-  /* Media Partners */
-  .mediaPartners{
-    @apply px-[30px] sm:px-[60px] pt-[85px] pb-[100px] bg-softGrey text-center bg-sponsors bg-no-repeat bg-bottom bg-contain
-  }
-  .mediaPartnersTop > h1{
-    @apply font-gooBold text-[40px] sm:text-[60px] xl:text-[60px] tracking-[-4px] text-softDark xl:leading-[80px]
-  }
-  .mediaPartnersTop > p{
-    @apply mb-[30px] text-[14px] md:text-[18px] font-gooReg text-softDark
-  }
-  .mediaPartnersItem{
-    @apply mt-[150px] mb-[50px] flex flex-col sm:flex-row justify-between space-y-12 sm:space-y-0 sm:space-x-8
-  }
-  /* End Media Partners */
+	/* Organizer */
+	.organizer {
+		@apply px-[30px] sm:px-[60px] pt-[300px] pb-[100px] bg-organizer bg-left-top bg-cover bg-no-repeat bg-softDark overflow-hidden;
+	}
+	.organizerTop {
+		@apply mr-auto lg:w-[75%] xl:w-[50%];
+	}
+	.organizerTop > h1 {
+		@apply font-gooBold text-[40px] sm:text-[60px] xl:text-[60px] tracking-[-4px] text-hackWhite xl:leading-[80px];
+	}
+	.organizerTop > p {
+		@apply mb-[30px] text-[14px] md:text-[18px] font-gooReg text-hackWhite;
+	}
+	.organizerGrid {
+		@apply grid grid-cols-4 mt-[80px] gap-x-20 gap-y-20 sm:gap-y-28;
+	}
+	.organizerCol {
+		@apply col-span-4;
+	}
+	.organizerCol > img {
+		@apply w-full md:w-[50%] h-auto mx-auto;
+	}
+	/* End Organizer */
 
-  /* Organizer */
-  .organizer{
-    @apply px-[30px] sm:px-[60px] pt-[300px] pb-[100px] bg-organizer bg-left-top bg-cover bg-no-repeat bg-softDark overflow-hidden
-  }
-  .organizerTop {
-    @apply mr-auto lg:w-[75%] xl:w-[50%]
-  }
-  .organizerTop > h1{
-    @apply font-gooBold text-[40px] sm:text-[60px] xl:text-[60px] tracking-[-4px] text-hackWhite xl:leading-[80px]
-  }
-  .organizerTop > p{
-    @apply mb-[30px] text-[14px] md:text-[18px] font-gooReg text-hackWhite
-  }
-  .organizerGrid{
-    @apply grid grid-cols-4 mt-[80px] gap-x-20 gap-y-20 sm:gap-y-28
-  }
-  .organizerCol{
-    @apply col-span-4
-  }
-  .organizerCol > img{
-    @apply w-full md:w-[50%] h-auto mx-auto
-  }
-  /* End Organizer */
+	/* Faq */
+	.faq {
+		@apply px-[30px] sm:px-[60px] pt-[85px] pb-[100px];
+	}
+	.faqTop {
+		@apply mr-auto lg:w-[85%] xl:w-[75%];
+	}
+	.faqTop > h1 {
+		@apply font-gooBold text-[40px] sm:text-[60px] xl:text-[60px] tracking-[-4px] text-hackWhite xl:leading-[80px];
+	}
+	.faqTop > p {
+		@apply mb-[30px] text-[14px] md:text-[18px] font-gooReg text-hackWhite;
+	}
+	.faqContent {
+		@apply mt-[50px];
+	}
+	/* End Faq */
 
-  /* Faq */
-  .faq{
-    @apply px-[30px] sm:px-[60px] pt-[85px] pb-[100px] 
-  }
-  .faqTop {
-    @apply mr-auto lg:w-[85%] xl:w-[75%]
-  }
-  .faqTop > h1{
-    @apply font-gooBold text-[40px] sm:text-[60px] xl:text-[60px] tracking-[-4px] text-hackWhite xl:leading-[80px]
-  }
-  .faqTop > p{
-    @apply mb-[30px] text-[14px] md:text-[18px] font-gooReg text-hackWhite
-  }
-  .faqContent{
-    @apply mt-[50px]
-  }
-  /* End Faq */
+	/* Discord */
+	.discord {
+		@apply px-[30px] sm:px-[60px] pt-[85px] pb-[100px];
+	}
+	.discordGrid {
+		@apply grid grid-cols-12 gap-y-10 lg:gap-y-0 lg:gap-x-8;
+	}
+	.discordContent {
+		@apply col-span-12 lg:col-span-6 xl:col-span-7 flex items-start md:items-center;
+	}
+	.discordTop {
+		@apply text-white font-gooBold text-[35px] sm:text-[50px] md:text-[35px] lg:text-[50px] xl:text-[60px] leading-tight;
+	}
+	.discordPar {
+		@apply text-white font-gooReg text-[13px] md:text-[12px] lg:text-[14px] mt-[10px];
+	}
+	.discordButton {
+		@apply inline-block bg-transparent text-white font-gooReg py-[10px] md:py-[15px] px-[30px] md:px-[40px] hover:bg-white hover:text-black transition-all w-full lg:w-fit text-center border-2 border-white mt-[30px] xl:mt-[40px] text-[16px] lg:text-[18px];
+	}
+	.discordImg {
+		@apply col-span-12 h-[300px] sm:h-[400px] lg:h-full lg:col-span-6 xl:col-span-5 bg-softGrey bg-discord bg-cover lg:bg-cover 2xl:bg-contain bg-right-top bg-no-repeat rounded-3xl;
+	}
+	/* End Discord */
 
-  /* Discord */
-  .discord{
-    @apply px-[30px] sm:px-[60px] pt-[85px] pb-[100px]
-  }
-  .discordGrid{
-    @apply grid grid-cols-12 gap-y-10 lg:gap-y-0 lg:gap-x-8
-  }
-  .discordContent{
-    @apply col-span-12 lg:col-span-6 xl:col-span-7 flex items-start md:items-center 
-  }
-  .discordTop{
-    @apply text-white font-gooBold text-[35px] sm:text-[50px] md:text-[35px] lg:text-[50px] xl:text-[60px] leading-tight
-  }
-  .discordPar{
-    @apply text-white font-gooReg text-[13px] md:text-[12px] lg:text-[14px] mt-[10px]
-  }
-  .discordButton{
-    @apply inline-block bg-transparent text-white font-gooReg py-[10px] md:py-[15px] px-[30px] md:px-[40px] hover:bg-white hover:text-black transition-all w-full lg:w-fit text-center border-2 border-white mt-[30px] xl:mt-[40px] text-[16px] lg:text-[18px]
-  }
-  .discordImg{
-    @apply col-span-12 h-[300px] sm:h-[400px] lg:h-full lg:col-span-6 xl:col-span-5 bg-softGrey bg-discord bg-cover lg:bg-cover 2xl:bg-contain bg-right-top bg-no-repeat rounded-3xl
-  }
-  /* End Discord */
-
-  /* Footer */
-  .footerContent{
-    @apply py-[70px] flex flex-col justify-center
-  }
-  .footerFlex{
-    @apply flex space-x-[40px] text-[20px] mx-auto mt-[31px]
-  }
-  .footerLogo{
-    @apply w-[300px] md:w-[400px] h-auto mx-auto
-  }
-  .footerCopy{
-    @apply mt-[70px] text-white font-gooReg text-center text-[14px] sm:text-[16px]
-  }
-  .footDown{
-    @apply flex
-  }
-  /* End Footer */
+	/* Footer */
+	.footerContent {
+		@apply py-[70px] flex flex-col justify-center;
+	}
+	.footerFlex {
+		@apply flex space-x-[40px] text-[20px] mx-auto mt-[31px];
+	}
+	.footerLogo {
+		@apply w-[300px] md:w-[400px] h-auto mx-auto;
+	}
+	.footerCopy {
+		@apply mt-[70px] text-white font-gooReg text-center text-[14px] sm:text-[16px];
+	}
+	.footDown {
+		@apply flex;
+	}
+	/* End Footer */
 }
