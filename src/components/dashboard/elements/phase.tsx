@@ -7,8 +7,9 @@ import {
 } from "@/lib/firestore";
 import ProgressBar from "../svg/progress-bar";
 import style from "./phase.module.css";
-import { useState } from "react";
+import { ReactElement, useState } from "react";
 import { formatDate } from "@/lib/date-util";
+import { toast } from "react-toastify";
 
 export default function Phase({
 	desc,
@@ -18,7 +19,7 @@ export default function Phase({
 	role,
 	teamData,
 }: {
-	desc: string;
+	desc: ReactElement;
 	deadline: string;
 	title: string;
 	stage: string;
@@ -29,18 +30,35 @@ export default function Phase({
 	const submission = (phaseData ? phaseData["link_" + role] : {}) as Submission;
 	const [link, setLink] = useState(submission?.link || "");
 
-	async function submit() {
-		await updateLink({
+	function submit(): Promise<any> {
+		const promise = updateLink({
 			teamId: teamData.name,
 			link,
 			phase: "phase_" + stage,
 			role,
 		});
+		toast.promise(
+			promise,
+			{
+				pending: "Submmitting...",
+				success: "Successfully submitted link",
+				error: "Failed to submit, please try again or contact comittee",
+			},
+			{
+				autoClose: 3000,
+				position: "top-right",
+				closeOnClick: true,
+				theme: "dark",
+				progressClassName: "bg-hackBlue",
+			}
+		);
+
+		return promise;
 	}
 
 	return (
 		<section className={style.section}>
-			<div>
+			<div style={{ minHeight: "100%" }}>
 				<ProgressBar
 					finished={submission?.submissionDate ? true : false}
 				></ProgressBar>
@@ -49,7 +67,7 @@ export default function Phase({
 				<div className={style.description}>
 					<h1>{title}</h1>
 					<p className={style.stage}>Stage {stage}</p>
-					<p className={style.desc}>{desc}</p>
+					<div className={style.desc}>{desc}</div>
 				</div>
 
 				<div className={style.submission}>

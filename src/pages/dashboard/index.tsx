@@ -33,6 +33,9 @@ export default function Dashboard() {
 				setTeamData(teamData);
 				setAuthLoading(false);
 				setUser(user.email || "");
+				setActive(userData?.role);
+			} else {
+				Router.push("/");
 			}
 		});
 	}, [user]);
@@ -42,11 +45,11 @@ export default function Dashboard() {
 	const components = {
 		hacker: Hacker(teamData),
 		hipster: Hipster(teamData),
-		summary: Summary(teamData),
+		//summary: Summary(teamData),
 		hustler: Hustler(teamData),
 	};
 
-	const [active, setActive] = useState("summary");
+	const [active, setActive] = useState("");
 
 	function renderIndividu() {
 		return components[active as Roles];
@@ -59,26 +62,26 @@ export default function Dashboard() {
 			<Navbar />
 			<div className={style.dashHeader}>
 				<div className={style.dashTeamName}>
-					<h1>{teamName}</h1>
+					<h1>{teamData.name}</h1>
 				</div>
 				<div className={style.dashHackLogo}>
 					<h1>HACKFEST 2024</h1>
 				</div>
 			</div>
-			<div className={style.teamName}>
-				<h1>{teamData.name}</h1>
-			</div>
 			<div className={style.dashSwitcher}>
 				<div className={style.dashCaps}>
-					<button
+					<button className={style.active}>
+						{active.toUpperCase()[0] + active.substring(1)}
+					</button>
+					{/* <button
 						onClick={() => setActive("summary")}
 						className={
 							active === "summary" ? style.active : style.navigationButton
 						}
 					>
 						Summary
-					</button>
-					<button
+					</button> */}
+					{/* <button
 						onClick={() => setActive("hacker")}
 						className={
 							active === "hacker" ? style.active : style.navigationButton
@@ -101,7 +104,7 @@ export default function Dashboard() {
 						}
 					>
 						Hustler
-					</button>
+					</button> */}
 				</div>
 			</div>
 			<div className={style.individuContainer}>{renderIndividu()}</div>

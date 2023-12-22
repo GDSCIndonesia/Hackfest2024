@@ -3,7 +3,11 @@
 }
 
 .section {
-	@apply p-0 flex gap-x-8 items-center;
+	@apply p-0 flex gap-x-8 items-stretch;
+}
+
+.description {
+	max-width: 70%;
 }
 
 .description > h1 {
@@ -16,6 +20,15 @@
 
 .desc {
 	@apply font-gooReg text-softGrey;
+}
+
+.desc > * {
+	@apply mt-3;
+}
+
+.desc > ol {
+	@apply pl-5;
+	list-style: decimal;
 }
 
 .submission {
