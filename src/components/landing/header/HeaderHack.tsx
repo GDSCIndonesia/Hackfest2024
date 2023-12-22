@@ -31,8 +31,8 @@ export default function HeaderHack() {
                 >
                     <h1>Turn your creative ideas into reality. Try them out and see what succeeds.</h1>
                     <p>Register your team now and have the chance of winning one of the most prestigious hackathon events in Indonesia!</p>
-                    <a href="https://s.id/register-hackfest2024" target="_blank">
-                        Register Now
+                    <a href="https://links.gdsc-hackfest.com/IdeaHackfest2024" target="_blank">
+                        Re-Register Now
                     </a>
                 </motion.div>
             </div>

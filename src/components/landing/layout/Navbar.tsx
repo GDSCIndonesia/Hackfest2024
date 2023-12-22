@@ -118,11 +118,11 @@ export default function Navbar() {
 							</li>
 							<li>
 								<a
-									href="https://s.id/register-hackfest2024"
+									href="https://links.gdsc-hackfest.com/IdeaHackfest2024"
 									className="navRegister"
 									target="_blank"
 								>
-									Register
+									Re-Register
 								</a>
 							</li>
 						</ul>
