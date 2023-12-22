@@ -17,13 +17,13 @@ export default function Hacker(teamData: TeamData) {
 							<p>Greetings, Master Hackers!</p>
 
 							<p>
-								We welcome you to the ultimate Hackers' Challenge where your
+								We welcome you to the ultimate Hackers Challenge where your
 								skills will be put to the test. In this clandestine mission, you
 								are required to create both a <strong>Use Case Diagram</strong>{" "}
 								and a <strong>Sequence Diagram</strong> for the solution that
 								your team is building. Your objective is to unravel the
-								intricacies of the system's functionality and expose its hidden
-								features.
+								intricacies of the system&apos;s functionality and expose its
+								hidden features.
 							</p>
 
 							<h2>Submission Guidelines:</h2>

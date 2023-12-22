@@ -15,12 +15,12 @@ export default function Hustler(teamData: any) {
 							<p>Dear Hustler,</p>
 
 							<p>
-								We're thrilled to have you on board for the Hustle Challenge,
-								where innovation meets execution! As part of this competition,
-								we've streamlined the submission process to make it as efficient
-								as your hustle. Your task is simple: submit a single link
-								pointing to your Business Model Canvas (BMC) in the form of a
-								.zip file.
+								We&apos;re thrilled to have you on board for the Hustle
+								Challenge, where innovation meets execution! As part of this
+								competition, we&apos;ve streamlined the submission process to
+								make it as efficient as your hustle. Your task is simple: submit
+								a single link pointing to your Business Model Canvas (BMC) in
+								the form of a .zip file.
 							</p>
 
 							<h2>Submission Guidelines:</h2>

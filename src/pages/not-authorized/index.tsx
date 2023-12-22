@@ -9,7 +9,7 @@ export default function NotAuthorized() {
 	return (
 		<div className="flex flex-col justify-center items-center align-center w-full h-full">
 			<h1 className="font-gooBold text-white text-2xl">
-				I'm sorry, you're not a participant in the event
+				I&apos;m sorry, you&apos;re not a participant in the event
 			</h1>
 			<button
 				className="mt-[25px] block text-hackWhite font-gooBold bg-hackBlue text-center lg:text-left w-full lg:w-fit px-[30px] py-[10px] text-[15px] 2xl:text-[20px]"
