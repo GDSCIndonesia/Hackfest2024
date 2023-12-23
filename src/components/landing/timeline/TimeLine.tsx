@@ -103,7 +103,7 @@ export default function TimeLine() {
 								<h1>December 23, 2023</h1>
 							</div>
 							<div className="dateBottom">
-								<h1>10.00 AM - 12.00 PM</h1>
+								<h1>10.00 AM </h1>
 							</div>
 						</div>
                     </div>
