@@ -43,10 +43,10 @@ export default function Dashboard() {
 	type Roles = keyof typeof components;
 
 	const components = {
-		hacker: Hacker(teamData),
-		hipster: Hipster(teamData),
+		Hacker: Hacker(teamData),
+		Hipster: Hipster(teamData),
 		//summary: Summary(teamData),
-		hustler: Hustler(teamData),
+		Hustler: Hustler(teamData),
 	};
 
 	const [active, setActive] = useState("");
