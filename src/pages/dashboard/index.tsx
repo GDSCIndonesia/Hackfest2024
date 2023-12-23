@@ -45,11 +45,15 @@ export default function Dashboard() {
 
 	type Roles = keyof typeof components;
 
+	const refreshTeamData = async () => {
+		setTeamData(await getTeamByTeamId(teamData.name));
+	};
+
 	const components = {
-		Hacker: Hacker(teamData, role),
-		Hipster: Hipster(teamData, role),
+		Hacker: Hacker(teamData, role, refreshTeamData),
+		Hipster: Hipster(teamData, role, refreshTeamData),
 		//summary: Summary(teamData),
-		Hustler: Hustler(teamData, role),
+		Hustler: Hustler(teamData, role, refreshTeamData),
 	};
 
 	function renderIndividu() {

@@ -13,6 +13,7 @@ export default function Phase({
 	role,
 	teamData,
 	canSubmit,
+	onSubmit,
 }: {
 	desc: ReactElement;
 	deadline: string;
@@ -21,6 +22,7 @@ export default function Phase({
 	role: "hipster" | "hacker" | "hustler";
 	teamData: TeamData;
 	canSubmit: boolean;
+	onSubmit: () => Promise<any>;
 }) {
 	const phaseData = (teamData["phase_" + stage] ?? {}) as Phase;
 	const submission = (phaseData ? phaseData["link_" + role] : {}) as Submission;
@@ -32,7 +34,8 @@ export default function Phase({
 			link,
 			phase: "phase_" + stage,
 			role,
-		});
+		}).then(onSubmit);
+
 		toast.promise(
 			promise,
 			{
