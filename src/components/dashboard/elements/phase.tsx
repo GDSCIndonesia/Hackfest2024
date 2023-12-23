@@ -29,6 +29,19 @@ export default function Phase({
 	const [link, setLink] = useState(submission?.link || "");
 
 	function submit(): Promise<any> {
+		const urlRegex =
+			/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/;
+
+		if (!urlRegex.test(link)) {
+			toast.error("Please submit a valid URL link", {
+				autoClose: 3000,
+				position: "top-right",
+				closeOnClick: true,
+				theme: "dark",
+			});
+
+			return Promise.resolve();
+		}
 		const promise = updateLink({
 			teamId: teamData.name,
 			link,
