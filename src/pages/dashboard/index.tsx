@@ -6,7 +6,13 @@ import { useEffect, useState } from "react";
 import Hipster from "@/components/dashboard/hipster";
 import Summary from "@/components/dashboard/summary";
 import Hustler from "@/components/dashboard/hustler";
-import { TeamData, getTeamByTeamId, getUserByEmail } from "@/lib/firestore";
+import {
+	Member,
+	TeamData,
+	getTeamByTeamId,
+	getUserByEmail,
+	getUsersByTeamId,
+} from "@/lib/firestore";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "@/lib/firebase";
 import { onAuthStateChanged, signOut } from "firebase/auth";
@@ -16,8 +22,8 @@ import Loading from "@/components/dashboard/elements/loading";
 
 export default function Dashboard() {
 	const [authLoading, setAuthLoading] = useState(true);
-	const [teamName, setTeamName] = useState("Team's Name");
 	const [teamData, setTeamData] = useState<TeamData>({} as TeamData);
+	const [teamMembers, setTeamMembers] = useState<Member[]>([]);
 	const [user, setUser] = useState("");
 	const [role, setRole] = useState("");
 	const [active, setActive] = useState("");
@@ -33,6 +39,8 @@ export default function Dashboard() {
 
 				const teamData = await getTeamByTeamId(userData.teamId);
 				setTeamData(teamData);
+				const teamMembers = await getUsersByTeamId(teamData.id);
+				setTeamMembers(teamMembers);
 				setAuthLoading(false);
 				setUser(user.email || "");
 				setActive(userData?.role);
@@ -52,7 +60,7 @@ export default function Dashboard() {
 	const components = {
 		Hacker: Hacker(teamData, role, refreshTeamData),
 		Hipster: Hipster(teamData, role, refreshTeamData),
-		//summary: Summary(teamData),
+		Summary: Summary(teamData, teamMembers),
 		Hustler: Hustler(teamData, role, refreshTeamData),
 	};
 
@@ -75,14 +83,14 @@ export default function Dashboard() {
 			</div>
 			<div className={style.dashSwitcher}>
 				<div className={style.dashCaps}>
-					{/* <button
-						onClick={() => setActive("summary")}
+					<button
+						onClick={() => setActive("Summary")}
 						className={
-							active === "summary" ? style.active : style.navigationButton
+							active === "Summary" ? style.active : style.navigationButton
 						}
 					>
 						Summary
-					</button> */}
+					</button>
 					<button
 						onClick={() => setActive("Hacker")}
 						className={

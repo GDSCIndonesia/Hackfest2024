@@ -5,6 +5,7 @@
 :root {
 	--toastify-color-dark: #202124 !important;
 	--toastify-color-success: theme("colors.hackBlue") !important;
+	--toastify-color-error: theme("colors.hackRed") !important;
 }
 
 p {
