@@ -295,6 +295,9 @@
   .sponsorsItem{
     @apply mt-[150px] mb-[300px] flex flex-col sm:flex-row justify-between space-y-12 sm:space-y-0 sm:space-x-8
   }
+  .sponsorsImg > img{
+    @apply w-full h-auto mx-auto
+  }
   /* End Sponsors */
 
   /* Media Partners */

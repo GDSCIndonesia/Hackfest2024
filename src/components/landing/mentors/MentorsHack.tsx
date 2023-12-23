@@ -10,8 +10,8 @@ export default function MentorsHack() {
                 duration: 0.5
             }}
         className='mentorsTop'>
-            <h1>Mentors</h1>
-            <p>Unlock exclusive mentorship from experts. Elevate your skills with personalized guidance, ensuring an extraordinary journey to mastery.</p>
+            <h1>Facilitators</h1>
+            <p>Embark on a transformative learning experience with our distinguished facilitators, offering exclusive guidance tailored to your unique journey.</p>
         </motion.div>
         <motion.div 
             initial={{ opacity: 0, y:150 }}
@@ -26,7 +26,7 @@ export default function MentorsHack() {
                     <img className='mentorsRealImg' src="/libraries/images/mentors/Restu.png" alt="" />
                 </div>
                 <h1>Restu Dwi Cahyo</h1>
-                <p>Hacker</p>
+                <p>Bandung Coders</p>
             </div>
             <div className='mentorsCol'>
                 <div className='mentorsImg'>
@@ -34,7 +34,7 @@ export default function MentorsHack() {
                     <img className='mentorsRealImg' src="/libraries/images/mentors/AlexanderJason.jpg" alt="" />
                 </div>
                 <h1>Alexander Jason</h1>
-                <p>Hustler</p>
+                <p>IFest Business IT-Case Competition</p>
             </div>
             <div className='mentorsCol'>
                 <div className='mentorsImg'>
@@ -42,7 +42,7 @@ export default function MentorsHack() {
                     <img className='mentorsRealImg' src="/libraries/images/mentors/sambas.jpg" alt="" />
                 </div>
                 <h1>Sambas Jundi Mahfuzdi</h1>
-                <p>Hipster</p>
+                <p>PT. Bank Rakyat Indonesia (Persero) Tbk.</p>
             </div>
             <div className='mentorsCol'>
                 <div className='mentorsImg'>
@@ -50,7 +50,7 @@ export default function MentorsHack() {
                     <img className='mentorsRealImg' src="/libraries/images/mentors/MariaCatherine.jpg" alt="" />
                 </div>
                 <h1>Maria Catherine</h1>
-                <p>Hipster</p>
+                <p>WoiLo, UIUXINDO</p>
             </div>
         </motion.div>
     </section>

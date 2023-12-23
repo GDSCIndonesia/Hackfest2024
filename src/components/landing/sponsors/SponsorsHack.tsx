@@ -20,11 +20,11 @@ export default function SponsorsHack() {
                 duration: 0.5
             }}
         className='sponsorsItem'>
-            <div className='sponsorImg'>
-                <img src="/libraries/images/png/googleForDevelopers.png" alt="" />
+            <div className='sponsorsImg'>
+                <img src="/libraries/images/png/telkomsel.png" alt="" />
             </div>
-            <div className='sponsorImg'>
-                <img src="/libraries/images/png/googleForDevelopers.png" alt="" />
+            <div className='sponsorsImg'>
+                <img src="/libraries/images/png/tiketcom.png" alt="" />
             </div>
         </motion.div>
     </section>
