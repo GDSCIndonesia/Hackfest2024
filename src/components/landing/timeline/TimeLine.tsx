@@ -98,9 +98,14 @@ export default function TimeLine() {
                             <h1>1st Stage Mentoring & Workshop</h1>
                             <p>Ready for the 1st Stage Mentoring & Workshop at GDSC Indonesia HackFest 2024? Step into skill enhancement and pave your way to victory!</p>
                         </div>
-                        <div className='dateBottom'>
-                            <h1>December 23, 2023</h1>
-                        </div>
+                        <div className="flex space-x-2">
+							<div className="dateBottom">
+								<h1>December 23, 2023</h1>
+							</div>
+							<div className="dateBottom">
+								<h1>10.00 AM - 12.00 PM</h1>
+							</div>
+						</div>
                     </div>
                 </div>
                 <div className='timeCol row-start-4 sm:row-start-2 lg:col-start-9'>
@@ -128,9 +133,14 @@ export default function TimeLine() {
                             <h1>2nd Stage Mentoring & Workshop</h1>
                             <p>Gear up for the 2nd Stage Mentoring & Workshop at GDSC Indonesia HackFest 2024! Elevate your skills further on the path to success!</p>
                         </div>
-                        <div className='dateBottom'>
-                            <h1>January 06, 2024</h1>
-                        </div>
+                        <div className="flex space-x-2">
+							<div className="dateBottom">
+								<h1>January 06, 2024</h1>
+							</div>
+							<div className="dateBottom">
+								<h1>10.00 AM</h1>
+							</div>
+						</div>
                     </div>
                 </div>
                 <div className='timeCol'>
@@ -158,9 +168,14 @@ export default function TimeLine() {
                             <h1>3rd Stage Mentoring & Workshop</h1>
                             <p>Get set for the 3rd Stage Mentoring & Workshop! Dive deeper into expertise at GDSC Indonesia HackFest 2024 and shape your path to excellence!</p>
                         </div>
-                        <div className='dateBottom'>
-                            <h1>January 13, 2024</h1>
-                        </div>
+                        <div className="flex space-x-2">
+							<div className="dateBottom">
+								<h1>January 13, 2024</h1>
+							</div>
+							<div className="dateBottom">
+								<h1>10.00 AM</h1>
+							</div>
+						</div>
                     </div>
                 </div>
                 <div className='timeCol row-start-[11] sm:row-start-6 lg:row-start-4'>
