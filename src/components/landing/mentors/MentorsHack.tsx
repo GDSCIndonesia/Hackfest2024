@@ -23,66 +23,34 @@ export default function MentorsHack() {
             <div className='mentorsCol'>
                 <div className='mentorsImg'>
                     <img className='mentorsBorder' src="/libraries/images/svg/circleMentors.svg" alt="" />
-                    <img className='mentorsRealImg' src="" alt="" />
+                    <img className='mentorsRealImg' src="/libraries/images/mentors/Restu.png" alt="" />
                 </div>
-                <h1>TBA</h1>
-                <p>Coming Soon</p>
+                <h1>Restu Dwi Cahyo</h1>
+                <p>Hacker</p>
             </div>
             <div className='mentorsCol'>
                 <div className='mentorsImg'>
                     <img className='mentorsBorder' src="/libraries/images/svg/circleMentors.svg" alt="" />
-                    <img className='mentorsRealImg' src="" alt="" />
+                    <img className='mentorsRealImg' src="/libraries/images/mentors/AlexanderJason.jpg" alt="" />
                 </div>
-                <h1>TBA</h1>
-                <p>Coming Soon</p>
+                <h1>Alexander Jason</h1>
+                <p>Hustler</p>
             </div>
             <div className='mentorsCol'>
                 <div className='mentorsImg'>
                     <img className='mentorsBorder' src="/libraries/images/svg/circleMentors.svg" alt="" />
-                    <img className='mentorsRealImg' src="" alt="" />
+                    <img className='mentorsRealImg' src="/libraries/images/mentors/sambas.jpg" alt="" />
                 </div>
-                <h1>TBA</h1>
-                <p>Coming Soon</p>
+                <h1>Sambas Jundi Mahfuzdi</h1>
+                <p>Hipster</p>
             </div>
             <div className='mentorsCol'>
                 <div className='mentorsImg'>
                     <img className='mentorsBorder' src="/libraries/images/svg/circleMentors.svg" alt="" />
-                    <img className='mentorsRealImg' src="" alt="" />
+                    <img className='mentorsRealImg' src="/libraries/images/mentors/MariaCatherine.jpg" alt="" />
                 </div>
-                <h1>TBA</h1>
-                <p>Coming Soon</p>
-            </div>
-            <div className='mentorsCol'>
-                <div className='mentorsImg'>
-                    <img className='mentorsBorder' src="/libraries/images/svg/circleMentors.svg" alt="" />
-                    <img className='mentorsRealImg' src="" alt="" />
-                </div>
-                <h1>TBA</h1>
-                <p>Coming Soon</p>
-            </div>
-            <div className='mentorsCol'>
-                <div className='mentorsImg'>
-                    <img className='mentorsBorder' src="/libraries/images/svg/circleMentors.svg" alt="" />
-                    <img className='mentorsRealImg' src="" alt="" />
-                </div>
-                <h1>TBA</h1>
-                <p>Coming Soon</p>
-            </div>
-            <div className='mentorsCol'>
-                <div className='mentorsImg'>
-                    <img className='mentorsBorder' src="/libraries/images/svg/circleMentors.svg" alt="" />
-                    <img className='mentorsRealImg' src="" alt="" />
-                </div>
-                <h1>TBA</h1>
-                <p>Coming Soon</p>
-            </div>
-            <div className='mentorsCol'>
-                <div className='mentorsImg'>
-                    <img className='mentorsBorder' src="/libraries/images/svg/circleMentors.svg" alt="" />
-                    <img className='mentorsRealImg' src="" alt="" />
-                </div>
-                <h1>TBA</h1>
-                <p>Coming Soon</p>
+                <h1>Maria Catherine</h1>
+                <p>Hipster</p>
             </div>
         </motion.div>
     </section>
