@@ -19,6 +19,8 @@ export default function Dashboard() {
 	const [teamName, setTeamName] = useState("Team's Name");
 	const [teamData, setTeamData] = useState<TeamData>({} as TeamData);
 	const [user, setUser] = useState("");
+	const [role, setRole] = useState("");
+	const [active, setActive] = useState("");
 
 	useEffect(() => {
 		onAuthStateChanged(auth, async (user) => {
@@ -34,6 +36,7 @@ export default function Dashboard() {
 				setAuthLoading(false);
 				setUser(user.email || "");
 				setActive(userData?.role);
+				setRole(userData?.role);
 			} else {
 				Router.push("/");
 			}
@@ -43,13 +46,11 @@ export default function Dashboard() {
 	type Roles = keyof typeof components;
 
 	const components = {
-		Hacker: Hacker(teamData),
-		Hipster: Hipster(teamData),
+		Hacker: Hacker(teamData, role),
+		Hipster: Hipster(teamData, role),
 		//summary: Summary(teamData),
-		Hustler: Hustler(teamData),
+		Hustler: Hustler(teamData, role),
 	};
-
-	const [active, setActive] = useState("");
 
 	function renderIndividu() {
 		return components[active as Roles];
@@ -70,9 +71,6 @@ export default function Dashboard() {
 			</div>
 			<div className={style.dashSwitcher}>
 				<div className={style.dashCaps}>
-					<button className={style.active}>
-						{active.toUpperCase()[0] + active.substring(1)}
-					</button>
 					{/* <button
 						onClick={() => setActive("summary")}
 						className={
@@ -81,30 +79,30 @@ export default function Dashboard() {
 					>
 						Summary
 					</button> */}
-					{/* <button
-						onClick={() => setActive("hacker")}
+					<button
+						onClick={() => setActive("Hacker")}
 						className={
-							active === "hacker" ? style.active : style.navigationButton
+							active === "Hacker" ? style.active : style.navigationButton
 						}
 					>
 						Hacker
 					</button>
 					<button
-						onClick={() => setActive("hipster")}
+						onClick={() => setActive("Hipster")}
 						className={
-							active === "hipster" ? style.active : style.navigationButton
+							active === "Hipster" ? style.active : style.navigationButton
 						}
 					>
 						Hipster
 					</button>
 					<button
-						onClick={() => setActive("hustler")}
+						onClick={() => setActive("Hustler")}
 						className={
-							active === "hustler" ? style.active : style.navigationButton
+							active === "Hustler" ? style.active : style.navigationButton
 						}
 					>
 						Hustler
-					</button> */}
+					</button>
 				</div>
 			</div>
 			<div className={style.individuContainer}>{renderIndividu()}</div>

@@ -1,12 +1,13 @@
-import { useEffect } from "react";
 import individualStyle from "./css/individual.module.css";
 import Phase from "./elements/phase";
 
-export default function Hipster(teamData: any) {
+export default function Hipster(teamData: any, role: string) {
+	const canSubmit = role === "Hipster";
 	return (
 		<div className={individualStyle.container}>
 			<div>
 				<Phase
+					canSubmit={canSubmit}
 					key="hipster_1"
 					title="User Persona & Wireframe"
 					desc={

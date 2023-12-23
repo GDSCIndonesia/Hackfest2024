@@ -1,13 +1,14 @@
-import { useEffect } from "react";
 import individualStyle from "./css/individual.module.css";
 import Phase from "./elements/phase";
 import "./css/individual.module.css";
 
-export default function Hustler(teamData: any) {
+export default function Hustler(teamData: any, role: string) {
+	const canSubmit = role === "Hipster";
 	return (
 		<div className={individualStyle.container}>
 			<div>
 				<Phase
+					canSubmit={canSubmit}
 					key="hustler_1"
 					title="Business Model Canvas"
 					desc={

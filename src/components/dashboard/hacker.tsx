@@ -1,15 +1,14 @@
-import { useEffect } from "react";
 import individualStyle from "./css/individual.module.css";
 import Phase from "./elements/phase";
-import { useAppStyle } from "@/styles/tailwind";
 import { TeamData } from "@/lib/firestore";
 
-export default function Hacker(teamData: TeamData) {
-	const style = useAppStyle();
+export default function Hacker(teamData: TeamData, role: string) {
+	const canSubmit = role === "Hacker";
 	return (
 		<div className={individualStyle.container}>
 			<div>
 				<Phase
+					canSubmit={canSubmit}
 					key="hacker_1"
 					title="Use Case & Sequence Diagram"
 					desc={
