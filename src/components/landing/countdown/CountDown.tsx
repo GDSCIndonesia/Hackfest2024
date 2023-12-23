@@ -65,7 +65,7 @@ export default function CountDown() {
         }} 
         className='countDate'>
           <div>
-            <h1>First Stage Submission</h1>
+            <h1>First Stage Submission Open</h1>
             <p>Don&#39;t worry, it&#39;s just shrinking bit by bit. Like my motivation during Monday mornings</p>
             <Countdown date={eventDate} renderer={renderer} />
           </div>
