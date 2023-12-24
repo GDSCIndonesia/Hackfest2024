@@ -12,10 +12,10 @@ export default function DropdownContent({
 			{/* Dibuat seperti dropdown FAQ di landing page, warnanya dark aja jangan putih 🤌 */}
 			<div>
 				{/* Title dari dropdown */}
-				<h1 className="text-hackWhite text-2xl">{title}</h1>
+				<h1 className="text-hackWhite text-2xl font-gooMed mb-[10px]">{title}</h1>
 			</div>
 			{/* Konten ketika dropdown dibuka */}
-			<div>{children}</div>
+			<div className="grid grid-cols-12 gap-5">{children}</div>
 		</>
 	);
 }

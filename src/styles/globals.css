@@ -416,4 +416,47 @@ body,
 		@apply flex;
 	}
 	/* End Footer */
+
+
+	/* Summary */
+	.chaCode > h1{
+		@apply font-gooMed text-[15px]
+	}
+	.summaryGrid{
+		@apply grid grid-cols-12 gap-6 mt-6
+	}
+	.summaryCol{
+		@apply col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3 p-4 bg-hackWhite border-2 rounded-lg text-softDark
+	}
+	.summaryCol > h1{
+		@apply font-gooBold text-[20px]
+	}
+	.summaryCol > h6{
+		@apply font-gooMed text-[15px]
+	}
+	.summaryCol > h2{
+		@apply font-gooReg text-[13px] break-words
+	}
+	.sumIdea{
+		@apply my-[40px]
+	}
+	.sumIdea > h1{
+		@apply font-gooMed
+	}
+	.sumIdea > p{
+		@apply font-gooReg
+	}
+	.roleSpan{
+		@apply col-span-12 sm:col-span-6 lg:col-span-4
+	}
+	.roleSpan > h1{
+		@apply font-gooBold text-[16px]
+	}
+	.statPas{
+		@apply font-gooReg text-hackGreen text-[15px]
+	}
+	.statNot{
+		@apply font-gooReg text-hackRed text-[15px]
+	}
+	/* End Summary */
 }
