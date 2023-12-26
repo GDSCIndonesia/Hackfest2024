@@ -34,57 +34,61 @@ export default function Summary(teamData: TeamData, teamMembers: Member[]) {
 				<p>This is description of the team</p>
 			</div>
 
-			<DropdownContent title={"Phase 1 Submission"}>
+			<DropdownContent title={"Phase 1 Submission"} className="my-2">
 				{/* Masing-masing ini bisa dibuat component tersendiri */}
-				<div className="roleSpan">
-					<h1>Hustler: </h1>
-					<div>
-						{/* Bisa masukin svg bulet biru atau merah */}
-						{phaseOne?.link_hustler?.submissionDate ? (
-							<span className="statPas">
-								Submitted at{" "}
-								{formatDate(phaseOne.link_hustler.submissionDate.toDate())}
-							</span>
-						) : (
-							<span className="statNot">Not yet Submitted</span>
-						)}
+				<div className="summaryGrid">
+					<div className="roleSpan">
+						<h1>Hustler: </h1>
+						<div>
+							{/* Bisa masukin svg bulet biru atau merah */}
+							{phaseOne?.link_hustler?.submissionDate ? (
+								<span className="statPas">
+									Submitted at{" "}
+									{formatDate(phaseOne.link_hustler.submissionDate.toDate())}
+								</span>
+							) : (
+								<span className="statNot">Not yet Submitted</span>
+							)}
+						</div>
 					</div>
-				</div>
-				<div className="roleSpan">
-					<h1>Hacker: </h1>
-					<div>
-						{/* Bisa masukin svg bulet biru atau merah */}
-						{phaseOne?.link_hacker?.submissionDate ? (
-							<span className="statPas">
-								Submitted at{" "}
-								{formatDate(phaseOne.link_hustler.submissionDate.toDate())}
-							</span>
-						) : (
-							<span className="statNot">Not yet Submitted</span>
-						)}
+					<div className="roleSpan">
+						<h1>Hacker: </h1>
+						<div>
+							{/* Bisa masukin svg bulet biru atau merah */}
+							{phaseOne?.link_hacker?.submissionDate ? (
+								<span className="statPas">
+									Submitted at{" "}
+									{formatDate(phaseOne.link_hacker.submissionDate.toDate())}
+								</span>
+							) : (
+								<span className="statNot">Not yet Submitted</span>
+							)}
+						</div>
 					</div>
-				</div>
-				<div className="roleSpan">
-					<h1>Hipster: </h1>
-					<div>
-						{/* Bisa masukin svg bulet biru atau merah */}
-						{phaseOne?.link_hipster?.submissionDate ? (
-							<span className="statPas">
-								Submitted at{" "}
-								{formatDate(phaseOne.link_hustler.submissionDate.toDate())}
-							</span>
-						) : (
-							<span className="statNot">Not yet Submitted</span>
-						)}
+					<div className="roleSpan">
+						<h1>Hipster: </h1>
+						<div>
+							{/* Bisa masukin svg bulet biru atau merah */}
+							{phaseOne?.link_hipster?.submissionDate ? (
+								<span className="statPas">
+									Submitted at{" "}
+									{formatDate(phaseOne.link_hipster.submissionDate.toDate())}
+								</span>
+							) : (
+								<span className="statNot">Not yet Submitted</span>
+							)}
+						</div>
 					</div>
 				</div>
 			</DropdownContent>
 
-			<DropdownContent title={"A Youtube Video"}>
-				<YoutubeEmbed
-					title="A youtube video"
-					url="https://www.youtube.com/embed/nuML9SmdbJ4?si=AY58iBDikM-069CM"
-				/>
+			<DropdownContent title={"A Youtube Video"} className="my-2">
+				<div className="h-[500px]">
+					<YoutubeEmbed
+						title="A youtube video"
+						url="https://www.youtube.com/embed/nuML9SmdbJ4?si=AY58iBDikM-069CM"
+					/>
+				</div>
 			</DropdownContent>
 		</div>
 	);

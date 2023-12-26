@@ -6,15 +6,12 @@ export default function YoutubeEmbed({
 	title: string;
 }) {
 	return (
-		<div className="roleSpan">
-			<iframe
-				width="full"
-				height="full"
-				src={url}
-				title={title}
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-				allowFullScreen
-			></iframe>
-		</div>
+		<iframe
+			src={url}
+			title={title}
+			style={{ overflow: "hidden", height: "100%", width: "100%" }}
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			allowFullScreen
+		></iframe>
 	);
 }
