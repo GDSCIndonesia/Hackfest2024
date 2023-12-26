@@ -8,10 +8,6 @@
 	--toastify-color-error: theme("colors.hackRed") !important;
 }
 
-p {
-	@apply font-gooReg text-hackWhite;
-}
-
 @layer base {
 	/* Google Fonts */
 	@font-face {
