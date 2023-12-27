@@ -8,7 +8,7 @@ export default function Hustler(
 	role: string,
 	onSubmit: () => Promise<any>
 ) {
-	const canSubmit = role === "Hipster";
+	const canSubmit = role === "Hustler";
 	return (
 		<div className={individualStyle.container}>
 			<div>
