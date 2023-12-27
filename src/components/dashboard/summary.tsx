@@ -16,7 +16,7 @@ export default function Summary(teamData: TeamData, teamMembers: Member[]) {
 	return (
 		<div className={individualStyle.container} style={{ color: "white" }}>
 			<div className="chaCode">
-				<h1 className="nico">Chapter-Code - Matana University</h1>
+				<h1 className="nico">{teamData.gdsc_chapter}</h1>
 			</div>
 			<div className="summaryGrid">
 				{/* Bisa dibuat pakai card */}
@@ -31,7 +31,7 @@ export default function Summary(teamData: TeamData, teamMembers: Member[]) {
 
 			<div className="sumIdea">
 				<h1>Submitted Idea description</h1>
-				<p>This is description of the team</p>
+				<p>{teamData.idea_description}</p>
 			</div>
 
 			<DropdownContent title={"Phase 1 Submission"} className="my-2">

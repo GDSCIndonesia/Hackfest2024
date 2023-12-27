@@ -19,6 +19,8 @@ export interface TeamData {
 	[index: string]: string | Phase;
 	id: string;
 	name: string;
+	gdsc_chapter: string;
+	idea_description: string;
 }
 
 export interface Phase {
