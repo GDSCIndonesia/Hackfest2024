@@ -15,6 +15,12 @@ import Footer from '@/components/landing/layout/Footer'
 import Navbar from '@/components/landing/layout/Navbar'
 import { NextSeo } from 'next-seo';
 
+import ReactGA from "react-ga4";
+
+ReactGA.initialize("G-83NDQYGPEV");
+
+ReactGA.send({ hitType: "pageview", location: window.location.pathname });
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
