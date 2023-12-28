@@ -36,6 +36,7 @@ export interface Member {
 	email: string;
 	name: string;
 	role: string;
+	verified: boolean;
 }
 
 export async function getUserByEmail(email: string = "") {
@@ -52,6 +53,7 @@ export async function getUserByEmail(email: string = "") {
 			teamId: string;
 			email: string;
 			role: string;
+			verified: boolean;
 		};
 	})[0];
 }
@@ -81,6 +83,7 @@ export async function getUsersByTeamId(teamId: string): Promise<Member[]> {
 			name: data.name,
 			email: data.email,
 			role: data.role,
+			verified: data.verified
 		};
 	});
 }
@@ -106,4 +109,9 @@ export async function updateLink({
 	};
 
 	await updateDoc(team, data);
+}
+
+export async function updateVerified(id: string) {
+	const user = doc(db, "users", id);
+	await updateDoc(user, { verified: true });
 }

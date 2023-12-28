@@ -12,6 +12,7 @@ import {
 	getTeamByTeamId,
 	getUserByEmail,
 	getUsersByTeamId,
+	updateVerified,
 } from "@/lib/firestore";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "@/lib/firebase";
@@ -36,7 +37,9 @@ export default function Dashboard() {
 					Router.push("/not-authorized");
 					return;
 				}
-
+				if (!userData.verified) {
+					await updateVerified(userData.id)
+				}
 				const teamData = await getTeamByTeamId(userData.teamId);
 				setTeamData(teamData);
 				const teamMembers = await getUsersByTeamId(teamData.id);
