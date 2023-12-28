@@ -1,0 +1,72 @@
+/* Dashboard */
+.dashHeader{
+@apply flex justify-between px-[30px] sm:px-[60px] pt-[50px] sm:pt-[70px] 
+}
+.dashTeamName{
+@apply font-gooBold text-hackWhite tracking-[-1px] text-[30px] py-[15px] px-[30px] rounded-2xl bg-hackBlue h-fit mb-[70px] 
+}
+.dashHackLogo{
+@apply font-gooBold text-hackWhite tracking-[-1px] text-[25px]
+}
+.dashSwitcher{
+@apply px-[30px] sm:px-[60px]
+}
+.dashCaps{
+@apply bg-hackBlue rounded-lg p-[20px]
+}
+.dashCaps > button {
+@apply font-gooMed tracking-[-0.5px]
+}
+
+.active {
+	@apply text-xl 
+        tracking-[2px] 
+        text-hackBlue
+        font-gooBold
+        py-1
+        px-3
+        rounded-lg
+        transition-all
+        bg-hackWhite;
+}
+
+.individuContainer {
+	@apply mx-[30px] sm:mx-[60px] py-8 px-8 mt-5;
+}
+/* End Dashboard */
+
+.teamName > h1 {
+	@apply font-gooBold 
+        tracking-[4px] 
+        text-3xl 
+        sm:text-4xl 
+        lg:text-5xl 
+        xl:text-5xl 
+        text-hackWhite 
+        inline
+        py-2
+        rounded-xl;
+}
+
+.teamName {
+	@apply px-[30px] sm:px-[60px] pt-[100px] pb-[60px] flex justify-between;
+}
+
+.navigation {
+	@apply px-[30px] sm:px-[60px] flex gap-x-5;
+}
+
+.navigationButton {
+	@apply text-xl 
+        tracking-[2px] 
+        text-hackWhite 
+        font-gooBold
+        py-1
+        px-3
+        rounded-lg
+        transition-all;
+}
+
+.navigationButton:hover {
+	@apply bg-slate-800 text-hackBlue;
+}

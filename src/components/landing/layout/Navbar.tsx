@@ -1,8 +1,38 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
+import { signInWithPopup, signOut, GoogleAuthProvider } from "firebase/auth";
+import { useAuthState } from "react-firebase-hooks/auth"
+import { auth } from "@/lib/firebase";
+import { getUserByEmail } from "@/lib/firestore";
+import Router from 'next/router';
 
 export default function Navbar() {
+	const [user, setUser] = useAuthState(auth)
+	const googleAuth = new GoogleAuthProvider()
+	const login = async () => {
+		try {
+			(googleAuth);
+			const result = await signInWithPopup(auth, googleAuth)
+			let { expirationTime, token, claims } = await result.user.getIdTokenResult()
+			let email = claims.email
+		} catch (error) {
+		}
+	}
+	const logout = async () => {
+		await signOut(auth);
+		Router.push(`/`);
+	};
+
+	useEffect(() => {
+		if (user?.email) {
+			getUserByEmail(user.email)
+				.then((data: any) => {
+					Router.push(`/dashboard`);
+				})
+		}
+	}, [user])
+
 	// Navbar Hooks
 	const [showNavbar, setNavbar] = useState(false);
 
@@ -25,12 +55,27 @@ export default function Navbar() {
 		<section className="navbar" ref={menuRef}>
 			<div className="navbarContent">
 				<div className="pl-[30px] md:pl-[60px] pr-[20px]">
-					<a href="#about">
-						<img
-							src="/libraries/images/svg/gdsc-logo.svg"
-							className="h-[28px]"
-						/>
-					</a>
+					{
+						!user && (
+							<a href="#about">
+								<img
+									src="/libraries/images/svg/gdsc-logo.svg"
+									className="h-[28px]"
+								/>
+							</a>
+						)
+					}
+					{
+						user && (
+							<div className="flex gap-6 font-bold items-center">
+								<img
+									src="/libraries/images/svg/gdsc-logo.svg"
+									className="h-[28px]"
+								/>
+								<h1 className="font-gooBold tracking-[-1px] text-hackBlue">HackFest2024</h1>
+							</div>
+						)
+					}
 				</div>
 				<div className="pr-[30px] md:pr-[60px] lg:hidden">
 					<button onClick={() => setNavbar(true)} className="py-[14px]">
@@ -51,9 +96,8 @@ export default function Navbar() {
 					</button>
 				</div>
 				<div
-					className={`${
-						showNavbar ? "right-0" : "right-[-100%]"
-					} navbarController`}
+					className={`${showNavbar ? "right-0" : "right-[-100%]"
+						} navbarController`}
 				>
 					<div className="navbarItems">
 						<ul className="navbarUl">
@@ -84,31 +128,39 @@ export default function Navbar() {
 									</button>
 								</div>
 							</li>
-							<li className="navbarLi">
-								<a href="#about" className="navbarLink">
-									About
-								</a>
-							</li>
-							<li className="navbarLi">
-								<a href="#events" className="navbarLink">
-									Events
-								</a>
-							</li>
-							<li className="navbarLi">
-								<a href="#timeline" className="navbarLink">
-									Timeline
-								</a>
-							</li>
-							<li className="navbarLi">
-								<a href="#prizes" className="navbarLink">
-									Prizes
-								</a>
-							</li>
-							<li>
-								<a href="#faq" className="navbarLink">
-									FAQ
-								</a>
-							</li>
+							{
+								!user && (
+									<>
+										<li className="navbarLi">
+											<a href="#about" className="navbarLink">
+												About
+											</a>
+										</li>
+										<li className="navbarLi">
+											<a href="#events" className="navbarLink">
+												Events
+											</a>
+										</li>
+										<li className="navbarLi">
+											<a href="#timeline" className="navbarLink">
+												Timeline
+											</a>
+										</li>
+										<li className="navbarLi">
+											<a href="#prizes" className="navbarLink">
+												Prizes
+											</a>
+										</li>
+										<li>
+											<a href="#faq" className="navbarLink">
+												FAQ
+											</a>
+										</li>
+									</>
+								)
+							}
+
+
 						</ul>
 						<ul className="flex flex-col lg:flex-row w-full lg:w-fit ">
 							<li>
@@ -116,15 +168,16 @@ export default function Navbar() {
 									Join Discord
 								</a>
 							</li>
-							<li>
-								<a
-									href="https://links.gdsc-hackfest.com/IdeaHackfest2024"
-									className="navRegister"
-									target="_blank"
-								>
-									Re-Register
-								</a>
-							</li>
+							{
+								!user && <li onClick={login}>
+									<p className="navRegister cursor-pointer">Login</p>
+								</li>
+							}
+							{
+								user && <li onClick={logout}>
+									<p className="navRegister cursor-pointer">Logout</p>
+								</li>
+							}
 						</ul>
 					</div>
 				</div>

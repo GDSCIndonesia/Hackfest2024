@@ -1,0 +1,72 @@
+.phase {
+	@apply flex justify-between items-center w-full;
+}
+
+.section {
+	@apply p-0 flex gap-x-8 items-stretch;
+}
+
+.description {
+	max-width: 70%;
+}
+
+.description > h1 {
+	@apply font-gooBold text-2xl text-hackWhite;
+}
+
+.stage {
+	@apply text-sm text-softGrey font-gooReg mb-4;
+}
+
+.desc {
+	@apply font-gooReg text-softGrey;
+}
+
+.desc > * {
+	@apply mt-3;
+}
+
+.desc > ol {
+	@apply pl-5;
+	list-style: decimal;
+}
+
+.submission {
+	@apply w-[300px];
+}
+
+.input {
+	@apply w-full rounded-lg h-9 p-3 font-gooReg;
+}
+
+.submissionDate {
+	@apply font-gooReg text-softGrey text-xs mt-1;
+}
+
+.action {
+	@apply flex justify-between;
+}
+
+.buttons {
+	@apply self-end;
+}
+
+.buttons > button {
+	@apply text-base
+        tracking-[1px] 
+        text-hackWhite 
+        font-gooBold
+        py-1
+        px-3
+        rounded-lg
+        transition-all
+        mt-2;
+}
+
+.edit {
+	@apply bg-hackOrange;
+}
+
+.submit {
+	@apply bg-hackBlue;
+}
