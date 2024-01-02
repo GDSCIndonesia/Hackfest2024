@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nextui-org/react": "^2.2.9",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "firebase": "^10.7.0",
     "firebase-admin": "^11.11.1",
