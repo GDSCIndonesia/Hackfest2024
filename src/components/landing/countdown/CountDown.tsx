@@ -75,8 +75,9 @@ export default function CountDown() {
 					<div>
 						<h1>First Stage Submission Closing</h1>
 						<p>
-							Don&#39;t worry, it&#39;s just shrinking bit by bit. Like my
-							motivation during Monday mornings
+							{/* Don&#39;t worry, it&#39;s just shrinking bit by bit. Like my
+							motivation during Monday mornings */}
+              Don&#39;t forget to submit your 1st Stage assignment only from Google Forms
 						</p>
 						<Countdown date={eventDate} renderer={renderer} />
 					</div>

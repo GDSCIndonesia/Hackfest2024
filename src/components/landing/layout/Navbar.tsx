@@ -168,7 +168,7 @@ export default function Navbar() {
 									Join Discord
 								</a>
 							</li>
-							{
+							{/* {
 								!user && <li onClick={login}>
 									<p className="navRegister cursor-pointer">Login</p>
 								</li>
@@ -177,7 +177,7 @@ export default function Navbar() {
 								user && <li onClick={logout}>
 									<p className="navRegister cursor-pointer">Logout</p>
 								</li>
-							}
+							} */}
 						</ul>
 					</div>
 				</div>
