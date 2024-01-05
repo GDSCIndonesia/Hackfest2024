@@ -12,14 +12,25 @@ export default function Hustler(
 	return (
 		<div className={individualStyle.container}>
 			<div>
-				<Phase
+				{/* <Phase
 					onSubmit={onSubmit}
-					canSubmit={canSubmit}
+					canSubmit={canSubmit && new Date() <= new Date("2024-01-02")}
 					key="hustler_1"
 					title="Business Model Canvas"
 					desc={FirstHustlerDesc()}
 					deadline="02 January 2023"
 					stage="1"
+					teamData={teamData}
+					role="hustler"
+				></Phase> */}
+				<Phase
+					onSubmit={onSubmit}
+					canSubmit={canSubmit && new Date() <= new Date("2024-01-12")}
+					key="hustler_2"
+					title="Hustler 2nd Submission"
+					desc={<></>}
+					deadline="12 January 2023"
+					stage="2"
 					teamData={teamData}
 					role="hustler"
 				></Phase>
