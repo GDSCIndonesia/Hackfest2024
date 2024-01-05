@@ -184,8 +184,8 @@ export default function TimeLine() {
                     <div className='absolute w-[10px] h-[20px] bg-softDark right-1/2 -translate-x-1/2 bottom-0'></div>
                     <div className='timeFrame bg-hackGreen'>
                         <div className='timeContent'>
-                            <h1>Best 10 Ideation</h1>
-                            <p>Top 10 Ideation: Explore the most innovative concepts at GDSC Indonesia HackFest. These standout ideas are set to redefine the future of technology!</p>
+                            <h1>Best 20 Ideation</h1>
+                            <p>Top 20 Ideation: Explore the most innovative concepts at GDSC Indonesia HackFest. These standout ideas are set to redefine the future of technology!</p>
                         </div>
                         <div className='dateBottom'>
                             <h1>January 21, 2024</h1>
@@ -244,7 +244,7 @@ export default function TimeLine() {
                     <div className='absolute lg:hidden w-[10px] h-[20px] bg-softDark right-1/2 -translate-x-1/2 bottom-0'></div>
                     <div className='timeFrame bg-hackRed'>
                         <div className='timeContent'>
-                            <h1>Best 20 Demo Day</h1>
+                            <h1>Best 10 Demo Day</h1>
                             <p>Witness the pinnacle of innovation at GDSC Indonesia HackFest. These top demos are set to captivate and redefine the landscape of technology!</p>
                         </div>
                         <div className='dateBottom'>
