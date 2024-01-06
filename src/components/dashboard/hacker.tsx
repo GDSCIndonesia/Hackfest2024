@@ -25,7 +25,7 @@ export default function Hacker(
 				></Phase> */}
 				<Phase
 					onSubmit={onSubmit}
-					canSubmit={canSubmit && new Date() <= new Date("2024-01-06T01:59:00")}
+					canSubmit={canSubmit && new Date() <= new Date("2024-01-12")}
 					key="hacker_2"
 					title="Hacker 2nd Submission"
 					desc={<></>}
