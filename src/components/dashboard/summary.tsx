@@ -9,8 +9,10 @@ import "./css/individual.module.css";
 
 export default function Summary(teamData: TeamData, teamMembers: Member[]) {
 	const [phaseOne, setPhaseOne] = useState<Phase>(teamData.phase_1 as Phase);
+	const [phaseTwo, setPhaseTwo] = useState<Phase>(teamData.phase_2 as Phase);
 	useEffect(() => {
 		setPhaseOne(teamData.phase_1 as Phase);
+		setPhaseTwo(teamData.phase_2 as Phase);
 	});
 
 	return (
@@ -34,13 +36,15 @@ export default function Summary(teamData: TeamData, teamMembers: Member[]) {
 				<p>{teamData.idea_description}</p>
 			</div>
 
-			<DropdownContent title={"Phase 1 Submission"} className="my-2">
-				{/* Masing-masing ini bisa dibuat component tersendiri */}
+			{/* <DropdownContent
+				title={"Phase 1 Submission"}
+				className="my-2"
+				key="phase_2"
+			>
 				<div className="summaryGrid">
 					<div className="roleSpan">
 						<h1>Hustler: </h1>
 						<div>
-							{/* Bisa masukin svg bulet biru atau merah */}
 							{phaseOne?.link_hustler?.submissionDate ? (
 								<span className="statPas">
 									Submitted at{" "}
@@ -54,7 +58,6 @@ export default function Summary(teamData: TeamData, teamMembers: Member[]) {
 					<div className="roleSpan">
 						<h1>Hacker: </h1>
 						<div>
-							{/* Bisa masukin svg bulet biru atau merah */}
 							{phaseOne?.link_hacker?.submissionDate ? (
 								<span className="statPas">
 									Submitted at{" "}
@@ -68,7 +71,6 @@ export default function Summary(teamData: TeamData, teamMembers: Member[]) {
 					<div className="roleSpan">
 						<h1>Hipster: </h1>
 						<div>
-							{/* Bisa masukin svg bulet biru atau merah */}
 							{phaseOne?.link_hipster?.submissionDate ? (
 								<span className="statPas">
 									Submitted at{" "}
@@ -80,16 +82,64 @@ export default function Summary(teamData: TeamData, teamMembers: Member[]) {
 						</div>
 					</div>
 				</div>
+			</DropdownContent> */}
+
+			<DropdownContent
+				title={"Phase 2 Submission"}
+				className="my-2"
+				key="phase_2"
+			>
+				<div className="summaryGrid">
+					<div className="roleSpan">
+						<h1>Hustler: </h1>
+						<div>
+							{phaseTwo?.link_hustler?.submissionDate ? (
+								<span className="statPas">
+									Submitted at{" "}
+									{formatDate(phaseTwo.link_hustler.submissionDate.toDate())}
+								</span>
+							) : (
+								<span className="statNot">Not yet Submitted</span>
+							)}
+						</div>
+					</div>
+					<div className="roleSpan">
+						<h1>Hacker: </h1>
+						<div>
+							{phaseTwo?.link_hacker?.submissionDate ? (
+								<span className="statPas">
+									Submitted at{" "}
+									{formatDate(phaseTwo.link_hacker.submissionDate.toDate())}
+								</span>
+							) : (
+								<span className="statNot">Not yet Submitted</span>
+							)}
+						</div>
+					</div>
+					<div className="roleSpan">
+						<h1>Hipster: </h1>
+						<div>
+							{phaseTwo?.link_hipster?.submissionDate ? (
+								<span className="statPas">
+									Submitted at{" "}
+									{formatDate(phaseTwo.link_hipster.submissionDate.toDate())}
+								</span>
+							) : (
+								<span className="statNot">Not yet Submitted</span>
+							)}
+						</div>
+					</div>
+				</div>
 			</DropdownContent>
 
-			<DropdownContent title={"A Youtube Video"} className="my-2">
+			{/* <DropdownContent title={"A Youtube Video"} className="my-2">
 				<div className="h-[500px]">
 					<YoutubeEmbed
 						title="A youtube video"
 						url="https://www.youtube.com/embed/nuML9SmdbJ4?si=AY58iBDikM-069CM"
 					/>
 				</div>
-			</DropdownContent>
+			</DropdownContent> */}
 		</div>
 	);
 }

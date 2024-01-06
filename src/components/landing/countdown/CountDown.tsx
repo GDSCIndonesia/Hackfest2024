@@ -36,7 +36,7 @@ export default function CountDown() {
 		</div>
 	);
 
-	const eventDate = new Date("2024-01-03T00:00:00");
+	const eventDate = new Date("2024-01-13T00:00:00");
 
 	return (
 		<div className="countdown" id="events">
@@ -73,11 +73,12 @@ export default function CountDown() {
 					className="countDate"
 				>
 					<div>
-						<h1>First Stage Submission Closing</h1>
+						<h1>Second Stage Submission Closing</h1>
 						<p>
 							{/* Don&#39;t worry, it&#39;s just shrinking bit by bit. Like my
 							motivation during Monday mornings */}
-              Don&#39;t forget to submit your 1st Stage assignment only from Google Forms
+							Don&#39;t forget to submit your 2nd Stage assignment in this
+							website and Log In using your registered account
 						</p>
 						<Countdown date={eventDate} renderer={renderer} />
 					</div>

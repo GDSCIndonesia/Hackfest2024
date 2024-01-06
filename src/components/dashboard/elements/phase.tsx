@@ -106,7 +106,7 @@ export default function Phase({
 										className={style.edit}
 										onClick={async () => await submit()}
 									>
-										Edit
+										Edit & Submit
 									</button>
 								) : (
 									<button

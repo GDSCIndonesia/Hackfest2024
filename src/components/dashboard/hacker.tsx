@@ -12,14 +12,25 @@ export default function Hacker(
 	return (
 		<div className={individualStyle.container}>
 			<div>
-				<Phase
+				{/* <Phase
 					onSubmit={onSubmit}
-					canSubmit={canSubmit}
+					canSubmit={canSubmit && new Date() <= new Date("2024-01-02")}
 					key="hacker_1"
 					title="Use Case & Sequence Diagram"
 					desc={FirstHackerDesc()}
 					deadline="02 January 2023"
 					stage="1"
+					teamData={teamData}
+					role="hacker"
+				></Phase> */}
+				<Phase
+					onSubmit={onSubmit}
+					canSubmit={canSubmit && new Date() <= new Date("2024-01-12")}
+					key="hacker_2"
+					title="Hacker 2nd Submission"
+					desc={<></>}
+					deadline="12 January 2023"
+					stage="2"
 					teamData={teamData}
 					role="hacker"
 				></Phase>
