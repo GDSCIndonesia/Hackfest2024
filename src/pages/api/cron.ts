@@ -26,10 +26,8 @@ export default async function handler(
 			datas,
 			range,
 		});
-		console.log(datas);
 		res.status(200).end("Success");
 	} catch (e) {
-		console.log(e);
 		res.status(500).end("Failed");
 	}
 }
