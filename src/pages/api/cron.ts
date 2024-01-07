@@ -1,5 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import { getAuthToken, getTeamsData, updateSheet } from "@/lib/google-sheet";
+import { getFirestore } from "firebase/firestore";
 import type { NextApiRequest, NextApiResponse } from "next";
 
 type Data = {
@@ -11,7 +12,7 @@ export default async function handler(
 	res: NextApiResponse<Data>
 ) {
 	try {
-		const datas = await getTeamsData();
+		const datas = await getTeamsData(getFirestore());
 		const auth = await getAuthToken();
 		const range = {
 			sheetId: 1696575772, // find your own

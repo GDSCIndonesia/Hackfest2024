@@ -1,5 +1,11 @@
 import { google, sheets_v4 } from "googleapis";
-import { collection, getDocs, orderBy, query } from "firebase/firestore";
+import {
+	Firestore,
+	collection,
+	getDocs,
+	orderBy,
+	query,
+} from "firebase/firestore";
 import { db } from "./firebase";
 import { Phase, TeamData } from "./firestore";
 
@@ -18,7 +24,7 @@ const credentials = {
 	universe_domain: process.env.SHEET_UNIVERSE_DOMAIN,
 };
 
-async function getTeamsData() {
+async function getTeamsData(db: Firestore) {
 	let q = query(collection(db, "teams"));
 	const snapshot = await getDocs(q);
 
