@@ -43,7 +43,7 @@ export default function Phase({
 			return Promise.resolve();
 		}
 		const promise = updateLink({
-			teamId: teamData.name,
+			teamId: teamData.id,
 			link,
 			phase: "phase_" + stage,
 			role,
