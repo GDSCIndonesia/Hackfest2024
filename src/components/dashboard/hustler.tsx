@@ -25,7 +25,7 @@ export default function Hustler(
 				></Phase> */}
 				<Phase
 					onSubmit={onSubmit}
-					canSubmit={new Date() <= new Date("2024-01-13")}
+					canSubmit={false}
 					key="hustler_2"
 					title="Hustler 2nd Submission"
 					desc={<></>}

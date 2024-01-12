@@ -24,7 +24,7 @@ export default function Hipster(
 				></Phase> */}
 				<Phase
 					onSubmit={onSubmit}
-					canSubmit={new Date() <= new Date("2024-01-13")}
+					canSubmit={false}
 					key="hipster_2"
 					title="Hipster 2nd Submission"
 					desc={<></>}
