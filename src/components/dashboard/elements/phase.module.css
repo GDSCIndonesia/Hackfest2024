@@ -36,7 +36,7 @@
 }
 
 .input {
-	@apply w-full rounded-lg h-9 p-3 font-gooReg;
+	@apply w-full rounded-lg h-9 p-3 font-gooReg text-hackBlack;
 }
 
 .submissionDate {

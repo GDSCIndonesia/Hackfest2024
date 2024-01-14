@@ -38,7 +38,7 @@ export default function Dashboard() {
 					return;
 				}
 				if (!userData.verified) {
-					await updateVerified(userData.id)
+					await updateVerified(userData.id);
 				}
 				const teamData = await getTeamByTeamId(userData.teamId);
 				setTeamData(teamData);
@@ -63,7 +63,7 @@ export default function Dashboard() {
 	const components = {
 		Hacker: Hacker(teamData, role, refreshTeamData),
 		Hipster: Hipster(teamData, role, refreshTeamData),
-		Summary: Summary(teamData, teamMembers),
+		Summary: Summary(teamData, teamMembers, refreshTeamData),
 		Hustler: Hustler(teamData, role, refreshTeamData),
 	};
 

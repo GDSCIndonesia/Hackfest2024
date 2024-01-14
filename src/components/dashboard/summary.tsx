@@ -1,4 +1,9 @@
-import { Phase, TeamData, getUsersByTeamId } from "@/lib/firestore";
+import {
+	Phase,
+	TeamData,
+	getTeamByTeamId,
+	getUsersByTeamId,
+} from "@/lib/firestore";
 import individualStyle from "./css/individual.module.css";
 import DropdownContent from "./elements/dropdown-content";
 import YoutubeEmbed from "./elements/youtube-embed";
@@ -6,8 +11,13 @@ import { useEffect, useState } from "react";
 import { formatDate } from "@/lib/date-util";
 import { Member } from "@/lib/firestore";
 import "./css/individual.module.css";
+import PhaseComponent from "@/components/dashboard/elements/phase";
 
-export default function Summary(teamData: TeamData, teamMembers: Member[]) {
+export default function Summary(
+	teamData: TeamData,
+	teamMembers: Member[],
+	onSubmit: () => Promise<any>
+) {
 	const [phaseOne, setPhaseOne] = useState<Phase>(teamData.phase_1 as Phase);
 	const [phaseTwo, setPhaseTwo] = useState<Phase>(teamData.phase_2 as Phase);
 	useEffect(() => {
@@ -131,6 +141,18 @@ export default function Summary(teamData: TeamData, teamMembers: Member[]) {
 					</div>
 				</div>
 			</DropdownContent>
+
+			<PhaseComponent
+				onSubmit={onSubmit}
+				canSubmit={new Date() <= new Date("2024-01-20")}
+				key="hipster_3"
+				title="Final Submission"
+				desc={<></>}
+				deadline="12 January 2023"
+				stage="3"
+				teamData={teamData}
+				role="hipster"
+			></PhaseComponent>
 
 			{/* <DropdownContent title={"A Youtube Video"} className="my-2">
 				<div className="h-[500px]">
