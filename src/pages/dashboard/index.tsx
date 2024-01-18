@@ -20,6 +20,7 @@ import { onAuthStateChanged, signOut } from "firebase/auth";
 import firebase from "firebase/compat/app";
 import Router from "next/router";
 import Loading from "@/components/dashboard/elements/loading";
+import PopDash from "@/components/dashboard/popdash/PopDash";
 
 export default function Dashboard() {
 	const [authLoading, setAuthLoading] = useState(true);
@@ -75,6 +76,7 @@ export default function Dashboard() {
 		<Loading />
 	) : (
 		<>
+			<PopDash/>
 			<Navbar />
 			<div className={style.dashHeader}>
 				<div className={style.dashTeamName}>
