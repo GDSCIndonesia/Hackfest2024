@@ -91,7 +91,7 @@ export default function Phase({
 						placeholder="https://example.com/path/to/file"
 						readOnly={canSubmit}
 					/>
-					{/* <div className={style.action}>
+					<div className={style.action}>
 						{submission?.submissionDate ? (
 							<p className={style.submissionDate}>
 								Submited at: {formatDate(submission.submissionDate.toDate())}
@@ -120,7 +120,7 @@ export default function Phase({
 						) : (
 							<></>
 						)}
-					</div> */}
+					</div>
 				</div>
 			</div>
 		</section>

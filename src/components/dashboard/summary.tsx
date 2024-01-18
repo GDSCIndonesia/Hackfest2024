@@ -144,7 +144,7 @@ export default function Summary(
 
 			<PhaseComponent
 				onSubmit={onSubmit}
-				canSubmit={new Date() <= new Date("2024-01-19")}
+				canSubmit={new Date() <= new Date("2024-01-19T07:00:00")}
 				key="hipster_3"
 				title="Final Submission"
 				desc={<></>}
