@@ -89,7 +89,7 @@ export default function Phase({
 						onChange={(e) => setLink(e.target.value)}
 						value={link}
 						placeholder="https://example.com/path/to/file"
-						readOnly={!canSubmit}
+						readOnly={canSubmit}
 					/>
 					{/* <div className={style.action}>
 						{submission?.submissionDate ? (
