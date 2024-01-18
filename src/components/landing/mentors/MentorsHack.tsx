@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import mentors from "../../../lib/json/mentors.json"
 
 export default function MentorsHack() {
   return (
@@ -20,38 +21,16 @@ export default function MentorsHack() {
                 duration: 0.5
             }}
         className='mentorsGrid'>
-            <div className='mentorsCol'>
-                <div className='mentorsImg'>
-                    <img className='mentorsBorder' src="/libraries/images/svg/circleMentors.svg" alt="" />
-                    <img className='mentorsRealImg' src="/libraries/images/mentors/Restu.png" alt="" />
+            {mentors.map((mentor, i) => (
+                <div className='mentorsCol' key={i}>
+                    <div className='mentorsImg'>
+                        <img className='mentorsBorder' src="/libraries/images/svg/circleMentors.svg" alt="" />
+                        <img className='mentorsRealImg' src={mentor.image} alt="" />
+                    </div>
+                    <h1>{mentor.name}</h1>
+                    <p>{mentor.company}</p>
                 </div>
-                <h1>Restu Dwi Cahyo</h1>
-                <p>Bandung Coders</p>
-            </div>
-            <div className='mentorsCol'>
-                <div className='mentorsImg'>
-                    <img className='mentorsBorder' src="/libraries/images/svg/circleMentors.svg" alt="" />
-                    <img className='mentorsRealImg' src="/libraries/images/mentors/AlexanderJason.jpg" alt="" />
-                </div>
-                <h1>Alexander Jason</h1>
-                <p>IFest Business IT-Case Competition</p>
-            </div>
-            <div className='mentorsCol'>
-                <div className='mentorsImg'>
-                    <img className='mentorsBorder' src="/libraries/images/svg/circleMentors.svg" alt="" />
-                    <img className='mentorsRealImg' src="/libraries/images/mentors/sambas.jpg" alt="" />
-                </div>
-                <h1>Sambas Jundi Mahfuzdi</h1>
-                <p>PT. Bank Rakyat Indonesia (Persero) Tbk.</p>
-            </div>
-            <div className='mentorsCol'>
-                <div className='mentorsImg'>
-                    <img className='mentorsBorder' src="/libraries/images/svg/circleMentors.svg" alt="" />
-                    <img className='mentorsRealImg' src="/libraries/images/mentors/MariaCatherine.jpg" alt="" />
-                </div>
-                <h1>Maria Catherine</h1>
-                <p>WoiLo, UIUXINDO</p>
-            </div>
+            ))}
         </motion.div>
     </section>
   )

@@ -20,11 +20,18 @@ export default function MediaPartners() {
                 duration: 0.5
             }}
         className='mediaPartnersItem'>
-            <div className='sponsorImg'>
-                <img src="/libraries/images/png/googleForDevelopers.png" alt="" />
+            <div>
+                <div className='sponsorImg mb-[50px] md:mb-0'>
+                    <img src="/libraries/images/png/googleForDevelopers.png" alt="" />
+                </div>
+                <div className='sponsorImg'>
+                    <img src="/libraries/images/png/BACOD.png" alt="" />
+                </div>
             </div>
-            <div className='sponsorImg'>
-                <img src="/libraries/images/png/googleForDevelopers.png" alt="" />
+            <div>
+                <div className='sponsorImg'>
+                    <img src="/libraries/images/png/uiuxindo.png" alt="" />
+                </div>
             </div>
         </motion.div>
     </section>

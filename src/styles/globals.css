@@ -312,6 +312,9 @@ body,
 	.sponsorsItem {
 		@apply mt-[150px] mb-[300px] flex flex-col sm:flex-row justify-between space-y-12 sm:space-y-0 sm:space-x-8;
 	}
+	.sponsorImg > img{
+		@apply max-h-[150px]
+	}
 	/* End Sponsors */
 
 	/* Sponsors */
@@ -343,7 +346,10 @@ body,
 		@apply mb-[30px] text-[14px] md:text-[18px] font-gooReg text-softDark;
 	}
 	.mediaPartnersItem {
-		@apply mt-[150px] mb-[50px] flex flex-col sm:flex-row justify-between space-y-12 sm:space-y-0 sm:space-x-8;
+		@apply mt-[150px] mb-[50px]
+	}
+	.mediaPartnersItem > div{
+		@apply w-full flex justify-evenly flex-col items-center md:space-x-10 md:flex-row first:mb-[60px]
 	}
 	/* End Media Partners */
 

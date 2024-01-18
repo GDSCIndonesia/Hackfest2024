@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Restu Dwi Cahyo",
+        "company": "Bandung Coders",
+        "image": "/libraries/images/mentors/Restu.png"
+    },
+    {
+        "name": "Alexander Jason",
+        "company": "IFest Business IT-Case Competition",
+        "image": "/libraries/images/mentors/AlexanderJason.jpg"
+    },
+    {
+        "name": "Sambas Jundi Mahfuzdi",
+        "company": "PT. Bank Rakyat Indonesia (Persero) Tbk.",
+        "image": "/libraries/images/mentors/sambas.jpg"
+    },
+    {
+        "name": "Maria Catherine",
+        "company": "IFest Business IT-Case Competition",
+        "image": "/libraries/images/mentors/MariaCatherine.jpg"
+    },
+    {
+        "name": "Joshua Agusta",
+        "company": "Vertex Venture SEA & India",
+        "image": "/libraries/images/mentors/JoshuaAgusta.jpg"
+    },
+    {
+        "name": "Nuriyah Amalia",
+        "company": "Tiket.com",
+        "image": "/libraries/images/mentors/NuriyahAmalia.jpg"
+    },
+    {
+        "name": "Adhy Wiranata Prasetyo",
+        "company": "Tiket.com",
+        "image": "/libraries/images/mentors/AdhyWiranataPrasetyo.jpg"
+    },
+    {
+        "name": "Novita Olivera",
+        "company": "Tiket.com",
+        "image": "/libraries/images/mentors/NovitaOlivera.jpg"
+    }
+]
