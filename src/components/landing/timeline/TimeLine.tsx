@@ -199,8 +199,8 @@ export default function TimeLine() {
                     <div className='absolute sm:hidden w-[10px] h-[20px] bg-softDark right-1/2 -translate-x-1/2 bottom-0'></div>
                     <div className='timeFrame bg-hackBlue'>
                         <div className='timeContent'>
-                            <h1>Pitch Deck Demo Submission</h1>
-                            <p>Present your innovation in the GDSC Indonesia HackFest with a compelling pitch deck. Let your ideas shine for a chance to make a lasting impact!</p>
+                            <h1>Judging</h1>
+                            <p>The time for the judges to evaluate all the works you have created.</p>
                         </div>
                         <div className='dateBottom'>
                             <h1>January 19, 2024 - January 20, 2024</h1>
