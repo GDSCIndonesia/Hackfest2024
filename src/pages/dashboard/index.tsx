@@ -76,7 +76,7 @@ export default function Dashboard() {
 		<Loading />
 	) : (
 		<>
-			<PopDash/>
+			{/* <PopDash/> */}
 			<Navbar />
 			<div className={style.dashHeader}>
 				<div className={style.dashTeamName}>
