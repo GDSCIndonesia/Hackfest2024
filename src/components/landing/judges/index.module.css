@@ -1,0 +1,21 @@
+.sessionTechBackground {
+	background-image: url(/libraries/images/svg/judgesBackground.svg),
+		url(/libraries/images/svg/sessionTechLeft.svg);
+	background-position: left top, left bottom;
+	background-repeat: no-repeat, no-repeat;
+	background-size: contain, auto;
+}
+
+.judgesHack{
+    @apply px-[30px] sm:px-[60px] pt-[250px] pb-[100px] bg-softDark sessionTechBackground overflow-hidden;
+}
+
+.judgesTop {
+	@apply ml-auto w-full lg:w-[75%] xl:w-[60%];
+}
+.judgesTop > h1 {
+	@apply font-gooBold text-[40px] sm:text-[60px] xl:text-[60px] tracking-[-4px] text-hackWhite xl:leading-[80px];
+}
+.judgesTop > p {
+	@apply mb-[30px] text-[14px] md:text-[18px] font-gooReg text-hackWhite;
+}

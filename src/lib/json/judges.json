@@ -1,0 +1,67 @@
+[
+    {
+        "name": "Sandhika Galih",
+        "role": "GDE Web | Lecturer | Content Creator",
+        "image": "/libraries/images/judges/sandhikaGalih.jpg"
+    },
+    {
+        "name": "Qassandra Chaidir",
+        "role": "GDE Cloud",
+        "image": "/libraries/images/judges/qassandraChaidir.jpg"
+    },
+    {
+        "name": "Esther Irawati",
+        "role": "Associate Professor ISTTS dan Google Developer Expert Machine Learning",
+        "image": "/libraries/images/judges/esther.jpg"
+    },
+    {
+        "name": "Andrew Kurniadi",
+        "role": "GDE Android/Founder Lumio",
+        "image": "/libraries/images/judges/andrewKurniadi.jpeg"
+    },
+    {
+        "name": "Joan Santoso",
+        "role": "GDE Machine Learning",
+        "image": "/libraries/images/judges/joanSantoso.jpg"
+    },
+    {
+        "name": "Ananda Dwi Rahmawati",
+        "role": "GDE Cloud",
+        "image": "/libraries/images/judges/anandaDwi.png"
+    },
+    {
+        "name": "Metta Ryanni",
+        "role": "WTM Ambassador",
+        "image": "/libraries/images/judges/metta.jpg"
+    },
+    {
+        "name": "Deni Rohimat",
+        "role": "GDG Bandung Manager",
+        "image": "/libraries/images/judges/deni.jpg"
+    },
+    {
+        "name": "Adam Widi B.",
+        "role": "Data Engineer at Online Travel Agent",
+        "image": "/libraries/images/judges/adam.jpg"
+    },
+    {
+        "name": "Fikih Firmansyah",
+        "role": "Backend Engineer",
+        "image": "/libraries/images/judges/fikih.jpeg"
+    },
+    {
+        "name": "Viranita Julianti",
+        "role": "WTM Ambassador",
+        "image": "/libraries/images/judges/viranitaJulianti.jpg"
+    },
+    {
+        "name": "A. Rayhan Primadedas",
+        "role": "Co-Organizer GDG Depok",
+        "image": "/libraries/images/judges/aRayhan.jpg"
+    },
+    {
+        "name": "Meyta Taliti",
+        "role": "Android Engineer",
+        "image": "/libraries/images/judges/meytaTailiti.jpg"
+    }
+]

@@ -13,6 +13,7 @@ import FrequentlyAsked from "@/components/landing/faq/FrequentlyAsked";
 import DiscordHack from "@/components/landing/discord/DiscordHack";
 import Footer from "@/components/landing/layout/Footer";
 import Navbar from "@/components/landing/layout/Navbar";
+import JudgesHack from "@/components/landing/judges/JudgesHack";
 import AlertHead from "@/components/landing/alert/AlertHead";
 import PopLanding from "@/components/landing/popup/PopUp";
 import { NextSeo } from "next-seo";
@@ -63,6 +64,7 @@ export default function Home() {
 			<TimeLine />
 			<SessionTech />
 			<MentorsHack />
+			<JudgesHack/>
 			<SponsorsHack />
 			<MediaPartners />
 			<OrganizerHack />
