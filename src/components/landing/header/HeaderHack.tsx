@@ -12,7 +12,7 @@ export default function HeaderHack() {
                 className='headerGrid'>
                 <div className='headLeft'>
                     <h1>HackFest 2024</h1>
-                    <p>HackFest Indonesia is Indonesia’s hackathon held by GDSC Indonesia where university students of different skills from all over Indonesia can come together to experiment and develop impactful software or hardware based onUnited Nation 17 SDGs.</p>
+                    <p>HackFest Indonesia is Indonesia’s hackathon held by GDSC Indonesia where university students of different skills from all over Indonesia can come together to experiment and develop impactful software or hardware based on United Nation 17 SDGs.</p>
                     <a href="https://links.gdsc-hackfest.com/bookletHackFest2024" target="_blank">
                         Download Booklet
                     </a>
