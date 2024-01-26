@@ -19,3 +19,26 @@
 .judgesTop > p {
 	@apply mb-[30px] text-[14px] md:text-[18px] font-gooReg text-hackWhite;
 }
+
+.judgesTopTen {
+	@apply ml-auto w-full text-center mt-[100px];
+}
+.judgesTopTen > h1 {
+	@apply font-gooBold text-[40px] sm:text-[60px] xl:text-[60px] tracking-[-4px] text-hackWhite xl:leading-[80px];
+}
+.judgesTopTen > p {
+	@apply mb-[30px] text-[14px] md:text-[18px] font-gooReg text-hackWhite;
+}
+
+.mentorsTen {
+	@apply grid grid-cols-6 sm:grid-cols-12 gap-10 mt-[100px];
+}
+.mentorsColTen {
+	@apply col-span-6 sm:col-span-6 md:col-span-4 text-center;
+}
+.mentorsColTen > h1 {
+	@apply font-gooBold text-hackWhite text-[25px] mt-[10px];
+}
+.mentorsColTen > p {
+	@apply font-gooReg text-hackGrey text-[15px];
+}

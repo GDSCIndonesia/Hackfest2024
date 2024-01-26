@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Riza Fahmi",
+        "role": "GDE Web",
+        "image": "/libraries/images/judges/riza.jpg"
+    },
+    {
+        "name": "Veronica Putri Anggrain",
+        "role": "GDE Android",
+        "image": "/libraries/images/judges/vero.jpeg"
+    },
+    {
+        "name": "Dimas Prasetyo Tegar Asmoro",
+        "role": "Telkom Indonesia",
+        "image": "/libraries/images/judges/dimas.jpg"
+    }
+]
