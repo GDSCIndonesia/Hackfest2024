@@ -21,7 +21,7 @@ export default function SponsorsHack() {
             }}
         className='sponsorsItem'>
             <div className='sponsorsImg'>
-                <img src="/libraries/images/png/telkomsel.png" alt="" />
+                <img src="/libraries/images/png/telkom-1.png" alt="" />
             </div>
             <div className='sponsorsImg'>
                 <img src="/libraries/images/png/tiketcom.png" alt="" />
